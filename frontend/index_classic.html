@@ -1,0 +1,2071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRAVAH 360 • Geospatial Disaster Intelligence &amp; Emergency Decision Support</title>
+  <link rel="icon" type="image/svg+xml" href="/static/assets/pravah360_favicon.svg">
+  <meta name="description" content="PRAVAH 360: Geospatial Disaster Intelligence & Emergency Decision Support. See the risk. Stay prepared.">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="/static/leaflet/leaflet.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Application CSS -->
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="gis-theme">
+  <!-- Main Application Shell -->
+  <div class="app-shell">
+    
+    <!-- Left Navigation Bar -->
+    <nav class="app-nav" id="appNav">
+      <div class="nav-brand">
+        <div class="brand-logo">
+          <img src="/static/assets/pravah360_icon.svg" alt="PRAVAH 360" width="34" height="34" style="border-radius:8px; display:block;">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">PRAVAH <span style="color:var(--accent-blue);">360</span></span>
+          <span class="brand-version">See the risk. Stay prepared.</span>
+        </div>
+      </div>
+
+      <div class="nav-menu">
+        <!-- Welcome & Discovery -->
+        <button class="nav-item" data-workspace="welcome" id="navItemWelcome">
+          <span class="nav-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+          <span class="nav-label">Welcome</span>
+          <span class="nav-pill highlight">Start</span>
+        </button>
+
+        <button class="nav-item active" data-workspace="overview" id="navItemOverview">
+          <span class="nav-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg></span>
+          <span class="nav-label">Overview</span>
+        </button>
+        <button class="nav-item" data-workspace="explorer" id="navItemExplorer">
+          <span class="nav-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg></span>
+          <span class="nav-label">Geospatial Explorer</span>
+          <span class="nav-pill">GIS</span>
+        </button>
+        <button class="nav-item" data-workspace="risk" id="navItemRisk">
+          <span class="nav-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg></span>
+          <span class="nav-label">Flood Risk Intelligence</span>
+        </button>
+        <button class="nav-item" data-workspace="impact" id="navItemImpact">
+          <span class="nav-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          <span class="nav-label">Impact Assessment</span>
+        </button>
+        <button class="nav-item" data-workspace="weather" id="navItemWeather">
+          <span class="nav-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/><path d="M16 19v3"/><path d="M8 19v3"/><path d="M12 21v3"/></svg></span>
+          <span class="nav-label">Weather &amp; Alerts</span>
+        </button>
+        <button class="nav-item" data-workspace="operations" id="navItemOperations">
+          <span class="nav-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg></span>
+          <span class="nav-label">Emergency Operations</span>
+          <span class="nav-pill alert">Simulator</span>
+        </button>
+        <button class="nav-item" data-workspace="global" id="navItemGlobal">
+          <span class="nav-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+          <span class="nav-label">Global 3D Earth</span>
+          <span class="nav-pill highlight">3D</span>
+        </button>
+        <button class="nav-item" data-workspace="evidence" id="navItemEvidence">
+          <span class="nav-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span>
+          <span class="nav-label">Evidence &amp; Trust</span>
+        </button>
+        <button class="nav-item" data-workspace="research" id="navItemResearch">
+          <span class="nav-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg></span>
+          <span class="nav-label">Research &amp; Method</span>
+        </button>
+        <button class="nav-item" data-workspace="help" id="navItemHelp">
+          <span class="nav-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+          <span class="nav-label">Help &amp; Preparedness</span>
+        </button>
+      </div>
+
+      <div class="nav-footer">
+        <div class="status-indicator live">
+          <span class="pulsing-dot"></span>
+          <span>Decision Support Active</span>
+        </div>
+        <div class="nav-scope-label">Lower Godavari (21 Mandals)</div>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="app-main">
+      
+      <!-- Top Utility Header -->
+      <header class="top-utility-bar">
+        <div class="bar-left">
+          <h1 class="workspace-heading" id="currentWorkspaceHeading">Overview &amp; Executive Summary</h1>
+          <span class="workspace-subheading" id="currentWorkspaceSubheading">Lower Godavari Basin, Andhra Pradesh • GADM v4.1 &amp; 2022 AP Reorganization</span>
+        </div>
+
+        <div class="bar-center">
+          <!-- Universal Global Search Box -->
+          <div class="global-search-wrapper">
+            <span class="search-icon"><svg class="svg-inline" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
+            <input type="text" id="globalLocationSearchInput" placeholder="Search mandal, town, or lat,lon..." autocomplete="off">
+            <button id="btnGlobalSearch" class="btn-search">Search</button>
+            <div class="search-suggestions" id="globalSearchSuggestions" style="display:none;"></div>
+          </div>
+        </div>
+
+        <div class="bar-right">
+          <!-- Active User / Authentication Badge -->
+          <button class="btn-auth-profile" id="btnUserAuth" title="Authentication &amp; Role Management">
+            <span class="user-role-dot" id="headerRoleDot"></span>
+            <span id="headerUserLabel">Guest (Click to Sign In)</span>
+          </button>
+
+          <!-- Interactive Guided Tour Launch -->
+          <button class="btn-tool btn-tour" id="btnLaunchTour" title="Interactive Guided Tour">
+            <svg class="svg-inline" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg> Tour
+          </button>
+          <div class="coord-display-pill" id="mouseCoordinatesDisplay" title="Current Cursor Coordinates">
+            Lat: 16.9420° N, Lon: 81.7760° E
+          </div>
+          <button class="btn-tool" id="btnResetBasinView" title="Reset Camera to Lower Godavari Basin">
+            <svg class="svg-inline" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg> Reset View
+          </button>
+        </div>
+      </header>
+
+      <!-- Workspaces Container -->
+      <div class="workspaces-container">
+        
+        <!-- ================================================================= -->
+        <!-- WORKSPACE 1: OVERVIEW -->
+        <!-- ================================================================= -->
+        
+        <!-- ================================================================= -->
+        <!-- WORKSPACE 0: WELCOME & SYSTEM DISCOVERY -->
+        <!-- ================================================================= -->
+        <section class="workspace" id="workspace-welcome">
+          <div class="welcome-scrollable">
+            <div class="welcome-hero-banner">
+              <div class="welcome-hero-badge">
+                <span class="pulsing-dot"></span> Earth Observation &amp; Emergency Decision Support
+              </div>
+              <h1 class="welcome-title">PRAVAH <span class="gradient-text">360</span></h1>
+              <p class="welcome-tagline">See the risk. Stay prepared.</p>
+              <p class="welcome-desc">
+                A unified geospatial intelligence platform bridging orbital Earth observation, multi-criteria hydrological modeling, and community emergency operations across the Lower Godavari Basin.
+              </p>
+              <div class="welcome-actions">
+                <button class="btn-primary-glow" id="btnWelcomeExploreOverview">
+                  <svg class="svg-inline" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+                  Enter Command Centre
+                </button>
+                <button class="btn-outline-glow" id="btnWelcomeStartTour">
+                  <svg class="svg-inline" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                  Start Guided Tour
+                </button>
+                <button class="btn-sos-glow" id="btnWelcomeOpenCitizenSos">
+                  <svg class="svg-inline" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  Emergency SOS
+                </button>
+              </div>
+            </div>
+
+            <!-- 6 Core Capabilities Grid -->
+            <div class="capabilities-header">
+              <h2>Core System Capabilities</h2>
+              <p>Six integrated intelligence domains powering environmental resilience and emergency response.</p>
+            </div>
+
+            <div class="capabilities-grid">
+              <div class="cap-card" data-target="weather">
+                <div class="cap-icon-wrap cap-icon-blue">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/><path d="M16 19v3"/><path d="M8 19v3"/><path d="M12 21v3"/></svg>
+                </div>
+                <h3>1. Multi-Source Environmental Monitoring</h3>
+                <p>Continuous background daemon ingesting NDMA SACHET alerts, CWC river stages (Dowleswaram, Bhadrachalam, Polavaram, Kunavaram), and Open-Meteo precipitation forecasts.</p>
+                <span class="cap-action-link">Open Monitoring &rarr;</span>
+              </div>
+
+              <div class="cap-card" data-target="risk">
+                <div class="cap-icon-wrap cap-icon-emerald">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg>
+                </div>
+                <h3>2. Explainable Flood Susceptibility (AHP)</h3>
+                <p>Scientific multi-criteria Analytic Hierarchy Process weighting Copernicus 30m DEM elevation (25%), slope gradient (20%), HydroRIVERS proximity (25%), and ESA WorldCover land use (15%).</p>
+                <span class="cap-action-link">Explore Model &rarr;</span>
+              </div>
+
+              <div class="cap-card" data-target="impact">
+                <div class="cap-icon-wrap cap-icon-amber">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+                </div>
+                <h3>3. Demographic &amp; Facility Impact Assessment</h3>
+                <p>High-resolution WorldPop 2020 constrained population disaggregation (8,252,724 exposed in elevated susceptibility zones) and 1,467 mapped health, education, and relief centers.</p>
+                <span class="cap-action-link">View Demographics &rarr;</span>
+              </div>
+
+              <div class="cap-card" data-target="explorer">
+                <div class="cap-icon-wrap cap-icon-cyan">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+                </div>
+                <h3>4. Interactive Geospatial Explorer</h3>
+                <p>GIS-grade multi-layer canvas with satellite/terrain basemaps, Sentinel-1 SAR floodwater extents (Track 129 peak crest: 1,087.5 km²), opacity sliders, and coordinate inspection.</p>
+                <span class="cap-action-link">Launch GIS &rarr;</span>
+              </div>
+
+              <div class="cap-card" data-target="operations">
+                <div class="cap-icon-wrap cap-icon-rose">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49"/></svg>
+                </div>
+                <h3>5. Emergency Operations &amp; Citizen SOS</h3>
+                <p>End-to-end incident coordination supporting Citizen SOS help requests, Mandal Tahsildar warnings, District resource allocation, and SDRF field dispatch lifecycles.</p>
+                <span class="cap-action-link">Open Operations &rarr;</span>
+              </div>
+
+              <div class="cap-card" data-target="global">
+                <div class="cap-icon-wrap cap-icon-teal">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <h3>6. Planetary 3D Earth Situational Awareness</h3>
+                <p>Interactive WebGL 3D globe providing macro-environmental planetary context, international borders, and seamless visual transitions into the Lower Godavari delta study area.</p>
+                <span class="cap-action-link">View 3D Earth &rarr;</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="workspace active" id="workspace-overview">
+          <div class="overview-scrollable">
+            <!-- Authoritative Metric Ribbon with Modern Geospatial Cards -->
+            <div class="metric-ribbon">
+              <div class="metric-card card-elevated">
+                <div class="metric-top">
+                  <span class="metric-icon"><svg class="svg-inline" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+                  <span class="metric-label">Elevated Susceptibility</span>
+                </div>
+                <div class="metric-val critical" id="ribbonHighMandals">15 / 21 Mandals</div>
+                <div class="metric-bar-wrap">
+                  <div class="metric-bar-fill fill-critical" style="width: 71.4%;"></div>
+                </div>
+                <span class="metric-sub">12 Very High, 3 High Zones (AHP • 71.4% of Basin)</span>
+              </div>
+
+              <div class="metric-card card-pop">
+                <div class="metric-top">
+                  <span class="metric-icon"><svg class="svg-inline" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                  <span class="metric-label">Potential Population Exposure</span>
+                </div>
+                <div class="metric-val" id="ribbonExposedPop">8,252,724</div>
+                <div class="metric-bar-wrap">
+                  <div class="metric-bar-fill fill-cyan" style="width: 90.43%;"></div>
+                </div>
+                <span class="metric-sub" id="ribbonExposedPopSub">90.43% of 9,126,355 Baseline (WorldPop 2020)</span>
+              </div>
+
+              <div class="metric-card card-assets">
+                <div class="metric-top">
+                  <span class="metric-icon"><svg class="svg-inline" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M8 12h8"/><path d="M12 8v8"/></svg></span>
+                  <span class="metric-label">Mapped Community Facilities</span>
+                </div>
+                <div class="metric-val" id="ribbonHealthFac">1,467 Facilities</div>
+                <div class="metric-bar-wrap">
+                  <div class="metric-bar-fill fill-amber" style="width: 95.1%;"></div>
+                </div>
+                <span class="metric-sub" id="ribbonHealthFacSub">876 Very High, 591 High (1,542 Study Area Total)</span>
+              </div>
+
+              <div class="metric-card card-sar">
+                <div class="metric-top">
+                  <span class="metric-icon"><svg class="svg-inline" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
+                  <span class="metric-label">Sentinel-1 Inundation Candidates</span>
+                </div>
+                <div class="metric-val highlight" id="ribbonSarArea">1,087.5 km²</div>
+                <div class="metric-bar-wrap">
+                  <div class="metric-bar-fill fill-teal" style="width: 100%;"></div>
+                </div>
+                <span class="metric-sub">Track 129 Event Peak Crest (16 July 2022)</span>
+              </div>
+            </div>
+
+            <!-- Overview Grid -->
+            <div class="overview-grid">
+              <!-- Left: Geographic Hero Basin Map -->
+              <div class="overview-card map-card">
+                <div class="card-header">
+                  <div class="header-title-group">
+                    <span class="card-icon"><svg class="svg-inline" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg></span>
+                    <div>
+                      <h3>Lower Godavari Basin Geographic Hero</h3>
+                      <span class="header-subtext">Interactive Regional Multi-Source Intelligence &amp; Observation View</span>
+                    </div>
+                  </div>
+                  <button class="btn-sm btn-accent" id="btnOpenFullExplorer">Full Geospatial Explorer →</button>
+                </div>
+
+                <!-- Interactive Hero Map Wrapper with Floating HUD -->
+                <div class="hero-map-wrapper">
+                  <div id="overview-map" class="embedded-map-container"></div>
+                  
+                  <!-- Floating Map HUD Controls -->
+                  <div class="hero-map-hud" id="heroMapHud">
+                    <div class="hero-hud-pills">
+                      <button class="hero-hud-btn active" data-layer="all">All Layers</button>
+                      <button class="hero-hud-btn" data-layer="flood">SAR Floodwater</button>
+                      <button class="hero-hud-btn" data-layer="susceptibility">Susceptibility</button>
+                      <button class="hero-hud-btn" data-layer="rivers">Drainage Network</button>
+                    </div>
+                    <div class="hero-hud-info" id="overviewMapHoverHud">
+                      Hover or click any mandal to view spatial metrics
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Integrated Hero Symbology Bar -->
+                <div class="hero-symbology-bar">
+                  <span class="symbology-item"><span class="swatch" style="background:#ef4444;"></span> Very High Susceptibility</span>
+                  <span class="symbology-item"><span class="swatch" style="background:#f97316;"></span> High</span>
+                  <span class="symbology-item"><span class="swatch" style="background:#eab308;"></span> Moderate</span>
+                  <span class="symbology-item"><span class="swatch" style="background:#10b981;"></span> Low</span>
+                  <span class="symbology-item"><span class="swatch" style="background:#00f0ff;"></span> SAR Flood Candidates</span>
+                  <span class="symbology-item"><span class="swatch" style="background:#00b4d8;"></span> HydroRIVERS Network</span>
+                </div>
+
+                <div class="card-caption">
+                  21 Mandals across East Godavari, West Godavari, Dr. B.R. Ambedkar Konaseema, Kakinada, Eluru, and Alluri Sitharama Raju districts • Copernicus DEM GLO-30 • HydroSHEDS • Sentinel-1 SAR • WorldPop 2020 • GADM v4.1
+                </div>
+              </div>
+
+              <!-- Right: Visual Analytical Summaries & Quick Navigation -->
+              <div class="overview-side-col">
+                <!-- Visual Analytical Summaries -->
+                <div class="overview-card analytics-card">
+                  <div class="card-header">
+                    <div class="header-title-group">
+                      <span class="card-icon"><svg class="svg-inline" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+                      <h3>Visual Analytical Summaries</h3>
+                    </div>
+                    <span class="badge-pill supported-scope">Reconciled Phase 4</span>
+                  </div>
+                  
+                  <div class="analytics-body">
+                    <!-- Susceptibility Class Distribution -->
+                    <div class="analytic-section">
+                      <div class="analytic-header">
+                        <span class="analytic-title">Mandal Susceptibility Distribution (21 Mandals)</span>
+                        <span class="analytic-meta">15 Elevated (71.4%)</span>
+                      </div>
+                      <div class="segmented-bar" title="12 Very High (57.1%), 3 High (14.3%), 3 Moderate (14.3%), 3 Low (14.3%)">
+                        <div class="seg-fill" style="width: 57.14%; background: #ef4444;">12 VH</div>
+                        <div class="seg-fill" style="width: 14.29%; background: #f97316;">3 H</div>
+                        <div class="seg-fill" style="width: 14.29%; background: #eab308;">3 M</div>
+                        <div class="seg-fill" style="width: 14.29%; background: #10b981;">3 L</div>
+                      </div>
+                      <div class="analytic-chips">
+                        <span class="chip-dot" style="background:#ef4444;"></span> Very High: 12
+                        <span class="chip-dot" style="background:#f97316;"></span> High: 3
+                        <span class="chip-dot" style="background:#eab308;"></span> Moderate: 3
+                        <span class="chip-dot" style="background:#10b981;"></span> Low: 3
+                      </div>
+                    </div>
+
+                    <!-- Population Exposure Breakdown -->
+                    <div class="analytic-section">
+                      <div class="analytic-header">
+                        <span class="analytic-title">Population Allocation (9,126,355 Baseline)</span>
+                        <span class="analytic-meta">8,252,724 Exposed (90.43%)</span>
+                      </div>
+                      <div class="segmented-bar" title="Very High: 6,027,704 (66.05%), High: 2,225,020 (24.38%), Moderate: 663,126 (7.27%), Low: 210,505 (2.31%)">
+                        <div class="seg-fill" style="width: 66.05%; background: #ef4444;">6.03M</div>
+                        <div class="seg-fill" style="width: 24.38%; background: #f97316;">2.23M</div>
+                        <div class="seg-fill" style="width: 7.27%; background: #eab308;">663K</div>
+                        <div class="seg-fill" style="width: 2.31%; background: #10b981;">211K</div>
+                      </div>
+                      <div class="analytic-chips">
+                        <span class="chip-dot" style="background:#ef4444;"></span> VH: 6.03M (66.1%)
+                        <span class="chip-dot" style="background:#f97316;"></span> H: 2.23M (24.4%)
+                        <span class="chip-dot" style="background:#eab308;"></span> M: 663K (7.3%)
+                        <span class="chip-dot" style="background:#10b981;"></span> L: 211K (2.3%)
+                      </div>
+                    </div>
+
+                    <!-- Critical Infrastructure Distribution -->
+                    <div class="analytic-section">
+                      <div class="analytic-header">
+                        <span class="analytic-title">Community Assets (1,542 Study Area Facilities)</span>
+                        <span class="analytic-meta">1,467 in Elevated Zones (95.1%)</span>
+                      </div>
+                      <div class="facilities-stat-grid">
+                        <div class="fac-box">
+                          <span class="fac-icon">🏥</span>
+                          <span class="fac-num">1,146</span>
+                          <span class="fac-lbl">Healthcare</span>
+                        </div>
+                        <div class="fac-box">
+                          <span class="fac-icon">🏫</span>
+                          <span class="fac-num">333</span>
+                          <span class="fac-lbl">Education</span>
+                        </div>
+                        <div class="fac-box">
+                          <span class="fac-icon">⛺</span>
+                          <span class="fac-num">63</span>
+                          <span class="fac-lbl">Shelters</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Earth Observation & Model Metrics -->
+                    <div class="analytic-section">
+                      <div class="eo-metrics-grid">
+                        <div class="eo-item">
+                          <span class="eo-val">98.12%</span>
+                          <span class="eo-lbl">DEM Coverage (Copernicus DSM)</span>
+                        </div>
+                        <div class="eo-item">
+                          <span class="eo-val">99.88%</span>
+                          <span class="eo-lbl">SAR Valid Pixels (Track 129)</span>
+                        </div>
+                        <div class="eo-item">
+                          <span class="eo-val">&lt; 0.10</span>
+                          <span class="eo-lbl">AHP Matrix CR (CR = 0.0001)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 5 Quick Workspace Access Cards -->
+                <div class="quick-nav-grid">
+                  <div class="quick-nav-card card-explorer" data-target="explorer">
+                    <span class="quick-nav-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg></span>
+                    <div class="quick-nav-text">
+                      <span class="quick-nav-title">Geospatial Explorer</span>
+                      <span class="quick-nav-desc">Multi-layer GIS analysis &amp; coordinate inspection</span>
+                    </div>
+                    <span class="quick-nav-arrow">→</span>
+                  </div>
+                  <div class="quick-nav-card card-risk" data-target="risk">
+                    <span class="quick-nav-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg></span>
+                    <div class="quick-nav-text">
+                      <span class="quick-nav-title">Flood Risk Intelligence</span>
+                      <span class="quick-nav-desc">AHP rankings, factor weights &amp; risk drivers</span>
+                    </div>
+                    <span class="quick-nav-arrow">→</span>
+                  </div>
+                  <div class="quick-nav-card card-impact" data-target="impact">
+                    <span class="quick-nav-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                    <div class="quick-nav-text">
+                      <span class="quick-nav-title">Impact Assessment</span>
+                      <span class="quick-nav-desc">Population exposure &amp; community infrastructure</span>
+                    </div>
+                    <span class="quick-nav-arrow">→</span>
+                  </div>
+                  <div class="quick-nav-card card-weather" data-target="weather">
+                    <span class="quick-nav-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/><path d="M16 19v3"/><path d="M8 19v3"/><path d="M12 21v3"/></svg></span>
+                    <div class="quick-nav-text">
+                      <span class="quick-nav-title">Weather &amp; Alerts</span>
+                      <span class="quick-nav-desc">5-day delta forecast &amp; civil defense advisories</span>
+                    </div>
+                    <span class="quick-nav-arrow">→</span>
+                  </div>
+                  <div class="quick-nav-card card-global" data-target="global">
+                    <span class="quick-nav-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+                    <div class="quick-nav-text">
+                      <span class="quick-nav-title">Global 3D Earth</span>
+                      <span class="quick-nav-desc">Interactive WebGL 3D globe &amp; country intelligence</span>
+                    </div>
+                    <span class="quick-nav-arrow">→</span>
+                  </div>
+                  <div class="quick-nav-card card-operations" data-target="operations" style="border-left: 3px solid var(--accent-amber);">
+                    <span class="quick-nav-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg></span>
+                    <div class="quick-nav-text">
+                      <span class="quick-nav-title">Emergency Operations Simulator</span>
+                      <span class="quick-nav-desc">Multi-role decision support: Resident, Mandal, District &amp; ERT</span>
+                    </div>
+                    <span class="quick-nav-arrow">→</span>
+                  </div>
+                </div>
+
+                <!-- Decision Bulletins -->
+                <div class="overview-card alerts-card">
+                  <div class="card-header">
+                    <div class="header-title-group">
+                      <span class="card-icon">⚠️</span>
+                      <h3>Active Decision Bulletins</h3>
+                    </div>
+                    <span class="count-pill" id="overviewBulletinCount">10 Active</span>
+                  </div>
+                  <div class="alerts-feed-compact" id="overviewAlertsFeed">
+                    <div class="loading-placeholder">Loading decision bulletins...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- WORKSPACE 2: GEOSPATIAL EXPLORER (PRIMARY WEB GIS) -->
+        <!-- ================================================================= -->
+        <section class="workspace" id="workspace-explorer">
+          <div class="gis-layout">
+            
+            <!-- Left Docked Layer Management Panel -->
+            <aside class="gis-layer-panel" id="gisLayerPanel">
+              <div class="panel-header">
+                <h3>GIS Layer Catalogue</h3>
+                <span class="panel-subtitle">Selectable Geospatial Intelligence Layers</span>
+              </div>
+
+              <!-- Basemap Selector -->
+              <div class="layer-group">
+                <div class="group-title">
+                  <span>Basemap Provider</span>
+                </div>
+                <div class="basemap-selector-grid">
+                  <label class="basemap-radio-label">
+                    <input type="radio" name="basemapRadio" value="dark" checked>
+                    <span>Dark Canvas (Esri)</span>
+                  </label>
+                  <label class="basemap-radio-label">
+                    <input type="radio" name="basemapRadio" value="satellite">
+                    <span>Satellite (Esri)</span>
+                  </label>
+                                    <label class="basemap-radio-label">
+                    <input type="radio" name="basemapRadio" value="osm">
+                    <span>OpenStreetMap</span>
+                  </label>
+                  <label class="basemap-radio-label">
+                    <input type="radio" name="basemapRadio" value="topo">
+                    <span>Topographic (Esri)</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Layer Groups Accordion -->
+              <div class="layer-accordion">
+                <!-- Group 1: Administrative Geography -->
+                <div class="accordion-group open">
+                  <div class="accordion-header">
+                    <span class="accordion-title">Administrative Geography</span>
+                    <span class="accordion-arrow">▼</span>
+                  </div>
+                  <div class="accordion-body">
+                    <label class="layer-toggle-row">
+                      <input type="checkbox" id="chkLyrStudyArea" checked>
+                      <span class="layer-name">Study Area Boundary (Union)</span>
+                      <span class="layer-badge">Vector</span>
+                    </label>
+                    <label class="layer-toggle-row">
+                      <input type="checkbox" id="chkLyrDistricts" checked>
+                      <span class="layer-name">District Boundaries (6 AP Districts)</span>
+                      <span class="layer-badge">Vector</span>
+                    </label>
+                    <label class="layer-toggle-row">
+                      <input type="checkbox" id="chkLyrMandals" checked>
+                      <span class="layer-name">Mandal Boundaries (21 GADM/AP)</span>
+                      <span class="layer-badge">Vector</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Group 2: Terrain and Hydrology -->
+                <div class="accordion-group open">
+                  <div class="accordion-header">
+                    <span class="accordion-title">Terrain &amp; Hydrology</span>
+                    <span class="accordion-arrow">▼</span>
+                  </div>
+                  <div class="accordion-body">
+                    <label class="layer-toggle-row">
+                      <input type="checkbox" id="chkLyrRivers" checked>
+                      <span class="layer-name">HydroRIVERS Drainage Network</span>
+                      <span class="layer-badge">Vector</span>
+                    </label>
+                    <label class="layer-toggle-row">
+                      <input type="checkbox" id="chkLyrStations" checked>
+                      <span class="layer-name">River Monitoring Stations (10)</span>
+                      <span class="layer-badge">Points</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Group 3: Land Cover & Demographics -->
+                <div class="accordion-group">
+                  <div class="accordion-header">
+                    <span class="accordion-title">Land &amp; Population</span>
+                    <span class="accordion-arrow">▼</span>
+                  </div>
+                  <div class="accordion-body">
+                    <label class="layer-toggle-row">
+                      <input type="checkbox" id="chkLyrFacilities">
+                      <span class="layer-name">Mapped Facilities (1,542 Study Area OSM)</span>
+                      <span class="layer-badge">Points</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Group 4: Satellite-Derived Water Intelligence -->
+                <div class="accordion-group open">
+                  <div class="accordion-header">
+                    <span class="accordion-title">Satellite SAR Water (16 July 2022)</span>
+                    <span class="accordion-arrow">▼</span>
+                  </div>
+                  <div class="accordion-body">
+                    <label class="layer-toggle-row">
+                      <input type="checkbox" id="chkLyrSarFlood" checked>
+                      <span class="layer-color-dot" style="background:#00d2ff;"></span>
+                      <span class="layer-name">Inundation Candidates (Track 129)</span>
+                      <span class="layer-badge raster">Raster PNG</span>
+                    </label>
+                    <label class="layer-toggle-row">
+                      <input type="checkbox" id="chkLyrSarPerm">
+                      <span class="layer-color-dot" style="background:#2563eb;"></span>
+                      <span class="layer-name">Permanent Water Reference</span>
+                      <span class="layer-badge raster">Raster PNG</span>
+                    </label>
+                    <label class="layer-toggle-row">
+                      <input type="checkbox" id="chkLyrSarAmbig">
+                      <span class="layer-color-dot" style="background:#d97706;"></span>
+                      <span class="layer-name">Ambiguous Wet Soil / Paddy</span>
+                      <span class="layer-badge raster">Raster PNG</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Group 5: Flood Susceptibility -->
+                <div class="accordion-group open">
+                  <div class="accordion-header">
+                    <span class="accordion-title">Flood Susceptibility</span>
+                    <span class="accordion-arrow">▼</span>
+                  </div>
+                  <div class="accordion-body">
+                    <label class="layer-toggle-row">
+                      <input type="checkbox" id="chkLyrSusceptibility" checked>
+                      <span class="layer-name">Exploratory AHP Susceptibility</span>
+                      <span class="layer-badge">Choropleth</span>
+                    </label>
+                    <div class="layer-opacity-control">
+                      <span>Opacity</span>
+                      <input type="range" id="rngSusceptibilityOpacity" min="10" max="90" value="55">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+            <!-- Main GIS Map Canvas -->
+            <div class="gis-map-container">
+              <div id="explorer-map" class="gis-map"></div>
+
+              <!-- Floating Map Tools -->
+              <div class="gis-floating-toolbar">
+                <button class="btn-gis-tool" id="btnFitBasinExtent" title="Fit Lower Godavari Basin Extent"><svg class="svg-inline" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg> Fit Basin</button>
+              </div>
+
+              <!-- Map Legend Overlay -->
+              <div class="gis-floating-legend" id="gisFloatingLegend">
+                <div class="legend-header">
+                  <span>Symbology Legend</span>
+                  <button class="btn-legend-toggle" id="btnToggleLegend">−</button>
+                </div>
+                <div class="legend-content" id="gisLegendContent">
+                  <div class="legend-subheading">AHP Susceptibility</div>
+                  <div class="legend-row"><span class="swatch" style="background:#ef4444;"></span> Very High (&ge; 0.72)</div>
+                  <div class="legend-row"><span class="swatch" style="background:#f97316;"></span> High (0.58 – 0.72)</div>
+                  <div class="legend-row"><span class="swatch" style="background:#eab308;"></span> Moderate (0.44 – 0.58)</div>
+                  <div class="legend-row"><span class="swatch" style="background:#10b981;"></span> Low (&lt; 0.44)</div>
+                  <div class="legend-subheading" style="margin-top:6px;">Sentinel-1 SAR (16 July 2022)</div>
+                  <div class="legend-row"><span class="swatch" style="background:#00f0ff;"></span> Potential Flood Inundation</div>
+                  <div class="legend-row"><span class="swatch" style="background:#2563eb;"></span> Permanent Water Reference</div>
+                  <div class="legend-row"><span class="swatch" style="background:#a855f7;"></span> Saturated Wet Soil / Paddy</div>
+                  <div class="legend-subheading" style="margin-top:6px;">Hydrology &amp; Admin</div>
+                  <div class="legend-row"><span class="swatch" style="background:#00b4d8;"></span> River Network Reaches</div>
+                  <div class="legend-row"><span class="swatch" style="background:#38bdf8;"></span> Mandal Boundaries</div>
+                </div>
+              </div>
+
+              <!-- Floating Right Inspection Drawer -->
+              <div class="gis-inspection-drawer" id="gisInspectionDrawer">
+                <div class="drawer-header">
+                  <div class="drawer-title-group">
+                    <span class="drawer-icon"><svg class="svg-inline" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg></span>
+                    <h4 id="drawerLocationTitle">Rajahmundry Mandal</h4>
+                  </div>
+                  <button class="btn-drawer-close" id="btnCloseDrawer">✕</button>
+                </div>
+                <div class="drawer-content" id="drawerLocationContent">
+                  <!-- Injected via JavaScript setSelectedLocation -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- WORKSPACE 3: FLOOD RISK INTELLIGENCE -->
+        <!-- ================================================================= -->
+        <section class="workspace" id="workspace-risk">
+          <div class="risk-layout">
+            <!-- Left: Risk Map -->
+            <div class="risk-map-col">
+              <div class="col-toolbar">
+                <div class="filter-wrap">
+                  <label>Filter Susceptibility Category:</label>
+                  <select id="riskFilterSelectWorkspace">
+                    <option value="ALL">All Categories (21 Mandals)</option>
+                    <option value="Very High">Very High Susceptibility Only</option>
+                    <option value="High">High &amp; Above</option>
+                    <option value="Moderate">Moderate &amp; Above</option>
+                    <option value="Low">Low Only (Upland Slopes)</option>
+                  </select>
+                </div>
+                <span class="badge-pill info">Exploratory Susceptibility Model (CR = 0.0001 &lt; 0.10)</span>
+              </div>
+              <div id="risk-map" class="sub-map-container"></div>
+            </div>
+
+            <!-- Right: AHP Methodology & Mandal Rankings Table -->
+            <div class="risk-data-col">
+              <div class="risk-card ahp-weights-card">
+                <div class="card-header">
+                  <h4>🧠 Exploratory Susceptibility Factor Weights</h4>
+                  <span class="count-pill">Consistency Ratio: CR = 0.0001 &lt; 0.10</span>
+                </div>
+                <div class="weights-bar-container">
+                  <div class="weight-bar-segment" style="width: 25%; background:#ef4444;" title="Elevation: 25%">Elev 25%</div>
+                  <div class="weight-bar-segment" style="width: 25%; background:#f97316;" title="Slope: 25%">Slope 25%</div>
+                  <div class="weight-bar-segment" style="width: 20%; background:#38bdf8;" title="River Distance: 20%">River 20%</div>
+                  <div class="weight-bar-segment" style="width: 15%; background:#22c55e;" title="Land Cover: 15%">Land 15%</div>
+                  <div class="weight-bar-segment" style="width: 15%; background:#a855f7;" title="Hazard: 15%">Hazard 15%</div>
+                </div>
+                <div class="weights-legend-grid">
+                  <span>🔴 Elevation (Copernicus 30m DSM): <strong>25%</strong></span>
+                  <span>🟠 Slope Gradient (Copernicus DSM): <strong>25%</strong></span>
+                  <span>🔵 Proximity to HydroRIVERS: <strong>20%</strong></span>
+                  <span>🟢 ESA WorldCover 2021 Class: <strong>15%</strong></span>
+                  <span>🟣 Regional Hazard Benchmark: <strong>15%</strong></span>
+                </div>
+              </div>
+
+              <!-- Mandal Rankings Table -->
+              <div class="risk-card mandal-table-card">
+                <div class="card-header">
+                  <h4>21 Mandal Susceptibility Rankings</h4>
+                  <span class="count-pill" id="riskTableCountPill">21 Mandals</span>
+                </div>
+                <div class="table-scroll-container">
+                  <table class="data-table" id="mandalRankingsTable">
+                    <thead>
+                      <tr>
+                        <th>Rank</th>
+                        <th>Mandal</th>
+                        <th>District</th>
+                        <th>Score</th>
+                        <th>Category</th>
+                        <th>Elevation</th>
+                        <th>Stream Dist</th>
+                        <th>Exposed Pop</th>
+                      </tr>
+                    </thead>
+                    <tbody id="mandalRankingsTableBody">
+                      <!-- Injected via JS -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- WORKSPACE 4: IMPACT ASSESSMENT -->
+        <!-- ================================================================= -->
+        <section class="workspace" id="workspace-impact">
+          <div class="impact-layout">
+            <!-- Left: Impact Map with Facilities Layer -->
+            <div class="impact-map-col">
+              <div class="col-toolbar">
+                <div class="filter-wrap">
+                  <label>Filter Facility Types:</label>
+                  <select id="facilityTypeFilter">
+                    <option value="ALL">All Mapped Assets (1,542 Study Area)</option>
+                    <option value="healthcare">Healthcare (1,146)</option>
+                    <option value="education">Education (333)</option>
+                    <option value="shelter">Designated Shelters (63)</option>
+                  </select>
+                </div>
+                <span class="badge-pill supported-scope">WorldPop 2020 Baseline: 9,126,355</span>
+              </div>
+              <div id="impact-map" class="sub-map-container"></div>
+            </div>
+
+            <!-- Right: Impact Statistics & Distribution Tables -->
+            <div class="impact-data-col">
+              <!-- Population Exposure Breakdown -->
+              <div class="impact-card">
+                <div class="card-header">
+                  <h4>👥 Potential Population Exposure Breakdown</h4>
+                  <span class="count-pill">Authoritative WorldPop 2020</span>
+                </div>
+                <div class="pop-breakdown-grid">
+                  <div class="pop-category-box very-high">
+                    <span class="pop-cat-title">Very High Exposure</span>
+                    <span class="pop-cat-val">6,027,704</span>
+                    <span class="pop-cat-pct">66.05% of Baseline</span>
+                  </div>
+                  <div class="pop-category-box high">
+                    <span class="pop-cat-title">High Exposure</span>
+                    <span class="pop-cat-val">2,225,020</span>
+                    <span class="pop-cat-pct">24.38% of Baseline</span>
+                  </div>
+                  <div class="pop-category-box moderate">
+                    <span class="pop-cat-title">Moderate Exposure</span>
+                    <span class="pop-cat-val">663,126</span>
+                    <span class="pop-cat-pct">7.27% of Baseline</span>
+                  </div>
+                  <div class="pop-category-box low">
+                    <span class="pop-cat-title">Low (Upland Hills)</span>
+                    <span class="pop-cat-val">210,505</span>
+                    <span class="pop-cat-pct">2.31% of Baseline</span>
+                  </div>
+                </div>
+                <div class="pop-summary-bar">
+                  <strong>Combined Elevated Exposure (High + Very High):</strong> 8,252,724 residents (90.43% of 9,126,355 total baseline population).
+                </div>
+              </div>
+
+              <!-- District Zonal Summary Table -->
+              <div class="impact-card">
+                <div class="card-header">
+                  <h4>🏛️ District-Level Exposure Distribution</h4>
+                </div>
+                <div class="table-scroll-container">
+                  <table class="data-table" id="districtExposureTable">
+                    <thead>
+                      <tr>
+                        <th>District Name</th>
+                        <th>Mandals</th>
+                        <th>Dominant Risk</th>
+                        <th>Baseline Pop</th>
+                        <th>Exposed Pop</th>
+                        <th>Exposed %</th>
+                      </tr>
+                    </thead>
+                    <tbody id="districtExposureTableBody">
+                      <!-- Injected via JS -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- Community Assets Summary -->
+              <div class="impact-card">
+                <div class="card-header">
+                  <h4>🏥 Community Infrastructure in Elevated Zones</h4>
+                </div>
+                <div class="facility-summary-grid">
+                  <div class="fac-box">
+                    <span class="fac-num">1,146</span>
+                    <span class="fac-label">Healthcare Clinics</span>
+                    <span class="fac-sub">876 in Very High Zones</span>
+                  </div>
+                  <div class="fac-box">
+                    <span class="fac-num">333</span>
+                    <span class="fac-label">Educational Institutions</span>
+                    <span class="fac-sub">238 in Very High Zones</span>
+                  </div>
+                  <div class="fac-box">
+                    <span class="fac-num">63</span>
+                    <span class="fac-label">Emergency Shelters</span>
+                    <span class="fac-sub">57 in Very High Zones</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- WORKSPACE 5: WEATHER & EMERGENCY INTELLIGENCE -->
+        <!-- ================================================================= -->
+        <section class="workspace" id="workspace-weather">
+          <div class="weather-layout">
+            <div class="weather-main-col">
+              <div class="weather-card-full" id="weatherFullCard">
+                <!-- Injected via JS renderWeatherCard -->
+                <div class="loading-placeholder">Loading atmospheric weather observations and forecasts...</div>
+              </div>
+            </div>
+
+            <div class="weather-side-col">
+              <!-- Deterministic General Preparedness Guidance -->
+              <div class="overview-card guidance-card">
+                <div class="card-header">
+                  <h4>🛡️ Deterministic Emergency Preparedness Guidance</h4>
+                  <span class="badge-pill info">General Advisory</span>
+                </div>
+                <div class="guidance-list">
+                  <div class="guidance-item">
+                    <span class="guidance-icon">🌊</span>
+                    <div>
+                      <strong>Riverfront Alluvial Embankments:</strong>
+                      <p>In low-lying mandals directly abutting the Godavari mainstem (Dowleswaram, Rajamahendravaram, Kovvur), maintain continuous monitoring of flood-bund revetments when barrage discharge exceeds 1.5M cusecs.</p>
+                    </div>
+                  </div>
+                  <div class="guidance-item">
+                    <span class="guidance-icon">🌾</span>
+                    <div>
+                      <strong>Estuarine &amp; Delta Drainage Sluices:</strong>
+                      <p>In Konaseema coastal delta reaches (Amalapuram, Mummidivaram, Razole), tidal backwater impedance restricts gravity drainage. Secure drainage sluice gates during astronomical high tides.</p>
+                    </div>
+                  </div>
+                  <div class="guidance-item">
+                    <span class="guidance-icon">🏥</span>
+                    <div>
+                      <strong>Critical Infrastructure Protection:</strong>
+                      <p>Ensure backup electrical generators and dry medical supplies at all 1,206 mapped healthcare facilities are elevated above ground level.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-caption">
+                  ⚠️ General decision support guidance based on physical terrain characteristics. For official mandatory evacuation orders, follow District Collectorate &amp; APSDMA directives.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- WORKSPACE 6: GLOBAL 3D EARTH (INTERACTIVE GLOBE) -->
+        <!-- ================================================================= -->
+        <section class="workspace" id="workspace-global">
+          <div class="globe-layout">
+            <!-- 3D Earth WebGL Canvas Container -->
+            <div id="globe-container" class="globe-canvas"></div>
+
+            <!-- Globe Top Control Toolbar -->
+            <div class="globe-toolbar">
+              <div class="globe-search-wrapper">
+                <span class="search-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+                <input type="text" id="globeCountrySearchInput" placeholder="Search 177 countries (e.g. India, Japan)..." autocomplete="off">
+                <div class="search-suggestions" id="globeCountrySuggestions" style="display:none;"></div>
+              </div>
+
+              <div class="globe-action-buttons">
+                <button class="btn-globe" id="btnToggleGlobeRotation" title="Toggle Auto-Rotation">
+                  ⏸ Pause Rotation
+                </button>
+                <button class="btn-globe" id="btnResetGlobeView" title="Reset Global View">
+                  <svg class="svg-inline" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg> Global Reset
+                </button>
+                <button class="btn-globe" id="btnToggleGlobeTexture" title="Switch Day/Night High-Res Texture">
+                  Day Texture
+                </button>
+              </div>
+              <div class="globe-quick-pills" style="display:flex; gap:6px; margin-top:8px;">
+                <span style="font-size:11px; color:#94a3b8; align-self:center;">Jump:</span>
+                <button class="btn-globe-pill" data-country="India">🇮🇳 India</button>
+                <button class="btn-globe-pill" data-country="United States of America">🇺🇸 USA</button>
+                <button class="btn-globe-pill" data-country="Japan">🇯🇵 Japan</button>
+                <button class="btn-globe-pill" data-country="Brazil">🇧🇷 Brazil</button>
+              </div>
+            </div>
+
+            <!-- Floating Country Intelligence Brief Card -->
+            <div class="globe-country-card" id="globeCountryCard">
+              <div class="globe-card-header">
+                <div class="country-flag-title">
+                  <span class="country-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+                  <h3 id="globeCountryName">Select Country</h3>
+                </div>
+                <button class="btn-drawer-close" id="btnCloseGlobeCard">✕</button>
+              </div>
+              <div class="globe-card-body" id="globeCountryBody">
+                <p class="globe-hint">Click any country on the 3D Earth or search above to inspect geopolitical context and regional prototype links.</p>
+              </div>
+            </div>
+
+            <!-- OSINT-Inspired Intelligence Layer Framework Panel -->
+            <div class="globe-osint-panel" id="globeOsintPanel">
+              <div class="osint-header">
+                <span>Global Intelligence Layers</span>
+                <span class="badge-pill info">OSINT Framework</span>
+              </div>
+              <div class="osint-layers-list">
+                <div class="osint-row active">
+                  <span class="osint-status-dot active"></span>
+                  <span class="osint-name">Geographic &amp; Political Borders</span>
+                  <span class="osint-badge active">Active Dataset (Natural Earth 110m)</span>
+                </div>
+                <div class="osint-row">
+                  <span class="osint-status-dot catalogued"></span>
+                  <span class="osint-name">Cyclones &amp; Extreme Weather</span>
+                  <span class="osint-badge">Planned Integration (NOAA IBTrACS)</span>
+                </div>
+                <div class="osint-row">
+                  <span class="osint-status-dot catalogued"></span>
+                  <span class="osint-name">Global Flood Observatory</span>
+                  <span class="osint-badge">Catalogued Reference (GDACS / DFO)</span>
+                </div>
+                <div class="osint-row">
+                  <span class="osint-status-dot catalogued"></span>
+                  <span class="osint-name">Seismic &amp; Earthquakes</span>
+                  <span class="osint-badge">Planned Integration (USGS GeoJSON)</span>
+                </div>
+                <div class="osint-row">
+                  <span class="osint-status-dot catalogued"></span>
+                  <span class="osint-name">Earth Observation Satellites</span>
+                  <span class="osint-badge">Reference Framework (CelesTrak TLE)</span>
+                </div>
+              </div>
+              <div class="osint-footer">
+                Honest Status Disclosure: Only Geographic Borders (Natural Earth) and the Lower Godavari Regional Prototype are active operational integrations. NOAA, GDACS, USGS, and CelesTrak are catalogued reference frameworks and planned integrations for future sprints.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- WORKSPACE 7: EVIDENCE & METHODOLOGY -->
+        <!-- ================================================================= -->
+        <section class="workspace" id="workspace-evidence">
+          <div class="evidence-layout">
+            <div class="evidence-container">
+              <h2>Evidence, Scientific Trust &amp; Methodology Matrix</h2>
+              <p class="evidence-intro">
+                This document defines the analytical models, data sources, resolutions, acquisition timestamps, and explicit constraints governing the Lower Godavari Flood Intelligence Prototype.
+              </p>
+
+              <!-- Terminology Matrix Table -->
+              <div class="evidence-block">
+                <h3>1. Standardized Scientific Terminology</h3>
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Approved Terminology</th>
+                      <th>Permitted Meaning</th>
+                      <th>Strictly Prohibited Misrepresentation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Exploratory Susceptibility Model</strong></td>
+                      <td>Intrinsic terrain vulnerability derived via Analytic Hierarchy Process (AHP). Identifies where water tends to pond based on physical elevation, slope, and river proximity.</td>
+                      <td>Must never be described as a calibrated 2D hydrodynamic flow simulation, real-time flood forecast, or dynamic inundation model.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Potential Inundation Candidates</strong></td>
+                      <td>Sentinel-1 SAR pixels exhibiting backscatter below Otsu threshold (&le; -18.42 dB) during the July 16, 2022 flood crest, excluding permanent water and radar shadow.</td>
+                      <td>Must never be presented as confirmed flood extent, ground-truth emergency observations, or live satellite monitoring.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Potential Population Exposure</strong></td>
+                      <td>WorldPop 2020 statistical raster zonal sum residing within elevated susceptibility polygons.</td>
+                      <td>Must never be reported as confirmed victims, displaced persons, casualties, or evacuees.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>OSM-Mapped Facilities</strong></td>
+                      <td>Community facilities catalogued from OpenStreetMap contributor data.</td>
+                      <td>Must never be claimed as verified operational disaster relief shelters, emergency triage centers, or government-staffed posts.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Atmospheric Weather Forecasts</strong></td>
+                      <td>Atmospheric precipitation, temperature, and wind predictions proxied from Google Maps Platform Weather API.</td>
+                      <td>Must never be conflated with river discharge, stream stage forecasts, or hydrological flood models.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Dataset Manifest Table -->
+              <div class="evidence-block">
+                <h3>2. Spatial Datasets &amp; Source Verification</h3>
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Dataset Name</th>
+                      <th>Source / Provider</th>
+                      <th>Resolution / Scale</th>
+                      <th>Timestamp / Version</th>
+                      <th>Role in System</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Copernicus DEM GLO-30</td>
+                      <td>ESA / Copernicus</td>
+                      <td>30 meters (1.0 arc-sec)</td>
+                      <td>2021 Release (DSM)</td>
+                      <td>Terrain elevation, surface gradient slope, and radar shadow masking.</td>
+                    </tr>
+                    <tr>
+                      <td>HydroSHEDS / HydroRIVERS</td>
+                      <td>WWF / USGS</td>
+                      <td>15 arc-sec reaches</td>
+                      <td>v1.0 (Vector reaches)</td>
+                      <td>Drainage reach distance modeling via STRtree spatial queries.</td>
+                    </tr>
+                    <tr>
+                      <td>ESA WorldCover</td>
+                      <td>ESA / VITO</td>
+                      <td>10m / 50m</td>
+                      <td>2021 v200</td>
+                      <td>Land cover roughness and surface permeability factor scoring.</td>
+                    </tr>
+                    <tr>
+                      <td>WorldPop India</td>
+                      <td>WorldPop / Univ. Southampton</td>
+                      <td>100m constrained</td>
+                      <td>2020 UN-Adjusted</td>
+                      <td>Residential population baseline (9,126,355 authoritative reconciled total).</td>
+                    </tr>
+                    <tr>
+                      <td>Sentinel-1A IW GRD</td>
+                      <td>Copernicus / ESA</td>
+                      <td>10m export / 50m analysis</td>
+                      <td>2022-07-16T12:44:19Z (Track 129)</td>
+                      <td>Historical peak inundation water extraction (1,087.5 km² candidates).</td>
+                    </tr>
+                    <tr>
+                      <td>GADM Boundaries</td>
+                      <td>GADM.org</td>
+                      <td>Level 3 (Mandals)</td>
+                      <td>v4.1 + 2022 AP Reorg</td>
+                      <td>21-mandal administrative boundaries and spatial join indexing.</td>
+                    </tr>
+                    <tr>
+                      <td>OpenStreetMap</td>
+                      <td>OSM Contributors (ODbL)</td>
+                      <td>Point features</td>
+                      <td>2024 Extraction</td>
+                      <td>1,542 community facilities inside 21 mandals (1,146 healthcare, 333 education, 63 shelters; 1,635 bounding-box raw extractions).</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Document & Verification Reports Link List -->
+              <div class="evidence-block">
+                <h3>3. Project Verification &amp; Reconciliation Reports</h3>
+                <ul class="evidence-reports-list">
+                  <li><a href="/static/docs/frontend_contract.md" target="_blank">docs/frontend_contract.md</a> — Phase 5.0 Read-Only API contract audit and benchmark results.</li>
+                  <li><a href="/static/PHASE_5_1_FRONTEND_INTEGRATION_REPORT.md" target="_blank">PHASE_5_1_FRONTEND_INTEGRATION_REPORT.md</a> — Phase 5.1 frontend integration and Web PNG overlay report.</li>
+                  <li><a href="/static/PHASE_3_3_AND_WEATHER_INTEGRITY_REVIEW.md" target="_blank">PHASE_3_3_AND_WEATHER_INTEGRITY_REVIEW.md</a> — Sentinel-1 multi-grid reconciliation and 5-tier alert safety audit.</li>
+                  <li><a href="/static/PHASE_4_FINAL_POPULATION_RECONCILIATION.md" target="_blank">PHASE_4_FINAL_POPULATION_RECONCILIATION.md</a> — Authoritative Phase 4 population reconciliation report (9,126,355 baseline).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ================================================================= -->
+        <!-- WORKSPACE 8: EMERGENCY OPERATIONS SIMULATOR -->
+        <!-- ================================================================= -->
+        <section class="workspace" id="workspace-operations">
+          <div class="operations-layout">
+            
+            <!-- Operations Header Bar with Role Switcher -->
+            <div class="ops-header-bar">
+              <div class="ops-header-info">
+                <div class="ops-live-pill">
+                  <span class="pulsing-dot-amber"></span>
+                  <span>DECISION SUPPORT PROTOCOL • LIVE PROTOTYPE</span>
+                </div>
+                <h2>Emergency Operations &amp; Decision Support Simulator</h2>
+                <p class="ops-header-desc">
+                  Unified cross-role disaster management workflow connecting Resident alerts, Mandal broadcast telemetry, District oversight, and Emergency Response Team (ERT) resource allocation.
+                </p>
+              </div>
+
+              <!-- Role Switcher Segmented Control -->
+              <div class="ops-role-switcher" id="opsRoleSwitcher">
+                <button class="ops-role-btn active" data-role="resident">
+                  <span class="role-icon"><svg class="svg-inline" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                  <div class="role-labels">
+                    <span class="role-name">Resident</span>
+                    <span class="role-hint">Community Member</span>
+                  </div>
+                </button>
+                <button class="ops-role-btn" data-role="mandal">
+                  <span class="role-icon"><svg class="svg-inline" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                  <div class="role-labels">
+                    <span class="role-name">Mandal Admin</span>
+                    <span class="role-hint">Incident Commander</span>
+                  </div>
+                </button>
+                <button class="ops-role-btn" data-role="district">
+                  <span class="role-icon"><svg class="svg-inline" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M8 12h8"/><path d="M12 8v8"/></svg></span>
+                  <div class="role-labels">
+                    <span class="role-name">District Admin</span>
+                    <span class="role-hint">Regional Oversight</span>
+                  </div>
+                </button>
+                <button class="ops-role-btn" data-role="ert">
+                  <span class="role-icon"><svg class="nav-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg></span>
+                  <div class="role-labels">
+                    <span class="role-name">ERT Dispatch</span>
+                    <span class="role-hint">Resource Coordination</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Operations Body -->
+            <div class="ops-body">
+              
+              <!-- ============================================================= -->
+              <!-- ROLE 1: RESIDENT VIEW -->
+              <!-- ============================================================= -->
+              <div class="ops-subview active" id="opsSubViewResident">
+                <!-- Location Sync Bar -->
+                <div class="ops-location-bar">
+                  <div class="ops-loc-left">
+                    <span class="loc-pin-icon"><svg class="svg-inline" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg></span>
+                    <div>
+                      <span class="loc-label">Active Monitored Location</span>
+                      <strong class="loc-val" id="residentLocationTitle">Rajamahendravaram (Rajahmundry)</strong>
+                      <span class="loc-coords" id="residentCoordsText">(16.985° N, 81.780° E • East Godavari)</span>
+                    </div>
+                  </div>
+                  <div class="ops-loc-right">
+                    <span class="badge-pill info" id="residentStudyAreaBadge">Lower Godavari Study Basin</span>
+                    <button class="btn-sm btn-outline" id="btnResidentSyncMap"><svg class="svg-inline" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg> Sync with Explorer Location</button>
+                  </div>
+                </div>
+
+                <div class="ops-grid-2col">
+                  <!-- Left Col: Susceptibility Status & Active Advisory -->
+                  <div class="ops-col">
+                    <div class="ops-card card-resident-status" id="residentStatusCard">
+                      <div class="card-header">
+                        <span class="card-icon">🌊</span>
+                        <h3>Terrain Susceptibility Assessment</h3>
+                        <span class="badge-pill" id="residentTierBadge" style="background:var(--risk-critical-bg); color:var(--risk-critical); border:1px solid var(--risk-critical);">VERY HIGH</span>
+                      </div>
+                      <div class="resident-score-block">
+                        <div class="score-num-hero">
+                          <span id="residentScoreVal">0.74</span>
+                          <span class="score-max">/ 1.00</span>
+                        </div>
+                        <div class="score-meta">
+                          <strong id="residentTierHeading">Elevated Flood Hazard Susceptibility</strong>
+                          <p id="residentTerrainDesc">
+                            This location exhibits intrinsic terrain vulnerability due to low elevation, flat delta slope (&lt; 2°), and close proximity to the Godavari mainstem.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Active Safety Advisory Bulletin -->
+                    <div class="ops-card card-advisory-bulletin" id="residentAdvisoryCard">
+                      <div class="card-header">
+                        <span class="card-icon">📢</span>
+                        <h3>Civil Protection Safety Advisory</h3>
+                        <span class="badge-pill" id="residentAdvPriority" style="background:rgba(239,68,68,0.2); color:#ef4444; border:1px solid #ef4444;">CRITICAL PRIORITY</span>
+                      </div>
+                      <div class="advisory-content">
+                        <h4 id="residentAdvHeadline">Riverbank Inundation Preparedness Advisory - Dowleswaram Barrage 1st Warning Stage</h4>
+                        <div class="advisory-meta-row">
+                          <span id="residentAdvIssuer">Issued by: Tahsildar &amp; Incident Commander</span>
+                          <span id="residentAdvTime">Updated: Today</span>
+                        </div>
+                        <div class="advisory-body-text" id="residentAdvMessage">
+                          Water levels at Dowleswaram Barrage are approaching warning threshold. Habitations within 500m of the riverfront must prepare for potential backflow inundation.
+                        </div>
+                        <div class="advisory-action-box">
+                          <strong>Recommended Actions:</strong>
+                          <p id="residentAdvAction">
+                            Move livestock and farm equipment to elevated bunds. Follow ward volunteer evacuation directions. Nearest shelter: Kotipalli Bus Stand Community Relief Center.
+                          </p>
+                        </div>
+
+                        <!-- Warning Acknowledgment Button -->
+                        <div class="ack-action-area">
+                          <button class="btn-ack-action" id="btnResidentAcknowledge">
+                            <span class="ack-btn-icon">✓</span>
+                            <span>Confirm Receipt &amp; Acknowledge Warning</span>
+                          </button>
+                          <div class="ack-status-msg" id="residentAckStatusMsg" style="display:none;">
+                            ✓ Acknowledgment recorded at <span id="residentAckTime"></span>. Transmission logged to Mandal Incident Telemetry.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Right Col: Nearest Mapped Facilities & Survival Guidance -->
+                  <div class="ops-col">
+                    <div class="ops-card">
+                      <div class="card-header">
+                        <span class="card-icon">🏥</span>
+                        <h3>Nearest Mapped Relief &amp; Medical Facilities</h3>
+                        <span class="badge-pill info">OSM Geodesic Analysis</span>
+                      </div>
+                      <p class="card-subnote">
+                        Direct distance calculated against 1,542 verified spatial assets in the Lower Godavari Basin.
+                      </p>
+
+                      <div class="nearest-facilities-list" id="residentFacilitiesList">
+                        <!-- Populated dynamically via /api/v1/operations/resident/view -->
+                        <div class="loading-placeholder">Loading nearby facilities...</div>
+                      </div>
+                    </div>
+
+                    <div class="ops-card card-guidance">
+                      <div class="card-header">
+                        <span class="card-icon">🛡️</span>
+                        <h3>Emergency Preparedness Protocol</h3>
+                      </div>
+                      <ul class="checklist-items">
+                        <li><strong>Safe Drinking Water:</strong> Store minimum 15 liters of potable drinking water in sealed, elevated containers.</li>
+                        <li><strong>Emergency Communication:</strong> Maintain powerbank charge; keep battery-powered radio tuned to All India Radio local frequencies.</li>
+                        <li><strong>Essential Documents:</strong> Seal land deeds, identity cards, and prescriptions in waterproof polythene envelopes.</li>
+                        <li><strong>Submerged Roads:</strong> Never drive or wade across flooded culverts or causeways; water velocity cannot be judged from the surface.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ============================================================= -->
+              <!-- ROLE 2: MANDAL ADMINISTRATOR VIEW -->
+              <!-- ============================================================= -->
+              <div class="ops-subview" id="opsSubViewMandal">
+                <!-- Mandal Selector Bar -->
+                <div class="ops-mandal-toolbar">
+                  <div class="toolbar-field">
+                    <label for="opsMandalSelect">Select Administrative Mandal (21 Study Mandals):</label>
+                    <select id="opsMandalSelect" class="ops-select">
+                      <option value="Rajamahendravaram (Rajahmundry)">Rajamahendravaram (Rajahmundry) — East Godavari</option>
+                      <option value="Kovvur">Kovvur — East Godavari</option>
+                      <option value="Amalapuram">Amalapuram — Dr. B.R. Ambedkar Konaseema</option>
+                      <option value="Mummidivaram">Mummidivaram — Dr. B.R. Ambedkar Konaseema</option>
+                      <option value="Razole">Razole — Dr. B.R. Ambedkar Konaseema</option>
+                      <option value="Kothapeta">Kothapeta — Dr. B.R. Ambedkar Konaseema</option>
+                      <option value="Ravulapalem">Ravulapalem — Dr. B.R. Ambedkar Konaseema</option>
+                      <option value="Narsapur">Narsapur — West Godavari</option>
+                      <option value="Palakollu">Palakollu — West Godavari</option>
+                      <option value="Achanta">Achanta — West Godavari</option>
+                      <option value="Tanuku">Tanuku — West Godavari</option>
+                      <option value="Bhimavaram">Bhimavaram — West Godavari</option>
+                      <option value="Tadepallegudem">Tadepallegudem — West Godavari</option>
+                      <option value="Polavaram">Polavaram — Eluru</option>
+                      <option value="Eluru">Eluru — Eluru</option>
+                      <option value="Chintalapudi">Chintalapudi — Eluru</option>
+                      <option value="Pithapuram">Pithapuram — Kakinada</option>
+                      <option value="Kakinada">Kakinada Rural — Kakinada</option>
+                      <option value="Peddapuram">Peddapuram — Kakinada</option>
+                      <option value="Tuni">Tuni — Kakinada</option>
+                      <option value="Devipatnam">Devipatnam — Alluri Sitharama Raju</option>
+                    </select>
+                  </div>
+                  <div class="mandal-stat-pills" id="mandalStatPills">
+                    <div class="m-pill">Risk Tier: <strong id="mandalPillRisk">Very High</strong></div>
+                    <div class="m-pill">Baseline Pop: <strong id="mandalPillBase">1,024,560</strong></div>
+                    <div class="m-pill highlight">Exposed Pop: <strong id="mandalPillExp">986,420 (96.3%)</strong></div>
+                  </div>
+                </div>
+
+                <div class="ops-grid-2col">
+                  <!-- Left Col: Compose & Broadcast Advisory Form -->
+                  <div class="ops-col">
+                    <div class="ops-card">
+                      <div class="card-header">
+                        <span class="card-icon">📡</span>
+                        <h3>Compose &amp; Dispatch Safety Advisory</h3>
+                        <span class="badge-pill info">Broadcast Simulation</span>
+                      </div>
+                      
+                      <form id="formMandalAdvisory" class="ops-form">
+                        <div class="form-row">
+                          <label>Target Susceptibility Tiers:</label>
+                          <div class="checkbox-group">
+                            <label class="cb-label"><input type="checkbox" name="targetTiers" value="Very High" checked> Very High</label>
+                            <label class="cb-label"><input type="checkbox" name="targetTiers" value="High" checked> High</label>
+                            <label class="cb-label"><input type="checkbox" name="targetTiers" value="Moderate"> Moderate</label>
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <label for="advPrioritySelect">Advisory Priority Level:</label>
+                          <select id="advPrioritySelect" class="ops-input">
+                            <option value="CRITICAL">🔴 CRITICAL (Immediate Life-Safety Warning)</option>
+                            <option value="HIGH" selected>🟠 HIGH (Elevated Precautionary Advisory)</option>
+                            <option value="MODERATE">🟡 MODERATE (Monitoring &amp; Readiness Notice)</option>
+                            <option value="ROUTINE">🔵 ROUTINE (Standard Hydrological Bulletin)</option>
+                          </select>
+                        </div>
+
+                        <div class="form-row">
+                          <label for="advHeadlineInput">Advisory Headline:</label>
+                          <input type="text" id="advHeadlineInput" class="ops-input" placeholder="e.g. Flash Flood Evacuation Notice for Riverside Habitations" required>
+                        </div>
+
+                        <div class="form-row">
+                          <label for="advMessageInput">Plain-Language Instructions:</label>
+                          <textarea id="advMessageInput" class="ops-textarea" rows="3" placeholder="State clear, understandable information for residents without technical jargon..." required></textarea>
+                        </div>
+
+                        <div class="form-row">
+                          <label for="advActionInput">Recommended Tactical Action:</label>
+                          <textarea id="advActionInput" class="ops-textarea" rows="2" placeholder="Specify evacuation routes, designated shelters, and emergency numbers..." required></textarea>
+                        </div>
+
+                        <div class="form-row">
+                          <label for="advIssuerInput">Issuing Authority Designation:</label>
+                          <input type="text" id="advIssuerInput" class="ops-input" value="Tahsildar &amp; Mandal Incident Commander">
+                        </div>
+
+                        <div class="form-actions">
+                          <button type="submit" class="btn-action-primary" id="btnDispatchAdvisory">
+                            <span>Broadcast Simulated Advisory</span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <!-- Right Col: Live Telemetry & Historical Advisories -->
+                  <div class="ops-col">
+                    <div class="ops-card">
+                      <div class="card-header">
+                        <span class="card-icon">📊</span>
+                        <h3>Broadcast Telemetry &amp; Simulated Acknowledgment</h3>
+                        <span class="badge-pill alert">Simulated Feed</span>
+                      </div>
+
+                      <div class="telemetry-counters-grid">
+                        <div class="telemetry-tile">
+                          <span class="t-label">Queued Messages</span>
+                          <span class="t-val" id="telemetryQueued">25,000</span>
+                        </div>
+                        <div class="telemetry-tile">
+                          <span class="t-label">Delivered (Simulated)</span>
+                          <span class="t-val" id="telemetryDelivered">23,750</span>
+                        </div>
+                        <div class="telemetry-tile highlight">
+                          <span class="t-label">Acknowledged</span>
+                          <span class="t-val" id="telemetryAck">8,421</span>
+                        </div>
+                      </div>
+
+                      <div class="telemetry-progress-wrap">
+                        <div class="telemetry-progress-labels">
+                          <span>Simulated Community Reach</span>
+                          <strong id="telemetryAckPct">35.5%</strong>
+                        </div>
+                        <div class="metric-bar-wrap">
+                          <div class="metric-bar-fill fill-cyan" id="telemetryProgressBar" style="width: 35.5%;"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Mandal Advisory History Table -->
+                    <div class="ops-card">
+                      <div class="card-header">
+                        <span class="card-icon">📋</span>
+                        <h3>Mandal Advisory History</h3>
+                      </div>
+                      <div class="table-responsive">
+                        <table class="data-table" id="mandalAdvisoriesTable">
+                          <thead>
+                            <tr>
+                              <th>ID</th>
+                              <th>Headline</th>
+                              <th>Priority</th>
+                              <th>Time</th>
+                              <th>Ack Rate</th>
+                              <th>Status</th>
+                            </tr>
+                          </thead>
+                          <tbody id="mandalAdvisoriesTbody">
+                            <!-- Populated dynamically -->
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <!-- Live Incoming Resident Assistance Requests -->
+                    <div class="ops-card" style="margin-top:16px;">
+                      <div class="card-header">
+                        <span class="card-icon">🆘</span>
+                        <h3>Incoming Resident Assistance Requests</h3>
+                        <span class="count-pill" id="residentRequestsCount">1 Active</span>
+                      </div>
+                      <div class="table-responsive">
+                        <table class="data-table" id="residentHelpRequestsTable">
+                          <thead>
+                            <tr>
+                              <th>Req ID</th>
+                              <th>Resident</th>
+                              <th>Phone</th>
+                              <th>Mandal</th>
+                              <th>Need</th>
+                              <th>Persons</th>
+                              <th>Status</th>
+                              <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody id="residentHelpRequestsTbody">
+                            <!-- Populated dynamically -->
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <!-- Multi-Channel Notification Dispatch & Audit Log -->
+                    <div class="ops-card" style="margin-top:16px;">
+                      <div class="card-header">
+                        <span class="card-icon">📨</span>
+                        <h3>Emergency Notification Dispatch &amp; Delivery Audit Log</h3>
+                        <span class="badge-pill info">SMTP / SMS Gateway / In-App</span>
+                      </div>
+                      <div class="notification-dispatch-toolbar" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                        <button type="button" class="btn-sm btn-action-primary" id="btnTriggerTestNotification">
+                          Dispatch Safe-Test Broadcast Verification
+                        </button>
+                        <span class="notif-dispatch-status" id="notifDispatchStatusText" style="font-size:12px; color:var(--text-secondary);"></span>
+                      </div>
+                      <div class="table-responsive">
+                        <table class="data-table" id="notificationDeliveryLogTable">
+                          <thead>
+                            <tr>
+                              <th>Dispatch ID</th>
+                              <th>Recipient</th>
+                              <th>Channel</th>
+                              <th>Status</th>
+                              <th>Provider</th>
+                              <th>Timestamp</th>
+                            </tr>
+                          </thead>
+                          <tbody id="notificationDeliveryLogTbody">
+                            <!-- Populated dynamically via /api/v1/notifications/history -->
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- ============================================================= -->
+              <!-- ROLE 3: DISTRICT ADMINISTRATOR VIEW -->
+              <!-- ============================================================= -->
+              <div class="ops-subview" id="opsSubViewDistrict">
+                <!-- District Rollup Metric Ribbon -->
+                <div class="district-metric-ribbon">
+                  <div class="metric-card card-elevated">
+                    <div class="metric-top">
+                      <span class="metric-icon">🏢</span>
+                      <span class="metric-label">Administrative Scope</span>
+                    </div>
+                    <div class="metric-val">6 Districts</div>
+                    <span class="metric-sub">21 Mandals (2022 Reorganized Boundaries)</span>
+                  </div>
+
+                  <div class="metric-card card-pop">
+                    <div class="metric-top">
+                      <span class="metric-icon">👥</span>
+                      <span class="metric-label">Basin Exposed Population</span>
+                    </div>
+                    <div class="metric-val">8,252,724</div>
+                    <span class="metric-sub">90.43% of 9,126,355 Study Baseline</span>
+                  </div>
+
+                  <div class="metric-card card-assets">
+                    <div class="metric-top">
+                      <span class="metric-icon">📢</span>
+                      <span class="metric-label">Active Advisories</span>
+                    </div>
+                    <div class="metric-val" id="distActiveAdvsCount">3 Active</div>
+                    <span class="metric-sub">Across All 21 Incident Commands</span>
+                  </div>
+
+                  <div class="metric-card card-sar">
+                    <div class="metric-top">
+                      <span class="metric-icon">🚒</span>
+                      <span class="metric-label">ERT Requisitions</span>
+                    </div>
+                    <div class="metric-val highlight" id="distPendingResCount">5 Pending</div>
+                    <span class="metric-sub">Rescue Boats, Rations &amp; Medical Kits</span>
+                  </div>
+                </div>
+
+                <!-- 6-District Comparative Analytical Table -->
+                <div class="ops-card">
+                  <div class="card-header">
+                    <span class="card-icon">🗺️</span>
+                    <h3>Lower Godavari 6-District Comparative Disaster Oversight</h3>
+                    <span class="badge-pill info">Authoritative Reconciled Metrics</span>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="data-table" id="districtComparisonTable">
+                      <thead>
+                        <tr>
+                          <th>District Name</th>
+                          <th>Study Mandals</th>
+                          <th>Highest Risk Tier</th>
+                          <th>Baseline Population</th>
+                          <th>Exposed Population</th>
+                          <th>Exposure %</th>
+                          <th>Active Advisories</th>
+                          <th>Simulated Ack Rate</th>
+                          <th>ERT Requisitions</th>
+                        </tr>
+                      </thead>
+                      <tbody id="districtComparisonTbody">
+                        <!-- Populated via /api/v1/operations/district/overview -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ============================================================= -->
+              <!-- ROLE 4: EMERGENCY RESPONSE TEAM (ERT) BOARD -->
+              <!-- ============================================================= -->
+              <div class="ops-subview" id="opsSubViewErt">
+                <!-- ERT Toolbar with Filter Chips & New Request Button -->
+                <div class="ert-toolbar">
+                  <div class="ert-filter-group">
+                    <span class="filter-label">Category:</span>
+                    <button class="ert-chip active" data-cat="all">All Resources</button>
+                    <button class="ert-chip" data-cat="Rescue boats">Rescue Boats</button>
+                    <button class="ert-chip" data-cat="Food and drinking water">Food &amp; Water</button>
+                    <button class="ert-chip" data-cat="Medical kits and first aid">🩹 Medical Kits</button>
+                    <button class="ert-chip" data-cat="Emergency medicines">Medicines</button>
+                    <button class="ert-chip" data-cat="Temporary shelters and essential supplies">Shelters</button>
+                    <button class="ert-chip" data-cat="Rescue personnel and transport support">Personnel</button>
+                  </div>
+
+                  <div class="ert-filter-group">
+                    <span class="filter-label">Status:</span>
+                    <button class="ert-status-chip active" data-stat="all">All</button>
+                    <button class="ert-status-chip" data-stat="Requested">Requested</button>
+                    <button class="ert-status-chip" data-stat="Approved">Approved</button>
+                    <button class="ert-status-chip" data-stat="Dispatched">Dispatched</button>
+                    <button class="ert-status-chip" data-stat="On Scene">On Scene</button>
+                    <button class="ert-status-chip" data-stat="Completed">Completed</button>
+                  </div>
+
+                  <button class="btn-action-primary" id="btnToggleNewResourceForm">
+                    <span>Log New Requisition</span>
+                  </button>
+                </div>
+
+                <!-- New Resource Request Collapsible Drawer -->
+                <div class="new-resource-drawer hidden" id="newResourceDrawer">
+                  <div class="drawer-inner">
+                    <h4>Log Emergency Resource Requisition</h4>
+                    <form id="formNewResource" class="ops-form-grid">
+                      <div class="form-col">
+                        <label for="resMandalInput">Target Mandal:</label>
+                        <select id="resMandalInput" class="ops-input" required>
+                          <option value="Kovvur">Kovvur (East Godavari)</option>
+                          <option value="Rajamahendravaram (Rajahmundry)">Rajamahendravaram (East Godavari)</option>
+                          <option value="Amalapuram">Amalapuram (Konaseema)</option>
+                          <option value="Polavaram">Polavaram (Eluru)</option>
+                          <option value="Devipatnam">Devipatnam (Alluri Sitharama Raju)</option>
+                          <option value="Narsapur">Narsapur (West Godavari)</option>
+                          <option value="Achanta">Achanta (West Godavari)</option>
+                          <option value="Razole">Razole (Konaseema)</option>
+                        </select>
+                      </div>
+
+                      <div class="form-col">
+                        <label for="resCategoryInput">Resource Category:</label>
+                        <select id="resCategoryInput" class="ops-input" required>
+                          <option value="Rescue boats">Rescue boats</option>
+                          <option value="Food and drinking water">Food and drinking water</option>
+                          <option value="Medical kits and first aid">Medical kits and first aid</option>
+                          <option value="Emergency medicines">Emergency medicines</option>
+                          <option value="Temporary shelters and essential supplies">Temporary shelters and essential supplies</option>
+                          <option value="Rescue personnel and transport support">Rescue personnel and transport support</option>
+                        </select>
+                      </div>
+
+                      <div class="form-col">
+                        <label for="resQuantityInput">Quantity &amp; Unit:</label>
+                        <div class="input-unit-group">
+                          <input type="number" id="resQuantityInput" class="ops-input" min="1" value="10" required>
+                          <input type="text" id="resUnitInput" class="ops-input" value="units" placeholder="e.g. boats, kits, rations">
+                        </div>
+                      </div>
+
+                      <div class="form-col">
+                        <label for="resPriorityInput">Requisition Priority:</label>
+                        <select id="resPriorityInput" class="ops-input">
+                          <option value="CRITICAL">🔴 CRITICAL</option>
+                          <option value="HIGH" selected>🟠 HIGH</option>
+                          <option value="MODERATE">🟡 MODERATE</option>
+                        </select>
+                      </div>
+
+                      <div class="form-col full-width">
+                        <label for="resReasonInput">Tactical Justification / Location Context:</label>
+                        <input type="text" id="resReasonInput" class="ops-input" placeholder="e.g. Cut-off hamlet along Godavari river reach requiring immediate supply line" required>
+                      </div>
+
+                      <div class="form-col full-width form-actions-row">
+                        <button type="submit" class="btn-action-primary">Submit Requisition</button>
+                        <button type="button" class="btn-sm btn-outline" id="btnCancelNewResource">Cancel</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <!-- ERT Tactical Dispatch Table -->
+                <div class="ops-card">
+                  <div class="card-header">
+                    <span class="card-icon">📋</span>
+                    <h3>ERT Tactical Resource Allocation Board</h3>
+                    <span class="badge-pill info">Lifecycle Management: Requested → Approved → Dispatched → On Scene → Completed</span>
+                  </div>
+
+                  <div class="table-responsive">
+                    <table class="data-table ert-table" id="ertResourcesTable">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Mandal</th>
+                          <th>Category</th>
+                          <th>Quantity</th>
+                          <th>Priority</th>
+                          <th>Reason &amp; Location</th>
+                          <th>Status</th>
+                          <th>Lifecycle Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody id="ertResourcesTbody">
+                        <!-- Populated dynamically via /api/v1/operations/resources -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+            </div> <!-- /ops-body -->
+          </div> <!-- /operations-layout -->
+        </section>
+
+
+        <!-- ================================================================= -->
+        <!-- WORKSPACE 9: RESEARCH & METHODOLOGY -->
+        <!-- ================================================================= -->
+        <section class="workspace" id="workspace-research">
+          <div class="research-scrollable">
+            <!-- Paper Header -->
+            <div class="research-hero-card">
+              <div class="research-tag">Academic Research &amp; Geospatial AI Identity</div>
+              <h1 class="research-paper-title">Explainable Geospatial AI for Flood Risk and Impact Assessment with Emergency Decision Support</h1>
+              <div class="research-project-sub">AI-Based Flood Risk, Impact Assessment and Emergency Decision Support System</div>
+              <div class="research-meta-bar">
+                <span><strong>Primary Implementation:</strong> Andhra Pradesh, India</span>
+                <span>&bull;</span>
+                <span><strong>Detailed Study Basin:</strong> Lower Godavari Basin (21 Mandals)</span>
+                <span>&bull;</span>
+                <span><strong>Domain:</strong> Disaster Management &amp; Climate Resilience</span>
+              </div>
+            </div>
+
+            <!-- Research Sections Grid -->
+            <div class="research-grid">
+              <!-- Objective & Problem Statement -->
+              <div class="research-card">
+                <div class="res-card-header">
+                  <svg class="svg-inline" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                  <h3>1. Research Objective &amp; Problem Statement</h3>
+                </div>
+                <div class="res-card-body">
+                  <p>Tropical river deltas face compound vulnerabilities from monsoon downpours, river surges, and backwater flooding. The Lower Godavari basin frequently handles peak discharge exceeding 2.5 million cusecs at Dowleswaram Barrage.</p>
+                  <p>This project introduces an explainable, multi-source framework synthesizing synthetic aperture radar (SAR) Earth observation, physical terrain hydrology, and demographic exposure with real-time official alerts to provide actionable, human-interpretable emergency guidance.</p>
+                </div>
+              </div>
+
+              <!-- Remote Sensing & Sentinel-1 SAR -->
+              <div class="research-card">
+                <div class="res-card-header">
+                  <svg class="svg-inline" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  <h3>2. Remote Sensing &amp; Sentinel-1 SAR Methodology</h3>
+                </div>
+                <div class="res-card-body">
+                  <p>Dual-polarization (VV + VH) C-band Sentinel-1 Ground Range Detected (GRD) data processed across the July 2022 Godavari flood crest:</p>
+                  <ul class="res-list">
+                    <li><strong>Sensor:</strong> Copernicus Sentinel-1A / 1B (SAR C-Band, 5.405 GHz)</li>
+                    <li><strong>Orbit:</strong> Track 129, Descending pass (16 July 2022 flood crest)</li>
+                    <li><strong>Pre-processing:</strong> Thermal noise removal, orbit state vector correction, radiometric calibration (sigma nought), Range Doppler terrain correction.</li>
+                    <li><strong>Thresholding:</strong> Bimodal Otsu thresholding on smoothed VV/VH ratio (-16 dB threshold) yielding <strong>1,087.5 km²</strong> of floodwater candidates.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Multi-Criteria AHP Methodology -->
+              <div class="research-card full-width">
+                <div class="res-card-header">
+                  <svg class="svg-inline" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                  <h3>3. Multi-Criteria Analytic Hierarchy Process (AHP) Weighting</h3>
+                </div>
+                <div class="res-card-body">
+                  <p>Susceptibility is derived deterministically from physical landscape factors following approved Saaty Analytic Hierarchy Process weights with zero black-box bias:</p>
+                  <div class="ahp-weight-grid">
+                    <div class="ahp-weight-item">
+                      <span class="ahp-pct">25%</span>
+                      <span class="ahp-label">Elevation (DEM)</span>
+                      <span class="ahp-sub">Copernicus GLO-30 DSM</span>
+                    </div>
+                    <div class="ahp-weight-item">
+                      <span class="ahp-pct">25%</span>
+                      <span class="ahp-label">River Proximity</span>
+                      <span class="ahp-sub">HydroSHEDS HydroRIVERS</span>
+                    </div>
+                    <div class="ahp-weight-item">
+                      <span class="ahp-pct">20%</span>
+                      <span class="ahp-label">Slope Gradient</span>
+                      <span class="ahp-sub">Derived DEM Slope</span>
+                    </div>
+                    <div class="ahp-weight-item">
+                      <span class="ahp-pct">15%</span>
+                      <span class="ahp-label">Land Cover</span>
+                      <span class="ahp-sub">ESA WorldCover 2021 10m</span>
+                    </div>
+                    <div class="ahp-weight-item">
+                      <span class="ahp-pct">15%</span>
+                      <span class="ahp-label">Historical Hazard</span>
+                      <span class="ahp-sub">Multi-Decadal Frequency</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Population Exposure & Infrastructure -->
+              <div class="research-card">
+                <div class="res-card-header">
+                  <svg class="svg-inline" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  <h3>4. Demographic &amp; Community Exposure</h3>
+                </div>
+                <div class="res-card-body">
+                  <p>WorldPop 2020 100m constrained population data overlaid against 21 mandal geometries:</p>
+                  <ul class="res-list">
+                    <li><strong>Basin Baseline Population:</strong> 9,126,355 persons</li>
+                    <li><strong>Potential Population in Elevated Zones:</strong> 8,252,724 persons (90.43%)</li>
+                    <li><strong>Mapped Community Assets:</strong> 1,467 health, education and relief facilities (876 in Very High, 591 in High risk mandals).</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Scientific Boundaries & Transparency -->
+              <div class="research-card">
+                <div class="res-card-header">
+                  <svg class="svg-inline" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <h3>5. Scientific Boundaries &amp; Data Transparency</h3>
+                </div>
+                <div class="res-card-body">
+                  <ul class="res-list">
+                    <li><strong>Susceptibility vs Inundation:</strong> Susceptibility reflects physical terrain propensity, not guaranteed real-time inundation depth.</li>
+                    <li><strong>No Fabricated Depth:</strong> Water depth is only presented where calibrated river gauge sensors exist; no synthetic depths are fabricated.</li>
+                    <li><strong>Data Attribution:</strong> GADM v4.1 administrative boundaries, Copernicus DEM, ESA WorldCover, WorldPop, IMD, CWC, and NDMA SACHET.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- WORKSPACE 10: HELP & FLOOD PREPAREDNESS -->
+        <!-- ================================================================= -->
+        <section class="workspace" id="workspace-help">
+          <div class="help-scrollable">
+            <div class="help-header-card">
+              <h2>Help, Safety Guidance &amp; Flood Preparedness</h2>
+              <p>Practical, verified instructions for citizens, local community volunteers, and emergency responders.</p>
+            </div>
+
+            <!-- Preparedness 3-Stage Guide -->
+            <div class="help-stages-grid">
+              <!-- Before Flood -->
+              <div class="help-stage-card">
+                <div class="stage-badge stage-before">Phase 1: Readiness</div>
+                <h3>Before a Flood Event</h3>
+                <ul class="help-checklist">
+                  <li><strong>Prepare an Emergency Kit:</strong> 3-day supply of drinking water (3L/person/day), dry ration (flattened rice, biscuits), waterproof torch, portable radio, whistle.</li>
+                  <li><strong>Protect Essential Documents:</strong> Store Aadhaar cards, property deeds, medical records in a waterproof sealed zip pouch.</li>
+                  <li><strong>Know Your Local Shelter:</strong> Identify nearest government cyclone/flood relief shelter and highest road route in your mandal.</li>
+                  <li><strong>Monitor Official Feeds:</strong> Keep notifications enabled on PRAVAH 360 for NDMA and AP-SDMA early warnings.</li>
+                </ul>
+              </div>
+
+              <!-- During Flood -->
+              <div class="help-stage-card">
+                <div class="stage-badge stage-during">Phase 2: Life Safety</div>
+                <h3>During Severe Inundation</h3>
+                <ul class="help-checklist">
+                  <li><strong>Evacuate Early:</strong> Move women, children, elderly, and livestock to designated relief shelters immediately upon receiving District Collectorate advisories.</li>
+                  <li><strong>Turn Around, Don't Drown:</strong> Never walk or drive into moving water. 15 cm of moving floodwater can sweep adults; 30 cm can float vehicles.</li>
+                  <li><strong>Disconnect Electricity:</strong> Switch off main circuit breakers and gas cylinders before evacuating to prevent electrocution and fires.</li>
+                  <li><strong>Use Emergency SOS:</strong> If stranded or injured, trigger the PRAVAH 360 SOS button with GPS coordinates to alert SDRF dispatchers.</li>
+                </ul>
+              </div>
+
+              <!-- After Flood -->
+              <div class="help-stage-card">
+                <div class="stage-badge stage-after">Phase 3: Recovery</div>
+                <h3>After Flood Waters Recede</h3>
+                <ul class="help-checklist">
+                  <li><strong>Water Safety:</strong> Boil all drinking water for at least 1 minute or use chlorine purification tablets before consumption.</li>
+                  <li><strong>Structural Caution:</strong> Inspect walls and foundation for cracks or erosion before re-entering dwellings. Watch for displaced reptiles/snakes.</li>
+                  <li><strong>Food Hygiene:</strong> Discard all food items, vegetables, and medicines that came in contact with floodwaters.</li>
+                  <li><strong>Report Damage:</strong> Log structural damages with Mandal Revenue Inspector for relief package enumeration.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Emergency Contact Directory -->
+            <div class="contacts-card">
+              <h3>Verified Andhra Pradesh Emergency Helpline Directory</h3>
+              <div class="contacts-grid">
+                <div class="contact-item">
+                  <span class="contact-org">AP-SDMA State Emergency Operations Centre</span>
+                  <span class="contact-num">1070 / 112</span>
+                  <span class="contact-desc">24/7 Toll-Free Multi-Hazard Disaster Response</span>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-org">East Godavari District Disaster Control Room</span>
+                  <span class="contact-num">0883-2442344</span>
+                  <span class="contact-desc">Rajahmundry Collectorate Incident Monitoring</span>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-org">State Disaster Response Force (SDRF)</span>
+                  <span class="contact-num">108 / 100</span>
+                  <span class="contact-desc">Swift Water Rescue &amp; Battalion Evacuation</span>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-org">National Disaster Response Force (NDRF 10th Bn)</span>
+                  <span class="contact-num">0863-2293100</span>
+                  <span class="contact-desc">Regional Response Centre &bull; Mangalagiri</span>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-org">Fire &amp; Emergency Rescue Services</span>
+                  <span class="contact-num">101</span>
+                  <span class="contact-desc">Urban Drainage &amp; High-Water Evacuation</span>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-org">Godavari River Barrage Control Room</span>
+                  <span class="contact-num">0883-2441074</span>
+                  <span class="contact-desc">Dowleswaram Barrage Hydrological Gauges</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div> <!-- /workspaces-container -->
+    </div> <!-- /app-main -->
+  </div> <!-- /app-shell -->
+
+  <!-- Leaflet JS -->
+  <script src="/static/leaflet/leaflet.js"></script>
+  <!-- Local Globe.gl JS (Cached for offline / zero-CDN dependency) -->
+  <script src="/static/globe.gl.min.js"></script>
+  <!-- Application JS Controller -->
+  <script src="/static/app.js"></script>
+
+  <!-- ======================================================================= -->
+  <!-- EARTH-AT-NIGHT CINEMATIC AUTHENTICATION MODAL (REFERENCE B) -->
+  <!-- ======================================================================= -->
+  <div class="modal-overlay" id="loginModal" style="display:none;">
+    <div class="login-backdrop-glow"></div>
+    <div class="login-container">
+      <!-- Close Button -->
+      <button class="btn-modal-close" id="btnCloseLoginModal" title="Close">&times;</button>
+      
+      <!-- Brand Header -->
+      <div class="login-brand-header">
+        <img src="/static/assets/pravah360_logo.svg" alt="PRAVAH 360" width="200" height="50">
+        <p class="login-tagline">See the risk. Stay prepared.</p>
+        <div class="login-env-pill">Evaluation &amp; Operations Portal</div>
+      </div>
+
+      <!-- Demo Role Quick Selector for Judges/Evaluators -->
+      <div class="demo-role-selector">
+        <div class="demo-selector-label">Quick Demonstration Roles (Click to Auto-Fill):</div>
+        <div class="demo-role-chips">
+          <button class="demo-chip active" data-role="citizen" data-email="citizen@pravah360.in" data-pass="Citizen@123">
+            <span class="chip-badge">Citizen</span>
+            <span class="chip-name">Ramesh Varma</span>
+          </button>
+          <button class="demo-chip" data-role="mandal_admin" data-email="mandal.admin@pravah360.in" data-pass="Mandal@123">
+            <span class="chip-badge">Mandal Admin</span>
+            <span class="chip-name">Tahsildar Satyanarayana</span>
+          </button>
+          <button class="demo-chip" data-role="district_admin" data-email="district.collector@pravah360.in" data-pass="District@123">
+            <span class="chip-badge">District Admin</span>
+            <span class="chip-name">Collector Madhavilatha, IAS</span>
+          </button>
+          <button class="demo-chip" data-role="ert" data-email="ert.commander@pravah360.in" data-pass="Responder@123">
+            <span class="chip-badge">SDRF Team</span>
+            <span class="chip-name">Inspector Prasad</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Authentication Form -->
+      <form id="loginForm" class="login-form">
+        <div class="form-group">
+          <label for="loginEmailInput">Authorized Email Address</label>
+          <input type="email" id="loginEmailInput" value="citizen@pravah360.in" required autocomplete="username">
+        </div>
+        <div class="form-group">
+          <label for="loginPasswordInput">Security Password</label>
+          <input type="password" id="loginPasswordInput" value="Citizen@123" required autocomplete="current-password">
+        </div>
+
+        <div class="login-feedback-area" id="loginFeedbackArea" style="display:none;"></div>
+
+        <div class="login-actions">
+          <button type="submit" class="btn-login-submit" id="btnLoginSubmit">
+            Authenticate &amp; Launch Dashboard &rarr;
+          </button>
+          <button type="button" class="btn-login-guest" id="btnContinueGuest">
+            Continue as Guest / Explore Public Intel
+          </button>
+        </div>
+      </form>
+
+      <div class="login-footer-security">
+        <span>Protected with PBKDF2-HMAC-SHA256 &bull; Role-Based Access Control</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================= -->
+  <!-- GUIDED ONBOARDING TOUR MODAL -->
+  <!-- ======================================================================= -->
+  <div class="modal-overlay" id="onboardingModal" style="display:none;">
+    <div class="tour-card">
+      <div class="tour-header">
+        <div class="tour-badge">PRAVAH 360 Walkthrough</div>
+        <button class="btn-modal-close" id="btnCloseTourModal" title="Close">&times;</button>
+      </div>
+
+      <div class="tour-content" id="tourContent">
+        <!-- Injected dynamically by tour controller -->
+      </div>
+
+      <div class="tour-footer">
+        <div class="tour-steps-indicator" id="tourStepsIndicator">
+          <span class="step-dot active"></span>
+          <span class="step-dot"></span>
+          <span class="step-dot"></span>
+          <span class="step-dot"></span>
+          <span class="step-dot"></span>
+          <span class="step-dot"></span>
+        </div>
+        <div class="tour-buttons">
+          <button class="btn-tour-secondary" id="btnTourBack" style="display:none;">&larr; Back</button>
+          <button class="btn-tour-secondary" id="btnTourSkip">Skip Tour</button>
+          <button class="btn-tour-primary" id="btnTourNext">Next &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

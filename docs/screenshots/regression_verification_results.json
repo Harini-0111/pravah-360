@@ -1,0 +1,18 @@
+{
+  "single_helpline_nav": true,
+  "single_helpline_nav_te": true,
+  "drawer_opened": true,
+  "mark_all_read_zero": true,
+  "drawer_closed": true,
+  "voice_flood_risk": true,
+  "voice_rainfall": true,
+  "voice_cyclone_murasu": true,
+  "voice_hospital": true,
+  "voice_controls_functional": true,
+  "ai_validation_loaded": true,
+  "ai_validation_has_rf": true,
+  "ai_validation_has_confusion_matrix": true,
+  "ai_validation_has_river_mae": true,
+  "ai_validation_has_feature_importance": true,
+  "ai_validation_has_demarcation": true
+}

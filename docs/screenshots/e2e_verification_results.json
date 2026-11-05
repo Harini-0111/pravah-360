@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-11-03T10:58:50.758Z",
+  "passCount": 11,
+  "total": 11,
+  "results": [
+    {
+      "test": "Welcome Page",
+      "pass": true
+    },
+    {
+      "test": "Overview Command Centre",
+      "pass": true
+    },
+    {
+      "test": "Geospatial Explorer",
+      "pass": true
+    },
+    {
+      "test": "Research & Methodology",
+      "pass": true
+    },
+    {
+      "test": "Help & Preparedness",
+      "pass": true
+    },
+    {
+      "test": "Global 3D Earth",
+      "pass": true
+    },
+    {
+      "test": "Four Role Dashboards",
+      "pass": true
+    },
+    {
+      "test": "Earth-at-Night Login (Ref B)",
+      "pass": true
+    },
+    {
+      "test": "Guided Onboarding Tour",
+      "pass": true
+    },
+    {
+      "test": "Role Authentication Endpoints",
+      "pass": true
+    },
+    {
+      "test": "Citizen SOS Submission",
+      "pass": true
+    }
+  ]
+}

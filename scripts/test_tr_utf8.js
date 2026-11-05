@@ -1,0 +1,12 @@
+const fs = require('fs');
+const tr = fs.readFileSync('frontend/translations.js', 'utf8');
+const vm = require('vm');
+const s = { window: {} };
+vm.createContext(s);
+vm.runInContext(tr, s);
+console.log('Sample Telugu translations:');
+console.log('langToggle:', s.window.PRAVAH_TRANSLATIONS.te.langToggle);
+console.log('heroTagline:', s.window.PRAVAH_TRANSLATIONS.te.heroTagline);
+console.log('heroHeadline:', s.window.PRAVAH_TRANSLATIONS.te.heroHeadline);
+console.log('heroStatement:', s.window.PRAVAH_TRANSLATIONS.te.heroStatement);
+console.log('navOverview:', s.window.PRAVAH_TRANSLATIONS.te.navOverview);
