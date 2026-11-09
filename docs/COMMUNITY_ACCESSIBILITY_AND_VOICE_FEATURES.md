@@ -26,12 +26,12 @@ The Voice Assistant utilizes native **W3C Web Speech API** standards, requiring 
 ```mermaid
 sequenceDiagram
     autonumber
-    actor User as Citizen / Rural Resident
-    participant UI as Pravah 360 Voice UI
-    participant STT as Web Speech Recognition (te-IN / en-US)
-    participant NLP as Local Intent Classifier
-    participant API as Pravah 360 Backend REST API
-    participant TTS as Web SpeechSynthesis (Telugu/English)
+    actor User as "Citizen / Rural Resident"
+    participant UI as "Pravah 360 Voice UI"
+    participant STT as "Web Speech Recognition (te-IN / en-US)"
+    participant NLP as "Local Intent Classifier"
+    participant API as "Pravah 360 Backend REST API"
+    participant TTS as "Web SpeechSynthesis (Telugu/English)"
 
     User->>UI: Clicks Floating Mic or Speaks
     UI->>STT: Start Audio Capture & Stream

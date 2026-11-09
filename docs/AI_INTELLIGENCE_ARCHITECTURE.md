@@ -19,43 +19,47 @@ PRAVAH 360 is an **Integrated Geospatial Decision Support System (DSS)** incorpo
 
 ```mermaid
 flowchart TD
-    subgraph DataIngestion ["1. Data Ingestion & Sensors"]
-        S1["Sentinel-1 SAR C-Band<br>(CDSE Track 129 / Track 92)"]
-        DEM["Copernicus 30m DSM<br>(Topography & Slopes)"]
-        HYD["HydroSHEDS & CWC<br>(Gauges & Drainage Network)"]
-        POP["WorldPop 2020<br>(100m Population Disaggregation)"]
-        IMD["IMD & NDMA SACHET<br>(Precipitation & CAP Feeds)"]
+    subgraph DataIngestion["1. Data Ingestion & Sensors"]
+        S1["Sentinel-1 SAR C-Band<br/>(CDSE Track 129 / Track 92)"]
+        DEM["Copernicus 30m DSM<br/>(Topography & Slopes)"]
+        HYD["HydroSHEDS & CWC<br/>(Gauges & Drainage Network)"]
+        POP["WorldPop 2020<br/>(100m Population Disaggregation)"]
+        IMD["IMD & NDMA SACHET<br/>(Precipitation & CAP Feeds)"]
     end
 
-    subgraph AnalyticalPipeline ["2. Geospatial & Computational Pipeline"]
-        SAR_PROC["SAR Radiometric Calibration<br>& Adaptive Otsu Thresholding"]
-        AHP_ENGINE["Analytic Hierarchy Process<br>(5-Criterion Weighted MCE, CR=0.0001)"]
-        SPATIAL_JOIN["Spatial Disaggregation &<br>Boundary Overlay (Shapely STRtree)"]
-        THRESH_ENGINE["Hydrological Rule Classifier<br>(Steady/Rising Danger Stages)"]
+    subgraph AnalyticalPipeline["2. Geospatial & Computational Pipeline"]
+        SAR_PROC["SAR Radiometric Calibration<br/>& Adaptive Otsu Thresholding"]
+        AHP_ENGINE["Analytic Hierarchy Process<br/>(5-Criterion Weighted MCE, CR=0.0001)"]
+        SPATIAL_JOIN["Spatial Disaggregation &<br/>Boundary Overlay (Shapely STRtree)"]
+        THRESH_ENGINE["Hydrological Rule Classifier<br/>(Steady/Rising Danger Stages)"]
     end
 
-    subgraph OperationalIntelligence ["3. Operational & Decision Layer"]
-        FSI_GRID["Flood Susceptibility Index<br>(Very High / High / Moderate / Low)"]
-        EXPOSURE_CALC["Exposed Population<br>(8,252,724 in Elevated Zones)"]
-        DISPATCH_ENGINE["Heuristic Triage Engine<br>& Safe Evacuation Corridors"]
-        VOICE_GROUND["Voice Assistance Engine &<br>Citizen Ground Observer Verification"]
+    subgraph OperationalIntelligence["3. Operational & Decision Layer"]
+        FSI_GRID["Flood Susceptibility Index<br/>(Very High / High / Moderate / Low)"]
+        EXPOSURE_CALC["Exposed Population<br/>(8,252,724 in Elevated Zones)"]
+        DISPATCH_ENGINE["Heuristic Triage Engine<br/>& Safe Evacuation Corridors"]
+        VOICE_GROUND["Voice Assistance Engine &<br/>Citizen Ground Observer Verification"]
     end
 
-    subgraph DecisionActors ["4. Decision Actors"]
-        CITIZEN["Resident: Telugu Voice Query,<br>SOS Beacon & Local Preparedness"]
-        MANDAL["Mandal Admin: Embankment Surveillance<br>& Verified Advisory Broadcast"]
-        DISTRICT["District Admin: 21-Mandal Rollup<br>& Regional Relief Prioritization"]
-        ERT["Response Team: Motorboat Allocations<br>& Ground Incident Verification"]
+    subgraph DecisionActors["4. Decision Actors"]
+        CITIZEN["Resident: Telugu Voice Query,<br/>SOS Beacon & Local Preparedness"]
+        MANDAL["Mandal Admin: Embankment Surveillance<br/>& Verified Advisory Broadcast"]
+        DISTRICT["District Admin: 21-Mandal Rollup<br/>& Regional Relief Prioritization"]
+        ERT["Response Team: Motorboat Allocations<br/>& Ground Incident Verification"]
     end
 
     S1 --> SAR_PROC
-    DEM & HYD & IMD --> AHP_ENGINE
+    DEM --> AHP_ENGINE
+    HYD --> AHP_ENGINE
+    IMD --> AHP_ENGINE
     POP --> SPATIAL_JOIN
     HYD --> THRESH_ENGINE
 
     AHP_ENGINE --> FSI_GRID
-    FSI_GRID & POP --> EXPOSURE_CALC
-    THRESH_ENGINE & FSI_GRID --> DISPATCH_ENGINE
+    FSI_GRID --> EXPOSURE_CALC
+    POP --> EXPOSURE_CALC
+    THRESH_ENGINE --> DISPATCH_ENGINE
+    FSI_GRID --> DISPATCH_ENGINE
     SAR_PROC --> DISPATCH_ENGINE
 
     DISPATCH_ENGINE --> VOICE_GROUND
