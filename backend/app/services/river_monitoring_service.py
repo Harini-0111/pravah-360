@@ -7,7 +7,7 @@ import os
 import json
 import logging
 from datetime import datetime
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Tuple
 
 from backend.app.schemas.monitoring import RiverGaugeObservation, SourceHealthStatus
 

@@ -7,7 +7,7 @@ import os
 import shutil
 import json
 import logging
-from typing import Dict, List, Any, Tuple
+from typing import Dict, List, Any, Tuple, Optional
 from datetime import datetime
 
 from backend.app.schemas.monitoring import OfficialDisasterAlert, RiverGaugeObservation
