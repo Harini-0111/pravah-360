@@ -123,8 +123,8 @@ In rural Godavari conditions:
 
 ## 5. Summary of Implementation Artifacts
 
-- **Backend Service:** [`backend/app/services/community_hazard_service.py`](file:///c:/major%20project/backend/app/services/community_hazard_service.py)
-- **API Endpoints:** [`backend/app/api/endpoints.py`](file:///c:/major%20project/backend/app/api/endpoints.py)
-- **Frontend Voice Controller:** [`frontend/voice_assistant.js`](file:///c:/major%20project/frontend/voice_assistant.js)
-- **Multilingual Lexicon:** [`frontend/translations.js`](file:///c:/major%20project/frontend/translations.js)
+- **Backend Service:** [`backend/app/services/community_hazard_service.py`](../backend/app/services/community_hazard_service.py)
+- **API Endpoints:** [`backend/app/api/endpoints.py`](../backend/app/api/endpoints.py)
+- **Frontend Voice Controller:** [`frontend/voice_assistant.js`](../frontend/voice_assistant.js)
+- **Multilingual Lexicon:** [`frontend/translations.js`](../frontend/translations.js)
 - **Storage Directory:** `data/community/` (`hazard_reports.json` and `photos/`)

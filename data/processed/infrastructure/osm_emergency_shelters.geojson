@@ -1,0 +1,1147 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7244018922,
+        "type": "node",
+        "tags": {
+          "amenity": "shelter",
+          "shelter_type": "public_transport"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6508406,
+          16.4239109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 674598111,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes",
+          "shelter_type": "public_transport"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6644383,
+          17.0719212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 674598114,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes",
+          "shelter_type": "public_transport"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6645736,
+          17.0717939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1230412662,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9262083,
+          16.9325692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1230412664,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9261409,
+          16.9325807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1230412668,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9260592,
+          16.9326335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1230706599,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9267995,
+          16.932204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1230706600,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9269601,
+          16.9319033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1232501679,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9254716,
+          16.9285017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1232742958,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9267397,
+          16.9309507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1232742988,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9269929,
+          16.9303253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1234110179,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9335744,
+          16.9412534
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1234110265,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9325468,
+          16.9411312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1234110292,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9322618,
+          16.9410028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1234699402,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9320394,
+          16.9409352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1234984160,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9321085,
+          16.9393806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1235006049,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.932086,
+          16.938263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1235147359,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9234395,
+          16.9320021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1235147360,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9234348,
+          16.9315123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1235147384,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9256133,
+          16.9326603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1235634240,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9328474,
+          16.934315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1235634241,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9326988,
+          16.9346843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1235634242,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9335535,
+          16.9347991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1235634293,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9309577,
+          16.9342719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1235640267,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9304927,
+          16.9329358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1235640268,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9306775,
+          16.9330317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1236685517,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9298656,
+          16.9339283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1236685539,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9300383,
+          16.9348127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1237344533,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9313682,
+          16.9320862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1237344572,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9302953,
+          16.931869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1237367895,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9294679,
+          16.9365345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1237367920,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9290286,
+          16.936579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1237367930,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9288524,
+          16.9366458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1238013795,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9284868,
+          16.9362604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1238955422,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9296044,
+          16.9320222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1238955423,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9296514,
+          16.9322366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1314720499,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9292911,
+          16.9307673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1314720527,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "roof"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9292311,
+          16.9296318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1314935963,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9299672,
+          16.9304232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1314935993,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9300178,
+          16.9309386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1314941901,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9304587,
+          16.9301513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1314946136,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.930444,
+          16.9288576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1314946141,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9297946,
+          16.9287781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1314946142,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9297049,
+          16.9287774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1314946171,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9306182,
+          16.9299365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1316514797,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9285727,
+          16.9301749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1316514810,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9287561,
+          16.930148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1316519246,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9274498,
+          16.9298505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1316749599,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9274838,
+          16.9289262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1316749600,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9274824,
+          16.9288562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1316749610,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9280409,
+          16.9289479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1316749630,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes",
+          "name": "Vegetable Market"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9287025,
+          16.9290393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1316749631,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes",
+          "name": "Vegetable Market"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9286004,
+          16.9290639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1316749632,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9287395,
+          16.9292256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1316781921,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.927827,
+          16.9285436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1316781955,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9275556,
+          16.9267743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1316781980,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9280113,
+          16.9274246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1316781982,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9281218,
+          16.9274261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1317922661,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9296506,
+          16.9266686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1420738859,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes",
+          "shelter_type": "public_transport"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.489681,
+          17.4832726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1551999798,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes",
+          "shelter_type": "weather_shelter"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7262261,
+          16.3168825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1551999799,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes",
+          "shelter_type": "weather_shelter"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7260356,
+          16.3167699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1551999800,
+        "type": "way",
+        "tags": {
+          "amenity": "shelter",
+          "building": "yes",
+          "shelter_type": "weather_shelter"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7258438,
+          16.3166566
+        ]
+      }
+    }
+  ]
+}

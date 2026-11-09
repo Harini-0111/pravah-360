@@ -1,0 +1,772 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-31T16:58:06Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 7244018922,
+      "lat": 16.4239109,
+      "lon": 81.6508406,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "way",
+      "id": 674598111,
+      "center": {
+        "lat": 17.0719212,
+        "lon": 81.6644383
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "way",
+      "id": 674598114,
+      "center": {
+        "lat": 17.0717939,
+        "lon": 81.6645736
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1230412662,
+      "center": {
+        "lat": 16.9325692,
+        "lon": 81.9262083
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1230412664,
+      "center": {
+        "lat": 16.9325807,
+        "lon": 81.9261409
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1230412668,
+      "center": {
+        "lat": 16.9326335,
+        "lon": 81.9260592
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1230706599,
+      "center": {
+        "lat": 16.932204,
+        "lon": 81.9267995
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1230706600,
+      "center": {
+        "lat": 16.9319033,
+        "lon": 81.9269601
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1232501679,
+      "center": {
+        "lat": 16.9285017,
+        "lon": 81.9254716
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1232742958,
+      "center": {
+        "lat": 16.9309507,
+        "lon": 81.9267397
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1232742988,
+      "center": {
+        "lat": 16.9303253,
+        "lon": 81.9269929
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1234110179,
+      "center": {
+        "lat": 16.9412534,
+        "lon": 81.9335744
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1234110265,
+      "center": {
+        "lat": 16.9411312,
+        "lon": 81.9325468
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1234110292,
+      "center": {
+        "lat": 16.9410028,
+        "lon": 81.9322618
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1234699402,
+      "center": {
+        "lat": 16.9409352,
+        "lon": 81.9320394
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1234984160,
+      "center": {
+        "lat": 16.9393806,
+        "lon": 81.9321085
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1235006049,
+      "center": {
+        "lat": 16.938263,
+        "lon": 81.932086
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1235147359,
+      "center": {
+        "lat": 16.9320021,
+        "lon": 81.9234395
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1235147360,
+      "center": {
+        "lat": 16.9315123,
+        "lon": 81.9234348
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1235147384,
+      "center": {
+        "lat": 16.9326603,
+        "lon": 81.9256133
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1235634240,
+      "center": {
+        "lat": 16.934315,
+        "lon": 81.9328474
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1235634241,
+      "center": {
+        "lat": 16.9346843,
+        "lon": 81.9326988
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1235634242,
+      "center": {
+        "lat": 16.9347991,
+        "lon": 81.9335535
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1235634293,
+      "center": {
+        "lat": 16.9342719,
+        "lon": 81.9309577
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1235640267,
+      "center": {
+        "lat": 16.9329358,
+        "lon": 81.9304927
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1235640268,
+      "center": {
+        "lat": 16.9330317,
+        "lon": 81.9306775
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1236685517,
+      "center": {
+        "lat": 16.9339283,
+        "lon": 81.9298656
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1236685539,
+      "center": {
+        "lat": 16.9348127,
+        "lon": 81.9300383
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1237344533,
+      "center": {
+        "lat": 16.9320862,
+        "lon": 81.9313682
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1237344572,
+      "center": {
+        "lat": 16.931869,
+        "lon": 81.9302953
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1237367895,
+      "center": {
+        "lat": 16.9365345,
+        "lon": 81.9294679
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1237367920,
+      "center": {
+        "lat": 16.936579,
+        "lon": 81.9290286
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1237367930,
+      "center": {
+        "lat": 16.9366458,
+        "lon": 81.9288524
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1238013795,
+      "center": {
+        "lat": 16.9362604,
+        "lon": 81.9284868
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1238955422,
+      "center": {
+        "lat": 16.9320222,
+        "lon": 81.9296044
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1238955423,
+      "center": {
+        "lat": 16.9322366,
+        "lon": 81.9296514
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1314720499,
+      "center": {
+        "lat": 16.9307673,
+        "lon": 81.9292911
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1314720527,
+      "center": {
+        "lat": 16.9296318,
+        "lon": 81.9292311
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "roof"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1314935963,
+      "center": {
+        "lat": 16.9304232,
+        "lon": 81.9299672
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1314935993,
+      "center": {
+        "lat": 16.9309386,
+        "lon": 81.9300178
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1314941901,
+      "center": {
+        "lat": 16.9301513,
+        "lon": 81.9304587
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1314946136,
+      "center": {
+        "lat": 16.9288576,
+        "lon": 81.930444
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1314946141,
+      "center": {
+        "lat": 16.9287781,
+        "lon": 81.9297946
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1314946142,
+      "center": {
+        "lat": 16.9287774,
+        "lon": 81.9297049
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1314946171,
+      "center": {
+        "lat": 16.9299365,
+        "lon": 81.9306182
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1316514797,
+      "center": {
+        "lat": 16.9301749,
+        "lon": 81.9285727
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1316514810,
+      "center": {
+        "lat": 16.930148,
+        "lon": 81.9287561
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1316519246,
+      "center": {
+        "lat": 16.9298505,
+        "lon": 81.9274498
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1316749599,
+      "center": {
+        "lat": 16.9289262,
+        "lon": 81.9274838
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1316749600,
+      "center": {
+        "lat": 16.9288562,
+        "lon": 81.9274824
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1316749610,
+      "center": {
+        "lat": 16.9289479,
+        "lon": 81.9280409
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1316749630,
+      "center": {
+        "lat": 16.9290393,
+        "lon": 81.9287025
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes",
+        "name": "Vegetable Market"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1316749631,
+      "center": {
+        "lat": 16.9290639,
+        "lon": 81.9286004
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes",
+        "name": "Vegetable Market"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1316749632,
+      "center": {
+        "lat": 16.9292256,
+        "lon": 81.9287395
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1316781921,
+      "center": {
+        "lat": 16.9285436,
+        "lon": 81.927827
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1316781955,
+      "center": {
+        "lat": 16.9267743,
+        "lon": 81.9275556
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1316781980,
+      "center": {
+        "lat": 16.9274246,
+        "lon": 81.9280113
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1316781982,
+      "center": {
+        "lat": 16.9274261,
+        "lon": 81.9281218
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1317922661,
+      "center": {
+        "lat": 16.9266686,
+        "lon": 81.9296506
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1420738859,
+      "center": {
+        "lat": 17.4832726,
+        "lon": 82.489681
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1551999798,
+      "center": {
+        "lat": 16.3168825,
+        "lon": 81.7262261
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes",
+        "shelter_type": "weather_shelter"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1551999799,
+      "center": {
+        "lat": 16.3167699,
+        "lon": 81.7260356
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes",
+        "shelter_type": "weather_shelter"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1551999800,
+      "center": {
+        "lat": 16.3166566,
+        "lon": 81.7258438
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes",
+        "shelter_type": "weather_shelter"
+      }
+    }
+  ]
+}

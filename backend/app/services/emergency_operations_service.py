@@ -340,6 +340,9 @@ class EmergencyOperationsService:
             results.append(AdvisoryRecord(**adv))
         return results
 
+    # Backward compatibility alias
+    list_advisories = get_advisories
+
     def create_advisory(self, adv_in: AdvisoryCreate) -> AdvisoryRecord:
         store = self._read_store()
         adv_id = f"ADV-2026-{len(store.get('advisories', [])) + 1:03d}"

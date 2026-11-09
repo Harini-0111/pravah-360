@@ -1,0 +1,53 @@
+{
+  "dataset": "Sentinel-1 Track 129 SAR Water Extraction (July 16, 2022)",
+  "crs": "EPSG:4326 (WGS84)",
+  "bounds": {
+    "south": 16.3,
+    "west": 80.85,
+    "north": 18.015,
+    "east": 82.615
+  },
+  "leaflet_bounds": [
+    [
+      16.3,
+      80.85
+    ],
+    [
+      18.015,
+      82.615
+    ]
+  ],
+  "dimensions": {
+    "width": 2353,
+    "height": 2287,
+    "resolution_deg": 0.00075,
+    "approx_resolution_m": 83.5
+  },
+  "layers": {
+    "flood_candidates": {
+      "file": "/static/overlays/sentinel1_flood_candidates_track129.png",
+      "label": "Sentinel-1 Observed Floodwater Candidates",
+      "color_hex": "#00d2ff",
+      "class_id": 2,
+      "pixels": 297775
+    },
+    "permanent_water": {
+      "file": "/static/overlays/sentinel1_permanent_water.png",
+      "label": "Permanent Water Reference",
+      "color_hex": "#2563eb",
+      "class_id": 1,
+      "pixels": 801423
+    },
+    "ambiguous_water": {
+      "file": "/static/overlays/sentinel1_ambiguous_wetsoil.png",
+      "label": "Ambiguous Water / Wet Soil",
+      "color_hex": "#d97706",
+      "class_id": 3,
+      "pixels": 49394
+    },
+    "combined": {
+      "file": "/static/overlays/sentinel1_water_classified_all.png",
+      "label": "All Water Classes Combined"
+    }
+  }
+}

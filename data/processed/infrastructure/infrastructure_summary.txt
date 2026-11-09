@@ -1,0 +1,8 @@
+OPENSTREETMAP INFRASTRUCTURE SUMMARY - LOWER GODAVARI BASIN
+===========================================================
+Study bounds: (16.3,81.0,17.9,82.8)
+
+- Healthcare: 1206
+- Education: 366
+- Emergency Shelters: 63
+- Bridges And Major Roads: 7173

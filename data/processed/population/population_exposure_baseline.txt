@@ -1,0 +1,10 @@
+WORLDPOP 2020 LOWER GODAVARI BASIN SUMMARY
+=========================================
+Source: WorldPop 2020 UN-adjusted 1km Population Grid (India)
+Bounding Box: [16.3 N, 81.0 E] to [17.9 N, 82.8 E]
+Grid dimensions: 192 rows x 216 cols
+Total baseline population in Lower Godavari box: 11,112,918 persons
+Max cell density: 22,313.8 persons/km²
+Mean density: 329.8 persons/km²
+
+NOTE: These demographic figures represent geospatial statistical population estimates. They must never be described as confirmed affected persons.

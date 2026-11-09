@@ -1,0 +1,6875 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2152912076,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Sasi Educational Institutions"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6859739,
+          16.8451903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2152912081,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Government Upper Primary School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6888819,
+          16.8442339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2152912096,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Govrenment Primary School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6876101,
+          16.8421123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2745108692,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "ZP Girls High School",
+          "wheelchair": "no"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0045557,
+          16.5752733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2745108695,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "ZP Boys High School (ZPHS)"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0042661,
+          16.5747874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2784794067,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Govt Girls High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0089065,
+          16.5885291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2784795124,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Muncipal High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0110898,
+          16.5830486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2784802617,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0101833,
+          16.5828686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348716,
+        "type": "node",
+        "tags": {
+          "addr:full": "Opp., Rajahmundry.",
+          "amenity": "college",
+          "name": "Government Junior College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7781566,
+          16.9899738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348717,
+        "type": "node",
+        "tags": {
+          "addr:full": "I Floor, Mownika Towers, Back Side Of Petrol Bunk, Innispeta, Rajahmundry.",
+          "amenity": "college",
+          "name": "SSV Vocational College",
+          "phone": "0883-2420958, 6664010"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7767615,
+          16.9932998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348718,
+        "type": "node",
+        "tags": {
+          "addr:full": "Innispeta, Rajahmundry.",
+          "amenity": "college",
+          "name": "V.T. Junior College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7788937,
+          16.9941214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348719,
+        "type": "node",
+        "tags": {
+          "addr:full": "Opp.saikrishna Theatre, Rajahmundry.",
+          "amenity": "college",
+          "name": "Ignou B.ed College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7745634,
+          16.9976443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348720,
+        "type": "node",
+        "tags": {
+          "addr:full": "Opp. Saikrishna Theatre, Rajahmundry.",
+          "amenity": "college",
+          "description": "Training College",
+          "name": "Garimella Satyanarayana Memorial Government College For Education"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7744746,
+          16.9978155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348721,
+        "type": "node",
+        "tags": {
+          "addr:full": "Tadi Thota, Rajahmundry.",
+          "amenity": "college",
+          "name": "Samhita Degree & Pg College",
+          "phone": "9248111004, 9866671777"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7813452,
+          16.9984724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348722,
+        "type": "node",
+        "tags": {
+          "addr:full": "Vl Puram, Rajahmundry.",
+          "amenity": "college",
+          "name": "Sri Chaitanya Junior College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7970171,
+          16.9989373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348723,
+        "type": "node",
+        "tags": {
+          "addr:full": "Beside Rtc Complex, Taditota, Rajahmundry.",
+          "amenity": "college",
+          "name": "Sri Medha Junior College",
+          "phone": "9346181818, 9248446566"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7870352,
+          16.9998623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348724,
+        "type": "node",
+        "tags": {
+          "addr:full": "Near Rtc Complex, Taditota, Rajahmundry.",
+          "amenity": "college",
+          "name": "Sai College Of Education",
+          "phone": "9032041624"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7878793,
+          17.0001096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348725,
+        "type": "node",
+        "tags": {
+          "addr:full": "Taditota, Beside Rtc Complex, Rajahmundry.",
+          "amenity": "college",
+          "name": "Aditya Degree College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7886014,
+          17.0004459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348726,
+        "type": "node",
+        "tags": {
+          "addr:full": "Taditota, Beside Rtc Complex, Rajahmundry.",
+          "amenity": "college",
+          "name": "Aditya Women Degree College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7884224,
+          17.0003894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348727,
+        "type": "node",
+        "tags": {
+          "addr:full": "Sadanam Veedhi, Godavari Gattu, Rajahmundry.",
+          "amenity": "college",
+          "description": "Est.1931",
+          "name": "Andhra Yuvati Samskruta Kalashala"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7682186,
+          17.0021052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348728,
+        "type": "node",
+        "tags": {
+          "addr:full": "Churhpet, Rajahmundry.",
+          "amenity": "college",
+          "name": "Sknm Junior College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7750401,
+          17.0037502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348729,
+        "type": "node",
+        "tags": {
+          "addr:full": "Danavaipeta, Rajahmundry.",
+          "amenity": "college",
+          "name": "Sir Aurthor Cotton Junior College",
+          "phone": "0883-2443759"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7849723,
+          17.0069732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348730,
+        "type": "node",
+        "tags": {
+          "addr:full": "Jn Road, Rajahmundry.",
+          "amenity": "college",
+          "description": "Ak Degree College",
+          "name": "Andhra Kesari Degree College",
+          "name:etymology:wikidata": "Q3523054"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8000427,
+          17.0072054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348731,
+        "type": "node",
+        "tags": {
+          "addr:full": "Beside Danavaipeta Park, Danavaipeta, Rajahmundry.",
+          "amenity": "college",
+          "name": "Smt.addepalli Mahalakshmi Devi B.ed College for Wom"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7819958,
+          17.00742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348732,
+        "type": "node",
+        "tags": {
+          "addr:full": "Jn Road, Rajahmundry.",
+          "amenity": "college",
+          "description": "Akc Junior College",
+          "name": "Andhra Kesari Centery Junior College",
+          "name:etymology:wikidata": "Q3523054"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8002548,
+          17.0076048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348933,
+        "type": "node",
+        "tags": {
+          "addr:city": "Rajahmundry",
+          "addr:street": "Jawaharlal Nehru Road",
+          "amenity": "college",
+          "name": "Akhil Hotel Management Acadamy",
+          "phone": "9440119426, 9247757335"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7932121,
+          17.0078824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348934,
+        "type": "node",
+        "tags": {
+          "addr:full": "Prakash Nagar, Rajahmundry.",
+          "amenity": "college",
+          "name": "Alamer Degree And P.G. College",
+          "phone": "+91 883 2886874"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7883105,
+          17.0078909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348935,
+        "type": "node",
+        "tags": {
+          "addr:full": "Danavaipeta, Rajahmundry.",
+          "amenity": "college",
+          "name": "Narayana Junior College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7852717,
+          17.0079022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348936,
+        "type": "node",
+        "tags": {
+          "addr:full": "Davaipeta, Rajahmundry.",
+          "amenity": "college",
+          "name": "Nivya Junior College",
+          "phone": "0883-2448356"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7810964,
+          17.0084149
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348937,
+        "type": "node",
+        "tags": {
+          "addr:full": "Beside Ttd Kalyana Mandapam, Rajahmundry.",
+          "amenity": "college",
+          "name": "Veeravalli College of Law"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7869414,
+          17.009344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348938,
+        "type": "node",
+        "tags": {
+          "addr:full": "Opposite Nagadevi Theatre, Rajahmundry.",
+          "amenity": "college",
+          "name": "Raja Vocational Junior College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7732164,
+          17.0094616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348939,
+        "type": "node",
+        "tags": {
+          "addr:full": "Near Nagadevi Theatre, Rajahmundry.",
+          "amenity": "college",
+          "name": "Raja Vocational Junior College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7735951,
+          17.0099122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348940,
+        "type": "node",
+        "tags": {
+          "addr:full": "Opp. Ttd Kalyanamandapam, Rajendranagar, Rajahmundry.",
+          "amenity": "college",
+          "description": "Naac \"B+\" Grade",
+          "name": "Smt. Kandukuri Rajyalakshmi College for Women"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7865839,
+          17.0099756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348941,
+        "type": "node",
+        "tags": {
+          "addr:full": "Anandagardens, Danavaipeta, Rajahmundry.",
+          "amenity": "college",
+          "description": "Founded & Managed By Hitakarini Samajam",
+          "name": "Skvt Degree & Pg College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7832765,
+          17.010019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348942,
+        "type": "node",
+        "tags": {
+          "addr:full": "Gandhipuram-1, Rajahmundry",
+          "amenity": "college",
+          "description": "Managed By Hitakarin",
+          "name": "Women's College (Ug, Pg, Inter)"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7855783,
+          17.0102166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348943,
+        "type": "node",
+        "tags": {
+          "addr:full": "Behind Skrw College, Rajendra Nagar, Rajahmundry.",
+          "amenity": "college",
+          "name": "Vijayadurga Junior College",
+          "phone": "9248448428"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7853513,
+          17.0109077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348944,
+        "type": "node",
+        "tags": {
+          "addr:full": "Behind Nagadevi, Rajahmundry.",
+          "amenity": "college",
+          "name": "Rajamahendri Womens Degree And P.g College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.77355,
+          17.011147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348945,
+        "type": "node",
+        "tags": {
+          "addr:full": "Jayakrishnapuram, Rajahmundry.",
+          "amenity": "college",
+          "education": "college",
+          "name": "Schade Junior Collge for Girls"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7806622,
+          17.0126575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348946,
+        "type": "node",
+        "tags": {
+          "addr:full": "Aryapuram, Rajahmundry.",
+          "amenity": "college",
+          "name": "Pragati Junior College",
+          "phone": "0883-2474356"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7702388,
+          17.0135473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348947,
+        "type": "node",
+        "tags": {
+          "addr:full": "Beside Schade Girls High School, Rajahmundry.",
+          "amenity": "college",
+          "name": "Mega Junior College",
+          "phone": "9390727374"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7799775,
+          17.0140076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348948,
+        "type": "node",
+        "tags": {
+          "addr:full": "Y-junction, Rajahmundry.",
+          "amenity": "college",
+          "name": "Dr. Allu Ramalingayya Homeo Hospital And Collge"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7841586,
+          17.0142859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348949,
+        "type": "node",
+        "tags": {
+          "addr:full": "Y-junction, Jayakrishnapuram, Rajahmundry.",
+          "amenity": "college",
+          "name": "Government College (Autonomus)"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.784006,
+          17.0168175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348950,
+        "type": "node",
+        "tags": {
+          "addr:full": "Veerabhadrapuram, Rajahmundry.",
+          "amenity": "college",
+          "name": "SSV Colloge of Nursing"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7782947,
+          17.0174158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348951,
+        "type": "node",
+        "tags": {
+          "addr:full": "Sitam Peta, Rajahmundry.",
+          "amenity": "college",
+          "name": "Matru Sree Junior College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7735768,
+          17.0181373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348952,
+        "type": "node",
+        "tags": {
+          "addr:full": "Opp.annapurna Hospital, Rajahmundry.",
+          "amenity": "college",
+          "name": "Oriental Degree College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7760405,
+          17.019571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348953,
+        "type": "node",
+        "tags": {
+          "addr:full": "Weavers Colony, Rajahmundry.",
+          "amenity": "college",
+          "description": "University College",
+          "name": "Dr Y S R R&d Building, Aknu"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7854923,
+          17.0196479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348954,
+        "type": "node",
+        "tags": {
+          "addr:full": "Sitam Peta, Rajahmundry.",
+          "amenity": "college",
+          "name": "Pragathi Junior College for Girls"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7743573,
+          17.0212635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348955,
+        "type": "node",
+        "tags": {
+          "addr:full": "Lalitha Nagar, Rajahmundry.",
+          "amenity": "school",
+          "education": "school",
+          "name": "C.G.T.M High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.779263,
+          17.0217273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348956,
+        "type": "node",
+        "tags": {
+          "addr:full": "Mallikarjuna Nagar, Rajahmundry.",
+          "amenity": "college",
+          "name": "Priyadarshini College of Nursing"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7895146,
+          17.0219096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348957,
+        "type": "node",
+        "tags": {
+          "addr:full": "Weavers Colony, Korukonda Road",
+          "amenity": "college",
+          "name": "Avanthi Degree And P.G College",
+          "phone": "0883-24648457"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7837264,
+          17.0240527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348958,
+        "type": "node",
+        "tags": {
+          "addr:full": "Luthargiri, Rajahmundry.",
+          "amenity": "college",
+          "name": "Rajiv Gandhi Degree And P.g College",
+          "name:etymology:wikidata": "Q4593",
+          "wikidata": "Q7286194",
+          "wikipedia": "en:Rajiv Gandhi Degree College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.775863,
+          17.0262944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348959,
+        "type": "node",
+        "tags": {
+          "addr:full": "Luthergiri, Rajahmundry.",
+          "amenity": "college",
+          "name": "St Joseph's College of Education"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7770783,
+          17.026957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348960,
+        "type": "node",
+        "tags": {
+          "addr:full": "Ratnam Peta, Rajahmundry.",
+          "amenity": "college",
+          "name": "Pratibha Vocational Junior College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7806234,
+          17.0273276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3076348961,
+        "type": "node",
+        "tags": {
+          "addr:full": "Ramadaupeta, Sanitorium, Rajahmundry.",
+          "amenity": "college",
+          "name": "Lenora School of Dental Sciences"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7921496,
+          17.0395348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3665398725,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Chaitanya Institute of science & technology"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.213481,
+          16.9878411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3965354321,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "arts collegeground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7854005,
+          17.016032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4112917392,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "KITE College",
+          "name:te": "\u0c15\u0c48\u0c1f\u0c4d \u0c15\u0c3e\u0c32\u0c47\u0c1c\u0c4d"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.239566,
+          16.8128179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4115259591,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Ideal college of Arts & Science",
+          "name:te": "\u0c10\u0c21\u0c3f\u0c2f\u0c32\u0c4d \u0c15\u0c3e\u0c32\u0c47\u0c1c\u0c4d \u0c06\u0c2b\u0c4d \u0c06\u0c30\u0c4d\u0c1f\u0c4d\u0c38\u0c4d & \u0c38\u0c48\u0c28\u0c4d\u0c38\u0c4d"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.223286,
+          16.9613919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4115260194,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Navodaya School",
+          "name:te": "\u0c28\u0c35\u0c4b\u0c26\u0c2f \u0c38\u0c4d\u0c15\u0c42\u0c32\u0c4d"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.1229567,
+          17.0820345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4184990601,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "RAVINDRA BHARATHI SCHOOL"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7984452,
+          17.0072333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4184995585,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "THE FUTURE KID'S SCOOL",
+          "operator": "RAVI"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8115356,
+          17.0061617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4352695089,
+        "type": "node",
+        "tags": {
+          "addr:housenumber": "2-132",
+          "addr:postcode": "533464",
+          "addr:street": "Rajula Street",
+          "amenity": "school",
+          "name": "Uppimilli, Kajuluru Mandalam"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.1430053,
+          16.7619012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4362647680,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "SAMAYAMANTHULA REDDY Z.P.H SCHOOL"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.5601498,
+          17.3628393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4364438805,
+        "type": "node",
+        "tags": {
+          "addr:city": "tuni",
+          "amenity": "college",
+          "name": "Govt.Degree College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.510077,
+          17.3411876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4382069843,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Scim Govt. Degree College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6791383,
+          16.7571936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4500288576,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Mohan Convent High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2493411,
+          17.0043041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4797199648,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "De Paul English Medium High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.2660076,
+          16.8225561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4797199838,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "ZPOH School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.2566375,
+          16.8164104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5041299364,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Loyola School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.5378057,
+          17.3538484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5041299365,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Government School MR Peta"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.5376574,
+          17.3533804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5277928665,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Mandala Parishath Elemetary School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6595718,
+          16.6091118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5277956623,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Zilla Parishath High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6561493,
+          16.6001374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5278021940,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Mandala Parishath Elemetary School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6570438,
+          16.6046748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5461500224,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "SCHBRM School",
+          "office": "educational_institution"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5152768,
+          16.5373449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5760203493,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Mathew Memorial High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0918045,
+          16.6945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5760203504,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "St Theresa's School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0962316,
+          16.7115751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5781717474,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "MPUP school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5882811,
+          16.5922452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6203016085,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Abhyas school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4720281,
+          16.5420403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6203249985,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Vishwa Kavi School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4997802,
+          16.5374741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6204713086,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Mahatma Gandhi Instuite"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4919634,
+          16.5459763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6207357590,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Jilla Parishat High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.2881012,
+          16.5048563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6218540911,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Jawahar Navodaya Vidyalaya, Yanam"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2155342,
+          16.7494188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6829278651,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Government School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.1068557,
+          17.3080451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6841702415,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "ZP High School Katravulapalli"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0820068,
+          17.1350305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6841788066,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Elementary school Katravulapalli"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0809921,
+          17.1258805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6850830209,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Telangana Tribal Welfare Residential School",
+          "source": "survey"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.008957,
+          17.256856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7008006108,
+        "type": "node",
+        "tags": {
+          "addr:city": "Nadakuduru",
+          "addr:postcode": "533016",
+          "addr:street": "sivalayam street",
+          "amenity": "school",
+          "name": "zilla parishath high school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.20435,
+          16.9182777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7008006115,
+        "type": "node",
+        "tags": {
+          "addr:city": "Nadakuduru",
+          "addr:postcode": "533016",
+          "addr:street": "sivalayam street",
+          "amenity": "school",
+          "name": "z p primary school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2045803,
+          16.9179928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7108780886,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Zilla Parishad pradamika patashala"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8078844,
+          17.0146251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7244007560,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "surya college"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7021588,
+          16.4421884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7244284020,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "SKBR college"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9969405,
+          16.5668774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7614340403,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "GMC"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2292982,
+          16.9355762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7791833503,
+        "type": "node",
+        "tags": {
+          "addr:district": "West Godavari",
+          "addr:full": "Undarajavaram",
+          "addr:postcode": "534216",
+          "addr:state": "Andhra Pradesh",
+          "amenity": "school",
+          "education": "school",
+          "name": "Zilla Parishad High School",
+          "source": "Local Knowledge"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.700497,
+          16.7856984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7831570886,
+        "type": "node",
+        "tags": {
+          "addr:city": "Ravikampadu Village",
+          "addr:postcode": "533406",
+          "addr:street": "Kathipudi - Perumallapuram Road",
+          "amenity": "school",
+          "name": "ZPH School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.3774355,
+          17.2291627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7938888352,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "DNR Law College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5183777,
+          16.5353648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7938888356,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "DNR English Medium Primary School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5171519,
+          16.5362442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7938888357,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "DNR English medium High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5179056,
+          16.536311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7939098217,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "St. Mary's"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5430647,
+          16.5469018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7947084188,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Naga Surya School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8819188,
+          16.44764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7947084189,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Zpph School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8823523,
+          16.4479862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7947084221,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Nalanda E Techno School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8867952,
+          16.4505735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7947183155,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "DNR MBA College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5186459,
+          16.5362313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7947193798,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Venkateswara deaf&dumb school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5136087,
+          16.5376687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7947237108,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Aditya public school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5104195,
+          16.5446803
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7947237111,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Bashyam School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5126565,
+          16.5429551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 8116542265,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Vimala Convent"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6945885,
+          16.7583308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 8116992451,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Dr KKR's Gowtham School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6882772,
+          16.7633139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 8116996331,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Montessori residential high school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6766504,
+          16.7505249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 8116996334,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Adarsh high school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.674444,
+          16.7571379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 9485544408,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Sri Vasavi Engineering College and pharmacy"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.494403,
+          16.8597027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 9527149510,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "St Ann's(E.M) School",
+          "office": "educational_institution"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6678944,
+          16.8989465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 9612435572,
+        "type": "node",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.286814,
+          17.1557645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 9612435573,
+        "type": "node",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2870325,
+          17.1557442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 9926094591,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Gayatri English Medium High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6944674,
+          17.1772229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 9929388785,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Seethanagram High school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6935081,
+          17.1731064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 9960788581,
+        "type": "node",
+        "tags": {
+          "amenity": "college"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0976919,
+          16.6393597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 10081275328,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Government Tribal School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.31226,
+          17.5099181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 10087229613,
+        "type": "node",
+        "tags": {
+          "addr:housenumber": "Bheemavaram, Anganwadi Center",
+          "addr:street": "main entrance",
+          "amenity": "school",
+          "name": "Bheemavaram, Anganwadi Center",
+          "opening_hours": "Mo-Sa 09:00-16:00"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7825791,
+          17.6555123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 10087234106,
+        "type": "node",
+        "tags": {
+          "addr:housenumber": "Pradhamika patasala",
+          "amenity": "school",
+          "description": "government primary school",
+          "name": "Pradhamika patasala",
+          "opening_hours": "Mo-Su 09:00-18:00"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7820875,
+          17.6563243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 10137305439,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2024-06-21",
+          "name": "DonBosco School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8394883,
+          16.7612236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 10614341831,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "VSR Degree College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.1060809,
+          17.2844463
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 10867426936,
+        "type": "node",
+        "tags": {
+          "addr:city": "Krishnampalem",
+          "addr:postcode": "531313",
+          "amenity": "school",
+          "capacity": "500",
+          "grades": "1-7",
+          "name": "Mandal Parishad Primary School, Krishnampalem",
+          "operator": "Krishnampalem",
+          "operator:type": "government"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5289019,
+          17.012565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11031564576,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6888203,
+          16.7519855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11039455462,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Sri Surya English medium Shool"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.3607935,
+          16.8748757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11041946923,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "MPUP School , Pora"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2329252,
+          16.5747618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11103987915,
+        "type": "node",
+        "tags": {
+          "addr:city": "Jaggampeta",
+          "addr:district": "East Godavari",
+          "addr:postcode": "533435",
+          "addr:street": "NH -16 Road",
+          "amenity": "school",
+          "name": "Sri Chaitanya Techno School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0634743,
+          17.1759521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11104082099,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "grades": "1-12",
+          "name": "ZPHS Jaggampeta"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0561214,
+          17.1722012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11104093310,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Govt Junior College, Jaggampeta"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0555349,
+          17.1719976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11272999680,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Satyavaram Board School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7303352,
+          16.6346174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11648189536,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2024-02-21"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7936193,
+          17.00869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11648189546,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2024-02-21"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8909151,
+          17.0679347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11648189549,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "check_date": "2024-02-21",
+          "name": "GSL Medical College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8844437,
+          17.0675122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11648189562,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2024-02-21"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8029765,
+          17.0152189
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11648497162,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "check_date": "2024-02-21",
+          "name": "CR Reddy Engineering"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0515693,
+          16.696162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11664578354,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Ap Model School Marupaka"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.7937238,
+          17.7738722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11664594897,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "AP Model School, Vemulapudi, Narsipatnam"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.6056571,
+          17.6116604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11664594938,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Andhra Pradesh Model School (A.P.M.S)"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.3662129,
+          17.3224612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11664594939,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Zpp. High School, Sankavaram"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.3653197,
+          17.3236333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11775400704,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Junior civil judge cum judicial magistrate court"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.1902928,
+          17.228182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11775749704,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Pragati Engineering College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0538998,
+          17.08342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11775749710,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Pragathi engineering college, Ee, Ce, Me block."
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0544838,
+          17.0835276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11775749711,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Pragathi Canteen"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0548928,
+          17.0833088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11775749712,
+        "type": "node",
+        "tags": {
+          "amenity": "college"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0539677,
+          17.0841606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11780002607,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2024-04-02"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.2347053,
+          16.3343955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11885377578,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2024-05-07",
+          "name": "Anganwadi"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.2370744,
+          16.8120421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11885383366,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2024-05-07",
+          "name": "Laurel High Global School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8150003,
+          17.0705974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11885484377,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "check_date": "2024-05-07",
+          "name": "Beniah Group Of Colleges"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8329378,
+          17.1386781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11885489280,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2024-05-07"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8441205,
+          17.2739929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11885839716,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2024-05-07",
+          "name": "Government High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7789335,
+          17.4361041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11885839719,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2024-05-07"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7777816,
+          17.4401616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11886795039,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2024-05-07",
+          "name": "Ekalavya Model Residential School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.715822,
+          17.5899024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11891801530,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2024-05-08",
+          "name": "Gangavaram High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9087144,
+          17.4218507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11891801535,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "check_date": "2024-05-08",
+          "name": "Junior College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9087215,
+          17.4223306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11891801537,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2024-05-08",
+          "name": "GTWA Girls High School , Ganagavarm"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9135475,
+          17.424636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11891802197,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2024-05-08"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.1452654,
+          17.4644056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11891802890,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2024-05-08"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.041752,
+          17.4476439
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11927235991,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "CRR Grounds"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0839557,
+          16.7055755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11927235992,
+        "type": "node",
+        "tags": {
+          "amenity": "college"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0855762,
+          16.7058063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11927235993,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Sri CRR Inter College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0866697,
+          16.7062506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11927235994,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Sir C R Reddy (A) college canteen"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0863799,
+          16.7068892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11927235995,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Sir C.R. Reddy Autonomous College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0859049,
+          16.7066023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11927235996,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Sir C.R. Reddy Public School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0791333,
+          16.7042236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11927235997,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Sir C.R. Reddy College of Pharmaceutical Sciences"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0773036,
+          16.7039322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11927277305,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Ap Social Welfare Residential School And College (Girls) Vatluru"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.026013,
+          16.6963372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11927277306,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Dr BR Ambedkar Gurukul School for Girls, Vatluru",
+          "name:etymology:wikidata": "Q231690"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0268256,
+          16.6972743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12042944638,
+        "type": "node",
+        "tags": {
+          "addr:city": "Kakinada",
+          "addr:district": "East Godavari",
+          "addr:housenumber": "10-99",
+          "addr:postcode": "533005",
+          "addr:street": "Gangaraju nagar",
+          "amenity": "school",
+          "grades": "6-12",
+          "name": "Aditya Talent School",
+          "website": "https://aditya.ac.in/talentschool/contact.php"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.250755,
+          16.9962697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12171291789,
+        "type": "node",
+        "tags": {
+          "addr:city": "Gudivada",
+          "addr:district": "Krishna",
+          "addr:postcode": "521301",
+          "addr:street": "RTC colony",
+          "amenity": "school",
+          "name": "Zilla parishad primary school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0026798,
+          16.4186717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12171291790,
+        "type": "node",
+        "tags": {
+          "addr:city": "Gudivada",
+          "addr:district": "Krishna",
+          "addr:postcode": "521301",
+          "addr:street": "RTC colony",
+          "amenity": "school",
+          "name": "mathrusri school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0059717,
+          16.4175515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12171302684,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Saraswathi english medium School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8309212,
+          17.1611956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12171315314,
+        "type": "node",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8307515,
+          17.1660727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12171315318,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Siddartha English medium school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.830057,
+          17.1638675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12171616015,
+        "type": "node",
+        "tags": {
+          "addr:city": "Kovvur",
+          "addr:district": "West Godavari",
+          "addr:postcode": "534350",
+          "addr:street": "APSRTC Bus Satnd Road",
+          "amenity": "school",
+          "grades": "1-7",
+          "name": "Sri Chaithya Techno School",
+          "operator": "Sri Chaithanya Management",
+          "operator:type": "private"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7247487,
+          17.0175216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12171616020,
+        "type": "node",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7253974,
+          17.0088362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12171616021,
+        "type": "node",
+        "tags": {
+          "addr:city": "Kovvur",
+          "addr:district": "West Godavari",
+          "addr:postcode": "534350",
+          "addr:street": "Kovvur-Vadapalli Road",
+          "amenity": "school",
+          "grades": "1-7",
+          "name": "Bhashayam Public School",
+          "operator": "Bhashayam Management",
+          "operator:type": "private"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7292651,
+          17.0092055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12171616023,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Samkruthi Patashala"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7313021,
+          17.0099748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12171616062,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "GOVT Girls High Schol"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7298774,
+          17.0113526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12171616063,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "D.A.V. High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7323369,
+          17.0016175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12171616065,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Deepthi English School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7301322,
+          17.0006813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12174118487,
+        "type": "node",
+        "tags": {
+          "addr:city": "Koruprolu",
+          "addr:district": "Visakhapatnam",
+          "addr:postcode": "531083",
+          "amenity": "school",
+          "name": "Koruprolu ZPHS School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.760478,
+          17.4240064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12174118488,
+        "type": "node",
+        "tags": {
+          "addr:city": "Koruprolu",
+          "addr:district": "Visakhapatnam",
+          "addr:postcode": "531083",
+          "amenity": "school",
+          "name": "Koruprolu ZPHS School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.7613744,
+          17.4240331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12174142158,
+        "type": "node",
+        "tags": {
+          "addr:city": "Koruprolu",
+          "addr:district": "Visakhapatnam",
+          "addr:postcode": "531083",
+          "amenity": "school",
+          "name": "Koruprolu ZPHS School Playground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.7597539,
+          17.4242772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12250051973,
+        "type": "node",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.1887457,
+          16.3345457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12251987840,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Aditya College of Engineering and Technology"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0669042,
+          17.091054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12251987850,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Technical Hub"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0694149,
+          17.0874932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12254702265,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Sri Maharshi Vedha Patasala"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7431553,
+          16.9721583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12254702266,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Vasishta English Medium School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7430989,
+          16.9717136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12256325401,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "contact:mobile": "09115799997",
+          "name": "Birla Open Minds - Rajahmundry",
+          "website": "https://www.birlaopenminds.com/k12/Andhra-Pradesh/Rajahmundry/"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8022921,
+          17.0064969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12256998507,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Bhashyam Junior College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7886464,
+          17.0091657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12256998508,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Bommarillu play school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.788553,
+          17.0090108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12257721300,
+        "type": "node",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.4583567,
+          17.5066276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12257739917,
+        "type": "node",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.4584754,
+          17.5046868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12260003553,
+        "type": "node",
+        "tags": {
+          "amenity": "college"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2322977,
+          16.9303086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12260003554,
+        "type": "node",
+        "tags": {
+          "amenity": "college"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2305168,
+          16.9300436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12596101843,
+        "type": "node",
+        "tags": {
+          "amenity": "college"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2430479,
+          16.9761208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12596165015,
+        "type": "node",
+        "tags": {
+          "amenity": "college"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2405768,
+          16.9707731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12596168082,
+        "type": "node",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2407019,
+          16.9722829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12596172560,
+        "type": "node",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2389709,
+          16.9880641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12596232760,
+        "type": "node",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2322463,
+          16.958452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12596234185,
+        "type": "node",
+        "tags": {
+          "amenity": "college"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2506202,
+          16.9964024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12854619411,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Ganganamma School",
+          "operator": "Department of School Education",
+          "operator:type": "government",
+          "operator:wikidata": "Q134113948"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.1013709,
+          16.7034097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12854619412,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Ganganamma School Ground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.1015348,
+          16.703455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13061404469,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Dr.D.S.Raju AP Residential School , Bhoopathipalem."
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9830091,
+          17.2721448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13086172793,
+        "type": "node",
+        "tags": {
+          "addr:city": "tanuku",
+          "addr:postcode": "534211",
+          "addr:street": "Tanuku Main Road",
+          "amenity": "college",
+          "name": "Play ground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6777424,
+          16.7543503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13086218028,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "zp High school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.3640885,
+          16.8106472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13086249184,
+        "type": "node",
+        "tags": {
+          "addr:city": "Attili",
+          "amenity": "school",
+          "name": "GEMS High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6042642,
+          16.697348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13086311445,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "SHARON ENGLISH MEDIUM SCHOOL"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5503684,
+          16.8191213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13086353987,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "STVNHH School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5272051,
+          16.7874162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13086358686,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "netaji public school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0455051,
+          16.9612501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13086376085,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Surya EM School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5266637,
+          16.7835404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13086406315,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Vidhyan Bharati School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.3675674,
+          16.8081957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13086414119,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "ZP High School,Bikkavolu"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0532084,
+          16.9620525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13086453506,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Pragati College Ground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6774583,
+          16.748893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13088205827,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Sri Vasavi  pharmacy College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4942584,
+          16.8597665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13088205853,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Electronic and communication Engineering Block"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4943801,
+          16.8584714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13088326298,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Sasi Degree College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6838909,
+          16.761008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13088405833,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "Ushodaya High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4031814,
+          16.8180887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13088453780,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Akula Sreeramulu College of Education",
+          "name:te": "\u0c06\u0c15\u0c41\u0c32 \u0c36\u0c4d\u0c30\u0c40\u0c30\u0c3e\u0c2e\u0c41\u0c32\u0c41 \u0c15\u0c3e\u0c32\u0c47\u0c1c\u0c4d \u0c06\u0c2b\u0c4d \u0c0e\u0c21\u0c4d\u0c2f\u0c41\u0c15\u0c47\u0c37\u0c28\u0c4d"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6686395,
+          16.7613821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13088464965,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "ZP girls High school,Mandapeta"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9297214,
+          16.865453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13088466230,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "BSH"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4960201,
+          16.8586756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13090714966,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "KGBV Kukunoor",
+          "operator": "Department of School Education",
+          "operator:type": "government",
+          "operator:wikidata": "Q134113948"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.1587903,
+          17.5521619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13182377532,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Polytechnic Football ground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0720573,
+          17.0912947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13182377533,
+        "type": "node",
+        "tags": {
+          "amenity": "college",
+          "name": "Cricket Ground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0718276,
+          17.0921843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13182400369,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "gpt"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2304683,
+          16.9761385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13183522118,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "name": "pragati school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2259509,
+          16.9663645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13257563800,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "education": "school",
+          "name": "MP Primary School No. 01"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.2317289,
+          16.7790953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13261202567,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "education": "school",
+          "name": "MP Primary School No. 03"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.2327936,
+          16.7771121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13261213027,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "education": "school",
+          "name": "MP Primary School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.2266954,
+          16.7828076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13436917551,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "education": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0317653,
+          16.6387199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13436917560,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "education": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0405888,
+          16.6438473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13511688921,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "education": "school",
+          "operator": "government"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.3704207,
+          17.1042796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13513644560,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "education": "school",
+          "name": "\u0c2a\u0c4d\u0c30\u0c48\u0c2e\u0c30\u0c40 \u0c38\u0c4d\u0c15\u0c42\u0c32\u0c4d",
+          "operator": "government"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.3691784,
+          17.1049145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13525935502,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "education": "school",
+          "name": "Municipal Goverment school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.5413637,
+          17.3643615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13737413013,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "education": "school",
+          "name": "MPP School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.108082,
+          16.9118005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13953414420,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2026-06-06",
+          "name": "PMSHRI ZPHS School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.7259709,
+          17.6171013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13953414425,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2026-06-06"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.6928594,
+          17.6310462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13953436823,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2026-06-06",
+          "name": "AP Residential School Boys"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.6359927,
+          17.6581503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13953436834,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "check_date": "2026-06-06",
+          "name": "MPP School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.5928057,
+          17.7119703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 14109136721,
+        "type": "node",
+        "tags": {
+          "amenity": "school",
+          "education": "school",
+          "name": "Gandham jones em school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5238939,
+          16.804734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 14227983901,
+        "type": "node",
+        "tags": {
+          "addr:postcode": "533307",
+          "addr:street": "Mandapeta - Kapileswarapuram Road",
+          "amenity": "college",
+          "contact:facebook": "sreesiddharthaangara",
+          "contact:instagram": "sreesiddharthaangara",
+          "name": "Sree Siddhartha College, Angara",
+          "opening_hours": "Mo-Sa 09:00-16:00",
+          "phone": "8977225552",
+          "website": "http://ssjcangara.co.in"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9335895,
+          16.7789356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 143341734,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Referral English Medium High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.3582913,
+          17.2444005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 174281585,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Kothapally Govt. High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0438217,
+          17.7595456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 177154325,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4547907,
+          17.7168408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 195507117,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "designation": "PG BLOCK",
+          "name": "Government College (A) PG BLOCK"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7837805,
+          17.0177099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 205032725,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "education": "school",
+          "name": "CGTM high school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.779669,
+          17.0219669
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 205032775,
+        "type": "way",
+        "tags": {
+          "addr:city": "RAJAHMUNDRY",
+          "addr:housenumber": "24-13-3",
+          "addr:street": "WEAVERS COLONY, R.V.NAGAR 13TH STREET",
+          "amenity": "school",
+          "building": "yes",
+          "name": "PRATHIBA.EDU.CARE"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.784047,
+          17.0206462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 205032777,
+        "type": "way",
+        "tags": {
+          "addr:city": "RAJAHMUNDRY",
+          "addr:housenumber": "24-14-9",
+          "addr:street": "WEAVERS COLONY , R.V.NAGAR 14TH STREET ",
+          "amenity": "school",
+          "building": "yes",
+          "name": "PRATHIBA.EDU.CARE"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7838704,
+          17.0197317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 205326062,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Sasi School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6862329,
+          16.8452755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 205584832,
+        "type": "way",
+        "tags": {
+          "addr:full": "24-4-8 WEAVERS COLONY,R.V.NAGAR,4TH STREET",
+          "amenity": "school",
+          "name": "SRI BHARATHI ENGLISH MEDIUM SCHOOL,(NURSERY TO 7TH CLASS)"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.785364,
+          17.0224945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 205585123,
+        "type": "way",
+        "tags": {
+          "addr:city": "RAJAHMUNDRY",
+          "addr:housenumber": "25-6-3",
+          "addr:street": "VELURIVARI STREET",
+          "amenity": "school",
+          "building": "house"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7811112,
+          17.0165304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 205585201,
+        "type": "way",
+        "tags": {
+          "addr:housename": "Priyadharshini Deaf & Dumb School",
+          "addr:housenumber": "25-6-4",
+          "addr:street": "Gotetivari Street",
+          "amenity": "school",
+          "building": "yes",
+          "name": "Priyadharshini Deaf & Dumb School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7812476,
+          17.0164468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 344273814,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "building": "yes",
+          "name": "ravindra bharathi school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5064864,
+          16.5428755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 369090532,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "building": "yes",
+          "name": "Don Bosco School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7925805,
+          17.0035479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 379954107,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "AMG School",
+          "wheelchair": "no"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2508718,
+          16.9512315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 379954108,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Govt. MPL. Elementary School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2482725,
+          16.949636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 399106342,
+        "type": "way",
+        "tags": {
+          "addr:city": "Chodavaram",
+          "addr:postcode": "534111",
+          "amenity": "school",
+          "name": "ZPPH School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4562995,
+          16.9554631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 416469085,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Annapurna Vidyanikethan",
+          "name:te": "\u0c05\u0c28\u0c4d\u0c28\u0c2a\u0c42\u0c30\u0c4d\u0c23 \u0c35\u0c3f\u0c26\u0c4d\u0c2f\u0c3e\u0c28\u0c3f\u0c15\u0c47\u0c24\u0c28\u0c4d"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6848403,
+          16.8397948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 416469086,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Government High School - Smt & Sri Sirigina Venkanna Memorial"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6850893,
+          16.8385552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 416506571,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Suma E.M School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7402647,
+          16.9646877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 434869417,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Ravindra Bharathi School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.677817,
+          16.7574786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 509995074,
+        "type": "way",
+        "tags": {
+          "addr:city": "Valasampeta",
+          "addr:postcode": "531115",
+          "amenity": "school",
+          "description": "This is a government school up to 7th standard",
+          "name": "Government School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.4951593,
+          17.5897608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 516277999,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "GIRLS HIGH SCHOOL"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.5450623,
+          17.3568471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 516278002,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "ZPP Raja High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.5461902,
+          17.3583712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 520622505,
+        "type": "way",
+        "tags": {
+          "addr:city": "Tuni",
+          "addr:postcode": "533401",
+          "addr:street": "RED CONVENT ROAD",
+          "amenity": "school",
+          "name": "SPVN School ground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.5444429,
+          17.3545706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 520622850,
+        "type": "way",
+        "tags": {
+          "addr:city": "Tuni",
+          "addr:postcode": "533401",
+          "addr:street": "RED CONVENT ROAD",
+          "amenity": "school",
+          "name": "Sidhartha School ground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.5433249,
+          17.3547053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 520625153,
+        "type": "way",
+        "tags": {
+          "addr:city": "Tuni",
+          "addr:postcode": "533401",
+          "addr:street": "RED CONVENT ROAD",
+          "amenity": "school",
+          "operator": "SPVN ground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.5448301,
+          17.3541817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 539865239,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "building": "yes",
+          "name": "CSI Elementary School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.316708,
+          16.8618824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 548522348,
+        "type": "way",
+        "tags": {
+          "addr:city": "payakraopeta",
+          "addr:postcode": "531126",
+          "addr:street": "NH16",
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.5616478,
+          17.3673419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 551395281,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.5702586,
+          17.3713362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 589125957,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "govt school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.472002,
+          16.5315165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 589127049,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Kopalle High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4656996,
+          16.5418611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 596743542,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Government School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4727866,
+          16.7430234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 653942040,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "gowtham model school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9260657,
+          16.8593576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 653956790,
+        "type": "way",
+        "tags": {
+          "addr:city": "bandapuram",
+          "addr:postcode": "534313",
+          "addr:street": "road",
+          "amenity": "school",
+          "building": "commercial",
+          "building:levels": "1",
+          "height": "5"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5783631,
+          17.0501814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 654127981,
+        "type": "way",
+        "tags": {
+          "addr:city": "Vegeswarapuram",
+          "addr:postcode": "534340",
+          "amenity": "school",
+          "building:levels": "2",
+          "height": "10",
+          "name": "GOVT high school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6707417,
+          17.115603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 654158641,
+        "type": "way",
+        "tags": {
+          "addr:postcode": "534211",
+          "addr:street": "Tanuku - Bhimavaram Road",
+          "amenity": "school",
+          "name": "Bhashyam public school grounds"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6804229,
+          16.7464662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 664392985,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "area": "yes",
+          "name": "JNV Yanam"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2159419,
+          16.749467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 674563651,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "sri vidya shcool ground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.5447523,
+          17.3535497
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 674598104,
+        "type": "way",
+        "tags": {
+          "alt_name": "Malakapalli",
+          "amenity": "school",
+          "name": "Z P H School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6625298,
+          17.0645575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 676466766,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Social Welfare School and Hostle"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6934137,
+          17.0561423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 676482351,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Nirmala E.M School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6176318,
+          17.0287703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 676491628,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6149875,
+          17.0317407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 677364178,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "ASHRAM School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8196613,
+          17.4462692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 677598151,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "D.A.V. High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.732265,
+          17.0016082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 677598154,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Staffnurse training"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7383506,
+          17.001387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 678583094,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "GOVT. High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7016057,
+          17.0390011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 680508245,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6796589,
+          17.0531921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 680553864,
+        "type": "way",
+        "tags": {
+          "addr:street": "Ashoknagar road",
+          "amenity": "school",
+          "education": "school",
+          "name": "Suresh Chandra Bahuguna Police E.M. School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0924927,
+          16.7135777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 680556123,
+        "type": "way",
+        "tags": {
+          "addr:postcode": "534003",
+          "addr:street": "Nuzividu - Eluru Road",
+          "amenity": "school",
+          "name": "Silvio pasquali e.m school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0604757,
+          16.7405533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 733479276,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9398216,
+          16.4568731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 767731712,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6616988,
+          17.0585745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 767774538,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6606943,
+          17.0496213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 776400165,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Govenment school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6473424,
+          16.4226494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 837017346,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.673219,
+          16.713431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 871443635,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Sri chaitanya school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6855815,
+          16.7613844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 907037120,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Chinna Amiram Govrenment school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4895278,
+          16.5379033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1014044857,
+        "type": "way",
+        "tags": {
+          "access": "yes",
+          "amenity": "school",
+          "name": "ZPH High School Playground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5282352,
+          16.814399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1026073333,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "building": "yes",
+          "name": "Govt School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4845508,
+          16.5332422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1026073335,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Vempadu Govt School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4801734,
+          16.5322404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1043826569,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Madhuri vidhyalayam"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2822693,
+          17.156144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1043826575,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2789322,
+          17.1469956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1077704074,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "play ground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.1405417,
+          17.2170037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1077704075,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.140718,
+          17.2167833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1082288710,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Meclarane Grounds"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2319311,
+          16.9579744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1157606573,
+        "type": "way",
+        "tags": {
+          "addr:city": "Machavaram",
+          "addr:postcode": "533214",
+          "amenity": "school",
+          "name": "Zilla parishath high schoool"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.935404,
+          16.597719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1187983037,
+        "type": "way",
+        "tags": {
+          "addr:city": "tanuku",
+          "addr:postcode": "534211",
+          "addr:street": "Railway station road",
+          "amenity": "school",
+          "name": "Montessori Ground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6767671,
+          16.7515084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1196696881,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "building": "school",
+          "check_date": "2024-02-21",
+          "grades": "1-12",
+          "name": "Zilla Parishith High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0562064,
+          17.1722012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1226253698,
+        "type": "way",
+        "tags": {
+          "addr:city": "Dwarapudi",
+          "addr:district": "DR.BR.konaseema district",
+          "addr:housenumber": "01",
+          "addr:postcode": "533341",
+          "addr:street": "GSL Road,via vemulapalli ayyappa hospital road",
+          "amenity": "school",
+          "grades": "7-12",
+          "name": "Girl's Govt High School Grounds",
+          "operator": "Government",
+          "operator:type": "government"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9245565,
+          16.9313004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1228226609,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "APTWR School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7922943,
+          17.3946034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1229976761,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "grades": "0-10",
+          "name": "Bala Manikanta School Ground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9286773,
+          16.9387458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1230255234,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "grades": "0-6",
+          "name": "Shanthinikethan School Grounds"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.927158,
+          16.9321767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1235785312,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "ZP High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9644564,
+          16.4214457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1236685533,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9296375,
+          16.932932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1239145596,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.74486,
+          17.6150814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1246852386,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "building": "school",
+          "grades": "6-10",
+          "name": "Govt high school",
+          "operator": "ap govt",
+          "operator:type": "government"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5105635,
+          16.9426727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1246852387,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "building": "school",
+          "name": "primary school",
+          "operator": "govt",
+          "operator:type": "government"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5130299,
+          16.9414633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1248054332,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "JR COLLEGE GROUND",
+          "operator": "GOVT OF AP",
+          "operator:type": "government"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.1835387,
+          17.2023271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1248067460,
+        "type": "way",
+        "tags": {
+          "addr:city": "KAKINADA RURAL",
+          "addr:housenumber": "#3-159/1",
+          "addr:postcode": "533005",
+          "addr:street": "PANASAPADU",
+          "amenity": "school",
+          "building": "school",
+          "email": "LITTLWOODSSCHOOL@GMAIL.COM",
+          "grades": "0-12",
+          "name": "LITTLE WOODS SCHOOL",
+          "operator": "SRIRAM EDUCATIONAL SOCIETY",
+          "operator:type": "private",
+          "website": "http://littlewoodsschool.com"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2329752,
+          17.0161026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1254795727,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Ap Model School Marupaka"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.7936531,
+          17.7738996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1254795742,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "education": "school",
+          "name": "AP Model School, Vemulapudi, Narsipatnam"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.6062947,
+          17.6117236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1254795746,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Andhra Pradesh Model School (A.P.M.S) , Zpp. High School, Sankavaram"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.3658913,
+          17.3230756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1268942414,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "lutheran high school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5241296,
+          16.5394509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1285815593,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Siddhartha Quest CBSE School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0589417,
+          16.7044687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1292094018,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0953777,
+          17.1259608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1292672192,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Shol grounds"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4080626,
+          16.9480146
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1292674501,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Sasi J.R college"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4038739,
+          16.9414167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1299153655,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Bharatiya Vidya Bhavan's"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4801299,
+          16.8589264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1299153680,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "ZPH SCHOOL Prakashrao Palem"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4288639,
+          16.921347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1300883879,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "AP Model School , Hamsavaram"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.4909464,
+          17.2949349
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1305160027,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Sri Chaitanya school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2448923,
+          17.1084235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1306890646,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "building": "school",
+          "name": "Sri Gayatri School",
+          "operator": "Department of School Education",
+          "operator:type": "government",
+          "operator:wikidata": "Q134113948"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7930473,
+          17.0244353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1306892594,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0244455,
+          16.704203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1306980981,
+        "type": "way",
+        "tags": {
+          "addr:city": "Atreyapuram",
+          "addr:district": "East Godavari",
+          "addr:postcode": "533235",
+          "addr:street": "KP Road",
+          "amenity": "school",
+          "grades": "19",
+          "name": "Maharshi Vidya Niketan School",
+          "operator": "Mr. Rama Raju",
+          "operator:type": "private",
+          "religion": "none"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7893799,
+          16.8302537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1314941889,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9310427,
+          16.9307725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1315030997,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "education": "school",
+          "name": "BVM High school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7802368,
+          17.0240486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1324006041,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Luthern  High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7745841,
+          17.0065292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1324008107,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "description": "School play ground",
+          "name": "Playground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.1718895,
+          16.9020322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1324057556,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Municipal School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7727478,
+          17.0055717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1324527326,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "playground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.5000339,
+          17.4785843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1324547174,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7871396,
+          17.0064535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1324547175,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7873015,
+          17.0071828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1345170376,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Good samaritans Home English Medium School , Dosakayapalli"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8496136,
+          17.1287267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1360631048,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "surya high school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.29271,
+          17.1183059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1395426393,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.3691905,
+          17.7552508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1416801528,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.6407404,
+          17.4270996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1421307568,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Andhra Pradesh  Residential School , Bhupathipalem"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9838003,
+          17.2711827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1422069506,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Andhrapradesh Tribal Welfare Residential School , Addateegala"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0159332,
+          17.4822869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1422219929,
+        "type": "way",
+        "tags": {
+          "amenity": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9137978,
+          17.4246562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1422589453,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Andhra Pardesh Tribal Welfare Residential School , Koyyuru"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.196543,
+          17.6539298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1423803039,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "High School Ground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.364312,
+          16.8111923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1423831205,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Sasi Ground"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6878931,
+          16.8464467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1423836069,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Montessori School Bus Parking"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.676306,
+          16.7506861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1431660391,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Karunya School And Junior College , Narsipatnam Town"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.6183596,
+          17.6724056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1433975844,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "prakasam convent school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2245091,
+          16.9798329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1434506292,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "name": "Andhra pradesh Tribal Welfare Residential Junior College"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.1696985,
+          17.2238785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1454103869,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "education": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7796512,
+          17.0242151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1454103870,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "education": "school",
+          "name": "Sri Kantipudi Rama Rao School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7812675,
+          17.0160123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1454103871,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "building": "yes",
+          "education": "school",
+          "name": "Schade Girls High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7805755,
+          17.0136229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1454103873,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "education": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7804652,
+          17.0039155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1454103877,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "education": "school",
+          "name": "APPM High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.7731191,
+          17.0225206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1454107130,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "education": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.856031,
+          16.908187
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1454107143,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "education": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.85292,
+          16.9076804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1472641905,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "education": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.9344694,
+          16.862736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1479716669,
+        "type": "way",
+        "tags": {
+          "alt_name": "KGBV School",
+          "amenity": "school",
+          "education": "school",
+          "name": "Kasturba Gandhi Balika Vidyalaya",
+          "name:etymology:wikidata": "Q264908",
+          "name:te": "\u0c15\u0c38\u0c4d\u0c24\u0c41\u0c30\u0c4d\u0c2c\u0c3e \u0c17\u0c3e\u0c02\u0c27\u0c40 \u0c2c\u0c3e\u0c32\u0c3f\u0c15\u0c3e \u0c35\u0c3f\u0c26\u0c4d\u0c2f\u0c3e\u0c32\u0c2f"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.7857307,
+          17.7868171
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1486445458,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "education": "school",
+          "name": "Government High School , Kotauratla"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.6883016,
+          17.5598545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1500229403,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "education": "school"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.1081085,
+          16.9118074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1562005123,
+        "type": "way",
+        "tags": {
+          "amenity": "school",
+          "education": "school",
+          "name": "MSR ZPP High School"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.2211576,
+          16.7873345
+        ]
+      }
+    }
+  ]
+}

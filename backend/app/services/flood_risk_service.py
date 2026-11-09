@@ -52,17 +52,42 @@ DEFAULT_WEIGHTS = {
 # Elevation and Slope are equally important (1.00)
 # Elevation and Slope are slightly more important than River Proximity (1.25)
 # Elevation and Slope are moderately more important than Land Cover and Hazard (1.67)
+# Saaty scale evaluations aligning with approved thesis methodology:
+# Elevation and River Proximity are equally important (1.00) and dominant in deltaic terrain.
+# Elevation and River Proximity are slightly more important than Slope (1.25).
+# Elevation and River Proximity are moderately more important than Land Cover and Hazard (1.67).
+# Slope is moderately more important than Land Cover and Hazard (1.33).
 AHP_PAIRWISE_MATRIX = [
-    [1.00, 1.00, 1.25, 1.67, 1.67],
-    [1.00, 1.00, 1.25, 1.67, 1.67],
-    [0.80, 0.80, 1.00, 1.33, 1.33],
-    [0.60, 0.60, 0.75, 1.00, 1.00],
-    [0.60, 0.60, 0.75, 1.00, 1.00]
+    [1.00, 1.25, 1.00, 1.67, 1.67],  # Elevation
+    [0.80, 1.00, 0.80, 1.33, 1.33],  # Slope
+    [1.00, 1.25, 1.00, 1.67, 1.67],  # River Proximity
+    [0.60, 0.75, 0.60, 1.00, 1.00],  # Land Cover
+    [0.60, 0.75, 0.60, 1.00, 1.00]   # Historical Hazard
 ]
-AHP_LAMBDA_MAX = 5.0006
-AHP_CONSISTENCY_INDEX = 0.0001
+
+def compute_ahp_matrix_consistency(matrix: List[List[float]], ri_n5: float = 1.12) -> Tuple[float, float, float, Dict[str, float]]:
+    """
+    Computes principal eigenvalue (lambda_max), Consistency Index (CI),
+    Consistency Ratio (CR), and normalized weights from an AHP pairwise matrix.
+    Uses Saaty's random index RI = 1.12 for n = 5 criteria.
+    """
+    mat = np.array(matrix, dtype=float)
+    n = mat.shape[0]
+    eigvals, eigvecs = np.linalg.eig(mat)
+    max_idx = int(np.argmax(eigvals.real))
+    lambda_max = float(eigvals[max_idx].real)
+    principal_vec = eigvecs[:, max_idx].real
+    weights_vec = principal_vec / float(principal_vec.sum())
+    ci = (lambda_max - n) / (n - 1) if n > 1 else 0.0
+    cr = ci / ri_n5 if ri_n5 > 0 else 0.0
+    keys = ["elevation", "slope", "river_proximity", "landcover", "historical_hazard"]
+    weights_dict = {keys[i]: round(float(weights_vec[i]), 4) for i in range(len(keys))}
+    return lambda_max, ci, cr, weights_dict
+
 AHP_RANDOM_INDEX_N5 = 1.12
-AHP_CONSISTENCY_RATIO = 0.0001  # < 0.10 indicates rigorous mathematical consistency
+AHP_LAMBDA_MAX, AHP_CONSISTENCY_INDEX, AHP_CONSISTENCY_RATIO, COMPUTED_AHP_WEIGHTS = compute_ahp_matrix_consistency(
+    AHP_PAIRWISE_MATRIX, AHP_RANDOM_INDEX_N5
+)
 
 # Classification Thresholds
 CLASSIFICATION_THRESHOLDS = {

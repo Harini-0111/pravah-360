@@ -8,25 +8,25 @@ from pydantic import BaseModel, Field, model_validator
 
 class OfficialDisasterAlert(BaseModel):
     alert_id: str
-    source: str
-    event_type: str
-    severity: str  # Extreme, Severe, Moderate, Minor, Unknown
-    state: str = "Andhra Pradesh"
+    source: Optional[str] = "Unknown"
+    event_type: Optional[str] = "Unknown"
+    severity: Optional[str] = "Unknown"  # Extreme, Severe, Moderate, Minor, Unknown
+    state: Optional[str] = "Andhra Pradesh"
     affected_districts: List[str] = Field(default_factory=list)
     affected_mandals: List[str] = Field(default_factory=list)
-    headline: str
-    description: str
+    headline: Optional[str] = None
+    description: Optional[str] = ""
     instruction: Optional[str] = None
     issued_at: Optional[str] = None
     expires_at: Optional[str] = None
-    retrieved_at: str
-    last_updated: str
-    status: str = "ACTIVE"
+    retrieved_at: Optional[str] = None
+    last_updated: Optional[str] = None
+    status: Optional[str] = "Unknown"
     source_url: Optional[str] = None
     in_lower_godavari: bool = False
     lower_godavari_mandals: List[str] = Field(default_factory=list)
     affected_lower_godavari_mandals: Optional[List[str]] = Field(default_factory=list)
-    
+
     # Backward-compatible fields
     mandals_count: Optional[int] = None
     sent_time: Optional[str] = None
@@ -35,6 +35,8 @@ class OfficialDisasterAlert(BaseModel):
     instructions: Optional[str] = None
     intersects_lower_godavari: Optional[bool] = None
     expires_time: Optional[str] = None
+    freshness_state: Optional[str] = None  # LIVE, CACHED, STALE, EXPIRED, UNKNOWN, UNAVAILABLE
+    is_cached: Optional[bool] = False
 
     @model_validator(mode="before")
     @classmethod
@@ -43,22 +45,38 @@ class OfficialDisasterAlert(BaseModel):
             return data
         d = dict(data)
 
-        # 1. source vs source_agency
-        src = d.get("source") or d.get("source_agency") or "NDMA SACHET / APSDMA"
+        # 1. source vs source_agency (Never invent official agencies; keep Unknown if missing)
+        src = d.get("source") or d.get("source_agency")
+        if not src or str(src).strip() == "":
+            src = "Unknown"
         d["source"] = src
         d["source_agency"] = src
 
-        # 2. event_type vs event_category
-        evt = d.get("event_type") or d.get("event_category") or "Severe Weather"
+        # 2. severity (Never invent Moderate; keep Unknown if missing)
+        sev = d.get("severity")
+        if not sev or str(sev).strip() == "":
+            sev = "Unknown"
+        d["severity"] = sev
+
+        # 3. event_type vs event_category (Never imply generic event is verified; keep Unknown if missing)
+        evt = d.get("event_type") or d.get("event_category")
+        if not evt or str(evt).strip() == "":
+            evt = "Unknown"
         d["event_type"] = evt
         d["event_category"] = evt
 
-        # 3. instruction vs instructions
+        # 4. status (Never default to ACTIVE; keep Unknown if missing)
+        stat = d.get("status")
+        if not stat or str(stat).strip() == "":
+            stat = "Unknown"
+        d["status"] = stat
+
+        # 5. instruction vs instructions
         inst = d.get("instruction") or d.get("instructions")
         d["instruction"] = inst
         d["instructions"] = inst
 
-        # 4. affected_mandals vs mandals_count
+        # 6. affected_mandals vs mandals_count
         mandals = d.get("affected_mandals")
         if mandals is None:
             mandals = []
@@ -66,29 +84,42 @@ class OfficialDisasterAlert(BaseModel):
         if d.get("mandals_count") is None:
             d["mandals_count"] = len(mandals)
 
-        # 5. issued_at vs sent_time vs retrieved_at
-        now_iso = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        # 7. affected_districts (Never invent East Godavari; keep empty list if missing)
+        aff_dist = d.get("affected_districts")
+        if aff_dist is None:
+            single_d = d.get("district")
+            if single_d:
+                aff_dist = [single_d]
+            else:
+                aff_dist = []
+            d["affected_districts"] = aff_dist
+
+        # 8. issued_at vs sent_time (Never invent current timestamp; keep None if missing)
         iss = d.get("issued_at") or d.get("sent_time")
         d["issued_at"] = iss
         d["sent_time"] = iss
-        if not d.get("retrieved_at"):
-            d["retrieved_at"] = iss or now_iso
-        if not d.get("last_updated"):
-            d["last_updated"] = d.get("retrieved_at") or now_iso
 
-        # 6. expires_at vs expires_time
+        # 9. retrieved_at (Preserve actual metadata independently; do not fabricate)
+        ret = d.get("retrieved_at")
+        d["retrieved_at"] = ret
+
+        # 10. last_updated (Preserve actual update metadata independently; do not fallback to issued_at)
+        lu = d.get("last_updated")
+        d["last_updated"] = lu
+
+        # 11. expires_at vs expires_time
         exp = d.get("expires_at") or d.get("expires_time")
         d["expires_at"] = exp
         d["expires_time"] = exp
 
-        # 7. in_lower_godavari vs intersects_lower_godavari
+        # 12. in_lower_godavari vs intersects_lower_godavari
         is_lg = d.get("in_lower_godavari")
         if is_lg is None:
             is_lg = d.get("intersects_lower_godavari", False)
         d["in_lower_godavari"] = bool(is_lg)
         d["intersects_lower_godavari"] = bool(is_lg)
 
-        # 8. lower_godavari_mandals vs affected_lower_godavari_mandals
+        # 13. lower_godavari_mandals vs affected_lower_godavari_mandals
         lg_m = d.get("lower_godavari_mandals") or d.get("affected_lower_godavari_mandals") or []
         d["lower_godavari_mandals"] = lg_m
         d["affected_lower_godavari_mandals"] = lg_m

@@ -10,7 +10,7 @@
 
 In disaster management, language barrier is a critical vulnerability. The Godavari river delta (Konaseema, East Godavari, and West Godavari districts) encompasses hundreds of river island (*lanka*) villages, coastal fishermen hamlets, and agricultural communities where English literacy is limited. An emergency warning system that operates solely in English fails at the point of greatest need.
 
-PRAVAH 360 incorporates native, end-to-end **Telugu (తెలుగు) localization** alongside English. Unlike generic automated widget translations (e.g., Google Translate widgets that break layouts or mangle disaster terminology), PRAVAH 360 utilizes a curated, domain-specific terminology dictionary implemented in [`frontend/translations.js`](file:///c:/major%20project/frontend/translations.js).
+PRAVAH 360 incorporates native, end-to-end **Telugu (తెలుగు) localization** alongside English. Unlike generic automated widget translations (e.g., Google Translate widgets that break layouts or mangle disaster terminology), PRAVAH 360 utilizes a curated, domain-specific terminology dictionary implemented in [`frontend/translations.js`](../frontend/translations.js).
 
 ---
 
@@ -57,8 +57,8 @@ The Telugu localization engine covers every public-facing and community-accessib
 Telugu script is an Indic abugida with complex conjunct characters (వత్తులు - *vattulu* and గుణింతాలు - *guninthalu*). Improper web font rendering leads to character clipping, missing vowel markers, or fallback to generic system fonts.
 
 To guarantee crisp typographical fidelity across devices:
-1. **Google Font Integration:** Loaded **Google Noto Sans Telugu** (`weights: 400, 500, 600, 700`) directly in [`frontend/index.html`](file:///c:/major%20project/frontend/index.html).
-2. **CSS Font Cascade:** Configured in [`frontend/entry_journey.css`](file:///c:/major%20project/frontend/entry_journey.css):
+1. **Google Font Integration:** Loaded **Google Noto Sans Telugu** (`weights: 400, 500, 600, 700`) directly in [`frontend/index.html`](../frontend/index.html).
+2. **CSS Font Cascade:** Configured in [`frontend/entry_journey.css`](../frontend/entry_journey.css):
    ```css
    body[data-lang="te"] {
      font-family: 'Noto Sans Telugu', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;

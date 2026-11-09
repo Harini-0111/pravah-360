@@ -1,0 +1,370 @@
+{
+  "raster_validations": [
+    {
+      "dataset_name": "Copernicus DEM N16E081",
+      "path": "data/raw/dem/Copernicus_DSM_COG_10_N16_00_E081_00_DEM.tif",
+      "file_size_bytes": 35835147,
+      "format": "GeoTIFF",
+      "dimensions": [
+        3600,
+        3600
+      ],
+      "data_type": "float32",
+      "has_nan": false,
+      "value_range": [
+        -4.5,
+        237.0111846923828
+      ],
+      "crs": "EPSG:4326",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "Copernicus DEM N16E082",
+      "path": "data/raw/dem/Copernicus_DSM_COG_10_N16_00_E082_00_DEM.tif",
+      "file_size_bytes": 8276418,
+      "format": "GeoTIFF",
+      "dimensions": [
+        3600,
+        3600
+      ],
+      "data_type": "float32",
+      "has_nan": false,
+      "value_range": [
+        -9.1031494140625,
+        64.15560150146484
+      ],
+      "crs": "EPSG:4326",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "Copernicus DEM N17E081",
+      "path": "data/raw/dem/Copernicus_DSM_COG_10_N17_00_E081_00_DEM.tif",
+      "file_size_bytes": 47341832,
+      "format": "GeoTIFF",
+      "dimensions": [
+        3600,
+        3600
+      ],
+      "data_type": "float32",
+      "has_nan": false,
+      "value_range": [
+        -9.42320728302002,
+        1361.8499755859375
+      ],
+      "crs": "EPSG:4326",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "Copernicus DEM N17E082",
+      "path": "data/raw/dem/Copernicus_DSM_COG_10_N17_00_E082_00_DEM.tif",
+      "file_size_bytes": 37750448,
+      "format": "GeoTIFF",
+      "dimensions": [
+        3600,
+        3600
+      ],
+      "data_type": "float32",
+      "has_nan": false,
+      "value_range": [
+        -2.589803695678711,
+        1584.4180908203125
+      ],
+      "crs": "EPSG:4326",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "Copernicus DEM Processed Elevation",
+      "path": "data/processed/dem/copernicus_dem_elevation_N16E081.tif",
+      "file_size_bytes": 51840272,
+      "format": "GeoTIFF",
+      "dimensions": [
+        3600,
+        3600
+      ],
+      "data_type": "float32",
+      "has_nan": false,
+      "value_range": [
+        -4.5,
+        237.0111846923828
+      ],
+      "crs": "EPSG:4326",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "Copernicus DEM Slope",
+      "path": "data/processed/dem/copernicus_dem_slope_deg_N16E081.tif",
+      "file_size_bytes": 51840272,
+      "format": "GeoTIFF",
+      "dimensions": [
+        3600,
+        3600
+      ],
+      "data_type": "float32",
+      "has_nan": false,
+      "value_range": [
+        0.0,
+        36.166290283203125
+      ],
+      "crs": "EPSG:4326",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "Copernicus DEM Aspect",
+      "path": "data/processed/dem/copernicus_dem_aspect_deg_N16E081.tif",
+      "file_size_bytes": 51840272,
+      "format": "GeoTIFF",
+      "dimensions": [
+        3600,
+        3600
+      ],
+      "data_type": "float32",
+      "has_nan": false,
+      "value_range": [
+        -0.0,
+        359.9999694824219
+      ],
+      "crs": "EPSG:4326",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "WorldPop India 2020 Raw (1km)",
+      "path": "data/raw/population/ind_ppp_2020_1km_Aggregated_UNadj.tif",
+      "file_size_bytes": 18313124,
+      "format": "GeoTIFF",
+      "dimensions": [
+        3451,
+        3508
+      ],
+      "data_type": "float32",
+      "has_nan": false,
+      "value_range": [
+        -99999.0,
+        183060.4375
+      ],
+      "crs": "EPSG:4326",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "WorldPop Lower Godavari Clipped",
+      "path": "data/processed/population/worldpop_lower_godavari_2020.tif",
+      "file_size_bytes": 166160,
+      "format": "GeoTIFF",
+      "dimensions": [
+        192,
+        216
+      ],
+      "data_type": "float32",
+      "has_nan": false,
+      "value_range": [
+        -99999.0,
+        22313.771484375
+      ],
+      "crs": "EPSG:4326",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "ESA WorldCover 10m Raw",
+      "path": "data/raw/landcover/ESA_WorldCover_10m_2021_v200_N15E081_Map.tif",
+      "file_size_bytes": 39539634,
+      "format": "GeoTIFF",
+      "dimensions": [
+        36000,
+        36000
+      ],
+      "data_type": "uint8",
+      "has_nan": false,
+      "value_range": [
+        0.0,
+        95.0
+      ],
+      "crs": "EPSG:4326",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "ESA WorldCover 50m Lower Godavari",
+      "path": "data/processed/landcover/esa_worldcover_lower_godavari_50m.tif",
+      "file_size_bytes": 16589056,
+      "format": "GeoTIFF",
+      "dimensions": [
+        3840,
+        4320
+      ],
+      "data_type": "uint8",
+      "has_nan": false,
+      "value_range": [
+        0.0,
+        95.0
+      ],
+      "crs": "EPSG:4326",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "CHIRPS 2.0 Daily Precipitation (NetCDF)",
+      "path": "data/raw/rainfall/chirps/chirps_godavari_20220710_20220720.nc",
+      "file_size_bytes": 52232,
+      "format": "NetCDF3/Classic",
+      "crs": "EPSG:4326 (WGS84)",
+      "temporal_range": "2022-07-10 to 2022-07-20",
+      "resolution": "0.05 degrees (~5.5 km)",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "NASA GPM IMERG Daily Precipitation (V07B)",
+      "path": "data/raw/rainfall/gpm_imerg/3B-DAY.MS.MRG.3IMERG.20220715-S000000-E235959.V07B.nc4",
+      "file_size_bytes": 34438035,
+      "format": "NetCDF-4 / HDF5",
+      "dimensions": [
+        1,
+        3600,
+        1800
+      ],
+      "data_type": "float32",
+      "crs": "EPSG:4326 (WGS84)",
+      "variables": [
+        "precipitation",
+        "precipitation_cnt",
+        "precipitation_cnt_cond",
+        "MWprecipitation",
+        "MWprecipitation_cnt",
+        "MWprecipitation_cnt_cond",
+        "randomError",
+        "randomError_cnt",
+        "probabilityLiquidPrecipitation",
+        "lon",
+        "lat",
+        "time",
+        "nv",
+        "time_bnds"
+      ],
+      "status": "VALID",
+      "intersects_study_area": true
+    }
+  ],
+  "vector_validations": [
+    {
+      "dataset_name": "Study Area Polygon",
+      "path": "data/processed/boundaries/lower_godavari_study_area.geojson",
+      "file_size_bytes": 750,
+      "format": "GeoJSON",
+      "feature_count": 1,
+      "geometry_types": [
+        "Polygon"
+      ],
+      "valid_geometries": true,
+      "crs": "EPSG:4326 (WGS84)",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "Andhra Pradesh Districts",
+      "path": "data/processed/boundaries/andhra_pradesh_districts.geojson",
+      "file_size_bytes": 686693,
+      "format": "GeoJSON",
+      "feature_count": 13,
+      "geometry_types": [
+        "MultiPolygon"
+      ],
+      "valid_geometries": true,
+      "crs": "EPSG:4326 (WGS84)",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "Lower Godavari Districts",
+      "path": "data/processed/boundaries/lower_godavari_districts.geojson",
+      "file_size_bytes": 80580,
+      "format": "GeoJSON",
+      "feature_count": 2,
+      "geometry_types": [
+        "MultiPolygon"
+      ],
+      "valid_geometries": true,
+      "crs": "EPSG:4326 (WGS84)",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "Lower Godavari Mandals",
+      "path": "data/processed/boundaries/lower_godavari_mandals.geojson",
+      "file_size_bytes": 272883,
+      "format": "GeoJSON",
+      "feature_count": 21,
+      "geometry_types": [
+        "MultiPolygon"
+      ],
+      "valid_geometries": true,
+      "crs": "EPSG:4326 (WGS84)",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "HydroRIVERS Godavari Reaches",
+      "path": "data/processed/rivers/lower_godavari_hydrorivers.geojson",
+      "file_size_bytes": 1338346,
+      "format": "GeoJSON",
+      "feature_count": 1496,
+      "geometry_types": [
+        "LineString"
+      ],
+      "valid_geometries": true,
+      "crs": "EPSG:4326 (WGS84)",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "OSM Healthcare Infrastructure",
+      "path": "data/processed/infrastructure/osm_healthcare.geojson",
+      "file_size_bytes": 700866,
+      "format": "GeoJSON",
+      "feature_count": 1206,
+      "geometry_types": [
+        "Point"
+      ],
+      "valid_geometries": true,
+      "crs": "EPSG:4326 (WGS84)",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "OSM Education Infrastructure",
+      "path": "data/processed/infrastructure/osm_education.geojson",
+      "file_size_bytes": 149097,
+      "format": "GeoJSON",
+      "feature_count": 366,
+      "geometry_types": [
+        "Point"
+      ],
+      "valid_geometries": true,
+      "crs": "EPSG:4326 (WGS84)",
+      "status": "VALID",
+      "intersects_study_area": true
+    },
+    {
+      "dataset_name": "OSM Emergency Shelters",
+      "path": "data/processed/infrastructure/osm_emergency_shelters.geojson",
+      "file_size_bytes": 22789,
+      "format": "GeoJSON",
+      "feature_count": 63,
+      "geometry_types": [
+        "Point"
+      ],
+      "valid_geometries": true,
+      "crs": "EPSG:4326 (WGS84)",
+      "status": "VALID",
+      "intersects_study_area": true
+    }
+  ],
+  "overall_status": "PASSED"
+}

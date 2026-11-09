@@ -1,0 +1,112 @@
+{
+  "timestamp": "2026-11-02T21:18:00Z",
+  "project": "AI-Based Flood Risk, Impact Assessment and Emergency Decision Support System",
+  "case_study": "Lower Godavari Basin, Andhra Pradesh (21 Mandals)",
+  "phase": "Phase 5.2 - GIS-First Web App Transformation + Global 3D Earth",
+  "authoritative_reconciled_population": {
+    "raw_baseline": 9126354.9793,
+    "rounded_baseline": 9126355,
+    "elevated_exposure": 8252723.5482,
+    "elevated_exposure_rounded": 8252724,
+    "elevated_exposure_pct": 90.43
+  },
+  "sentinel1_historical_observation": {
+    "track": 129,
+    "date": "2022-07-16",
+    "candidate_floodwater_km2": 1087.5,
+    "permanent_water_km2": 1018.3,
+    "ambiguous_wetsoil_km2": 214.4
+  },
+  "preserved_assets": [
+    {
+      "path": "data/processed/population/worldpop_lower_godavari_2020.tif",
+      "size_bytes": 166160,
+      "sha256": "ecd32926ecb24f1d51d6bd68e8070622ed903d1cae5696c96c54a1572f812a4b"
+    },
+    {
+      "path": "data/processed/dem/copernicus_dem_elevation_N16E081.tif",
+      "size_bytes": 51840272,
+      "sha256": "SKIPPED_LARGE_FILE"
+    },
+    {
+      "path": "data/processed/landcover/esa_worldcover_lower_godavari_50m.tif",
+      "size_bytes": 16589056,
+      "sha256": "45c46ee574765f312af6c6b8576d3ec6d61b23b47e61ceb557aab583dbaf6ce3"
+    },
+    {
+      "path": "data/processed/boundaries/lower_godavari_mandals.geojson",
+      "size_bytes": 272883,
+      "sha256": "db852c4850bd21a497fac0acd0e3c807f919a96f247913d128938887ed9565d1"
+    },
+    {
+      "path": "data/processed/boundaries/lower_godavari_districts.geojson",
+      "size_bytes": 80580,
+      "sha256": "32caeccba1abb4eab584405d09032dcaf377ea6be9dc8c8c3cee32af1712a5aa"
+    },
+    {
+      "path": "data/processed/rivers/lower_godavari_hydrorivers.geojson",
+      "size_bytes": 1338346,
+      "sha256": "cc1920baf6c9e6a226add8e0e6d07517c856b021fb3b4e09cb3a0e1fd349fca3"
+    },
+    {
+      "path": "data/processed/sentinel1/track129_water_classification.tif",
+      "size_bytes": 763887,
+      "sha256": "a8cab66c79b9bf8a6d6fe88a21c38c1dd1ea14047e32647286080cceff18570c"
+    },
+    {
+      "path": "data/processed/sentinel1/track129_flood_water_candidates.geojson",
+      "size_bytes": 9713160,
+      "sha256": "8699727f20010ab7dfb3dfce8c41f395d01ed4c641d1fb5f15c99b7fa41d1676"
+    },
+    {
+      "path": "data/metadata/phase3_3_mandal_water_candidates.json",
+      "size_bytes": 8509,
+      "sha256": "0d952c1cbb331696e0f009680e3f675a03e59be331870920ad4943863d303c9e"
+    },
+    {
+      "path": "data/metadata/sentinel1_png_overlay_metadata.json",
+      "size_bytes": 1310,
+      "sha256": "78d70764441077e2770a80349462f148cd8fd750cbcee82be5fa0cc99b42bdcd"
+    },
+    {
+      "path": "backend/app/services/flood_risk_service.py",
+      "size_bytes": 60156,
+      "sha256": "1fb21535cdcf62b9dd0ff6dff663a903cdcc9c7b37bae1cfcccebeb27fab1386"
+    },
+    {
+      "path": "backend/app/services/geographic_identification_service.py",
+      "size_bytes": 11531,
+      "sha256": "59726c1d33f99f452889bfc3491593719eb5bd23c67e5f9b30d819ade5338108"
+    },
+    {
+      "path": "backend/app/services/weather_service.py",
+      "size_bytes": 25175,
+      "sha256": "b075088000dcd01e6ab5ab007fd14ba73de97ae548f01595eb42abacc37912da"
+    },
+    {
+      "path": "backend/app/api/endpoints.py",
+      "size_bytes": 17652,
+      "sha256": "b107f080023cb63fb37cfdd4fc69351c5e971ee182b6416955fce9591cb17c0b"
+    },
+    {
+      "path": "PHASE_4_FINAL_POPULATION_RECONCILIATION.md",
+      "size_bytes": 19297,
+      "sha256": "4755eab16335c73541643370d2228d834e42bffa69a875f5872dbeedf5712dbc"
+    },
+    {
+      "path": "PHASE_3_3_AND_WEATHER_INTEGRITY_REVIEW.md",
+      "size_bytes": 13843,
+      "sha256": "4d076459a482501c2f54a82efdfc10a23be23492d7ea1e9633c43f4c0b65e801"
+    },
+    {
+      "path": "PHASE_5_1_FRONTEND_INTEGRATION_REPORT.md",
+      "size_bytes": 20649,
+      "sha256": "799f3a75c342113dd87c3d3df7d44b4df0c9ed269ca43143a02cc5cf76969ae3"
+    },
+    {
+      "path": "docs/frontend_contract.md",
+      "size_bytes": 17695,
+      "sha256": "7e66a7186267960431be84ce7f45af483b64e0a4aa510d600f16f78def2fc7be"
+    }
+  ]
+}

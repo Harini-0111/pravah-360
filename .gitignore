@@ -1,0 +1,177 @@
+# ==============================================================================
+# PRAVAH 360 - Comprehensive Git Ignore Configuration
+# ==============================================================================
+
+# 1. Environment Variables, Databases & Secret Credentials (NEVER COMMIT)
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+credentials.json
+token.json
+auth_tokens.json
+data/users.db
+users.db
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# 2. Python Virtual Environments, Bytecode & Caches
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 3. Testing, Coverage & Type Checking
+.pytest_cache/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# 4. Large Raw Geospatial Datasets (>100MB)
+# Note: Raw satellite rasters & continental GIS shapefiles exceed GitHub limits.
+# Lightweight clipped vector GeoJSONs and compressed PNG overlays are retained.
+data/processed/sentinel1/track129_20220716/
+data/raw/rivers/HydroRIVERS_v10_as_shp/
+data/raw/rivers/HydroRIVERS_v10_as_shp.zip
+data/raw/**/*.tif
+data/raw/**/*.tiff
+data/raw/**/*.nc
+data/raw/**/*.nc4
+data/raw/**/*.hdf
+data/raw/**/*.h5
+data/raw/**/*.zip
+data/raw/**/*.tar.gz
+data/raw/**/*.tar
+data/raw/**/*.jp2
+data/processed/dem/copernicus_dem_*.tif
+
+# Retain essential processed vector & demographic data
+!data/processed/infrastructure/*.geojson
+!data/processed/sentinel1/*.geojson
+!data/processed/population/worldpop_lower_godavari_2020.tif
+!data/metadata/*.json
+!data/metadata/*.csv
+!data/metadata/*.md
+!data/**/.gitkeep
+
+# 5. Runtime Monitoring, Operations & Community Data (Auto-initialized on startup)
+data/community/
+data/operations/
+data/monitoring/
+data/monitoring/resident_help_requests_backup.json
+*.bak
+
+# 6. Large Preview Rasters & Transient Audit Dumps in Metadata
+data/metadata/qc_previews/
+data/metadata/frontend_contract_audit_results.json
+data/metadata/browser_deep_audit_results.json
+data/metadata/browser_performance_audit.json
+data/metadata/frontend_e2e_journey_test_results.json
+data/metadata/phase54_browser_audit_results.json
+
+# 7. Old Report Drafts, Legacy Patch Scripts & Intermediate Artifacts
+docs/archive/legacy_reports/
+docs/archive/test_artifacts/
+docs/archive/phase_milestone_reports/
+scripts/legacy_patches/
+scripts/doc_content_dump.txt
+extracted_images/
+report_screenshots/
+
+# 8. Third-Party Reference Documents & External Research Papers (Preserve Locally)
+data/reference/*.pdf
+data/reference_extracted_text.txt
+data/reference/Review*.md
+data/raw/rivers/*.pdf
+
+# 9. Third-Party Administrative Boundaries & Hydrographic Networks (Obtain & Process Locally)
+data/raw/boundaries/
+data/processed/boundaries/
+data/processed/rivers/
+
+# 10. One-off Maintenance, Patching, Inspection & Browser Debugging Scripts
+scripts/patch_*.py
+scripts/inspect_*.py
+scripts/test_*.py
+scripts/test_*.js
+scripts/verify_*.py
+scripts/verify_*.js
+scripts/scan_*.py
+scripts/audit_*.py
+scripts/capture_*.js
+scripts/debug_*.js
+scripts/convert_local_links_to_relative.py
+scripts/find_*.py
+scripts/dump_doc.py
+scripts/reorganize_repo.py
+scripts/assemble_*.py
+scripts/build_full_report.py
+scripts/generate_chapters*.py
+scripts/generate_chapter4_diagrams.py
+scripts/generate_complete_report.py
+scripts/generate_preliminary.py
+scripts/generate_toc_and_lists.py
+
+# 11. Local Checkpoints, Backups & Scratch Files
+backups/
+backup_*/
+scratch/
+uvicorn_*.log
+*.log
+
+# 12. Browser Automation & Chromium User Profiles
+.chrome_*/
+
+# 13. Microsoft Office Locks & Temporary Build Documents
+~$*.docx
+~$*.pptx
+~$*.xlsx
+test_border.*
+test_pagination.*
+test_table.*
+test_flowchart_copy.*
+
+# 14. Operating System & IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

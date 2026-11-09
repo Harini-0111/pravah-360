@@ -10,7 +10,7 @@ import json
 import uuid
 import logging
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from typing import List, Dict, Any, Optional, Tuple
 
 from backend.app.schemas.monitoring import OfficialDisasterAlert, SourceHealthStatus
@@ -34,6 +34,122 @@ LOWER_GODAVARI_MANDALS_SET = {
     "eluru", "chintalapudi", "devipatnam", "rampachodavaram", "addatigala", "dowleswaram",
     "seethanagaram", "korukonda"
 }
+
+
+# Documented Regional Timezone Assumption:
+# Upstream regional government feeds in Andhra Pradesh (APSDMA, CWC regional gauges, local emergency operations)
+# frequently emit naive local timestamps without UTC offset notation (e.g., '2026-11-09 16:30:00').
+# In accordance with project spatial scope (Lower Godavari Basin, India), any naive timestamp is assumed
+# to be in Indian Standard Time (IST = UTC+05:30) and converted to a timezone-aware UTC datetime.
+IST_TIMEZONE = timezone(timedelta(hours=5, minutes=30))
+
+def parse_iso_timestamp(ts: Any, default_tz: timezone = IST_TIMEZONE) -> Optional[datetime]:
+    """
+    Parses ISO-8601 and operational timestamp formats into a timezone-aware UTC datetime.
+
+    Supports:
+    - ISO-8601 strings ending with 'Z' (e.g. '2026-11-09T16:30:00Z') -> UTC.
+    - Offsets with positive and negative notation (e.g. '+05:30', '-04:00', '+00:00').
+    - Naive timestamps (e.g. '2026-11-09 16:30:00' or '2026-11-09T16:30:00') -> interpreted as default_tz (IST), then converted to UTC.
+    - datetime objects (aware or naive).
+
+    Safety:
+    - Never uses string-splitting to strip offsets or 'Z'.
+    - Returns None on missing (None/empty) or unparseable input without raising exceptions.
+    """
+    if ts is None:
+        return None
+    if isinstance(ts, datetime):
+        if ts.tzinfo is None:
+            return ts.replace(tzinfo=default_tz).astimezone(timezone.utc)
+        return ts.astimezone(timezone.utc)
+
+    ts_str = str(ts).strip()
+    if not ts_str:
+        return None
+
+    if ts_str.endswith("Z") or ts_str.endswith("z"):
+        ts_str = ts_str[:-1] + "+00:00"
+
+    try:
+        dt = datetime.fromisoformat(ts_str)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=default_tz)
+        return dt.astimezone(timezone.utc)
+    except Exception:
+        pass
+
+    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M", "%d-%m-%Y %H:%M:%S", "%Y/%m/%d %H:%M:%S"):
+        try:
+            dt = datetime.strptime(ts_str, fmt)
+            dt = dt.replace(tzinfo=default_tz)
+            return dt.astimezone(timezone.utc)
+        except Exception:
+            continue
+
+    return None
+
+def evaluate_alert_freshness(
+    alert: Any,
+    is_feed_down: bool = False,
+    is_source_stale: bool = False,
+    feed_timestamp: Optional[str] = None
+) -> str:
+    """
+    Evaluates the temporal state of an alert into one of 6 distinct states:
+    - EXPIRED: When alert.expires_at (or expires_time) is in the past, or status == 'EXPIRED'.
+    - STALE: When alert is explicitly flagged stale, or retrieval/issue timestamp age > 1800s (30m).
+    - CACHED: When alert is from confirmed cache storage (is_cached=True), within freshness threshold (age <= 1800s), and not expired.
+    - LIVE: When alert was confirmed actively retrieved from live stream (is_cached=False), within freshness threshold (age <= 1800s), and not expired.
+    - UNKNOWN: When temporal metadata is missing, unavailable, or invalid.
+    - UNAVAILABLE: When no alert object is present or feed is completely down with no usable data.
+    """
+    if alert is None:
+        return "UNAVAILABLE"
+
+    now_utc = datetime.now(timezone.utc)
+
+    # 1. Check expiration (authoritative status or explicit expiration timestamp)
+    if str(getattr(alert, "status", "")).upper() == "EXPIRED":
+        return "EXPIRED"
+
+    exp_raw = getattr(alert, "expires_at", None) or getattr(alert, "expires_time", None)
+    if exp_raw:
+        exp_dt = parse_iso_timestamp(exp_raw)
+        if exp_dt is not None and exp_dt < now_utc:
+            return "EXPIRED"
+
+    # 2. Check explicit staleness flag on the alert itself
+    if getattr(alert, "is_stale", False) is True:
+        return "STALE"
+
+    # 3. Check temporal metadata
+    ret_raw = getattr(alert, "retrieved_at", None)
+    feed_raw = feed_timestamp
+    iss_raw = getattr(alert, "issued_at", None) or getattr(alert, "sent_time", None)
+
+    target_dt = parse_iso_timestamp(ret_raw) or parse_iso_timestamp(feed_raw) or parse_iso_timestamp(iss_raw)
+
+    if target_dt is None:
+        return "UNKNOWN"
+
+    age_seconds = (now_utc - target_dt).total_seconds()
+
+    if age_seconds > 1800:
+        return "STALE"
+
+    if is_source_stale and (ret_raw is None or age_seconds > 1800):
+        return "STALE"
+
+    # 4. Check CACHED vs LIVE
+    is_cached = getattr(alert, "is_cached", False)
+    if is_cached:
+        return "CACHED"
+
+    if is_feed_down:
+        return "CACHED"
+
+    return "LIVE"
 
 class LiveAlertIngestionService:
     def __init__(self):
@@ -142,12 +258,9 @@ class LiveAlertIngestionService:
 
                 is_expired = False
                 if g.get("expires_at"):
-                    try:
-                        exp_clean = g["expires_at"].replace("Z", "").split("+")[0]
-                        if datetime.fromisoformat(exp_clean) < datetime.now():
-                            is_expired = True
-                    except Exception:
-                        pass
+                    exp_dt = parse_iso_timestamp(g["expires_at"])
+                    if exp_dt is not None and exp_dt < datetime.now(timezone.utc):
+                        is_expired = True
                 alert_status = "EXPIRED" if is_expired else "ACTIVE"
 
                 alert_obj = OfficialDisasterAlert(
@@ -236,6 +349,65 @@ class LiveAlertIngestionService:
         except Exception as e:
             logger.error(f"Error reading cached alerts: {e}")
             return []
+
+
+    def get_cached_or_live_alerts(self) -> Tuple[List[OfficialDisasterAlert], SourceHealthStatus]:
+        """
+        Returns cached alerts if available, otherwise attempts a live fetch.
+        Computes accurate temporal freshness states (LIVE, CACHED, STALE, EXPIRED, UNKNOWN, UNAVAILABLE).
+        """
+        cached = self.get_cached_alerts()
+        if cached:
+            now_utc = datetime.now(timezone.utc)
+            is_stale = False
+            last_success = None
+            last_up = None
+            try:
+                if os.path.exists(ALERTS_FILE):
+                    with open(ALERTS_FILE, "r", encoding="utf-8") as f:
+                        meta = json.load(f)
+                    last_up = meta.get("last_updated") or meta.get("feed_generated_at")
+                    if last_up:
+                        last_dt = parse_iso_timestamp(last_up)
+                        if last_dt:
+                            last_success = last_dt.strftime("%Y-%m-%d %H:%M:%S")
+                            if (now_utc - last_dt).total_seconds() > 1800:
+                                is_stale = True
+            except Exception:
+                is_stale = True
+
+            health = SourceHealthStatus(
+                source_id="NDMA_SACHET_APSDMA",
+                source_name="NDMA SACHET / APSDMA State Disaster Monitoring",
+                status="AVAILABLE" if not is_stale else "STALE",
+                last_attempt_iso=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                last_success_iso=last_success or datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                records_count=len(cached),
+                stale=is_stale
+            )
+            # Update freshness state on individual alerts from cache
+            for a in cached:
+                a.is_cached = True
+                a.freshness_state = evaluate_alert_freshness(
+                    a,
+                    is_feed_down=False,
+                    is_source_stale=is_stale,
+                    feed_timestamp=last_up
+                )
+            return cached, health
+
+        # No cache exists - attempt live fetch
+        alerts, status = self.fetch_live_alerts()
+        if not alerts:
+            # When upstream feed fails and no cached data exists -> status is UNAVAILABLE
+            status.status = "UNAVAILABLE"
+            status.stale = False
+            return [], status
+
+        for a in alerts:
+            a.is_cached = False
+            a.freshness_state = evaluate_alert_freshness(a, is_feed_down=False, is_source_stale=False)
+        return alerts, status
 
     def get_alerted_mandals_geojson(self) -> Dict[str, Any]:
         """Returns the GeoJSON of all currently alerted mandals across Andhra Pradesh."""

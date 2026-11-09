@@ -1,0 +1,301 @@
+{
+  "pipeline": "Phase 3.3 Sentinel-1 Water Extraction",
+  "target_date": "2022-07-16",
+  "track": 129,
+  "pass": "Ascending",
+  "methodology": "Single-Date Multi-Polarized Adaptive Otsu with Environmental Masking",
+  "otsu_threshold_vh_db": -21.91,
+  "otsu_threshold_vv_db": -16.05,
+  "slope_cutoff_deg": 7.0,
+  "speckle_filter_applied": true,
+  "total_basin_potential_flood_km2": 1087.5,
+  "total_basin_permanent_water_km2": 1018.3,
+  "sensitivity_analysis": [
+    {
+      "threshold_vh_db": -24.0,
+      "pixels": 2851602,
+      "area_km2": 7129.0,
+      "pct_of_valid_swath": 20.88
+    },
+    {
+      "threshold_vh_db": -23.0,
+      "pixels": 3113539,
+      "area_km2": 7783.8,
+      "pct_of_valid_swath": 22.8
+    },
+    {
+      "threshold_vh_db": -22.0,
+      "pixels": 3399676,
+      "area_km2": 8499.2,
+      "pct_of_valid_swath": 24.9
+    },
+    {
+      "threshold_vh_db": -21.91,
+      "pixels": 3427841,
+      "area_km2": 8569.6,
+      "pct_of_valid_swath": 25.1
+    },
+    {
+      "threshold_vh_db": -21.0,
+      "pixels": 3717493,
+      "area_km2": 9293.7,
+      "pct_of_valid_swath": 27.23
+    },
+    {
+      "threshold_vh_db": -20.0,
+      "pixels": 4085825,
+      "area_km2": 10214.6,
+      "pct_of_valid_swath": 29.92
+    }
+  ],
+  "class_breakdown": {
+    "0": {
+      "name": "NoData / Swath Margin",
+      "pixels": 351575,
+      "area_km2": 878.9,
+      "pct": 2.51
+    },
+    "1": {
+      "name": "Permanent Water Reference",
+      "pixels": 2129543,
+      "area_km2": 5323.9,
+      "pct": 15.2
+    },
+    "2": {
+      "name": "Potential Flood Inundation Candidate",
+      "pixels": 789268,
+      "area_km2": 1973.2,
+      "pct": 5.64
+    },
+    "3": {
+      "name": "Ambiguous Low-Backscatter / Wet Soil / Paddy",
+      "pixels": 129420,
+      "area_km2": 323.6,
+      "pct": 0.92
+    },
+    "4": {
+      "name": "Topographic Radar Shadow (> 7\u00b0 slope)",
+      "pixels": 62572,
+      "area_km2": 156.4,
+      "pct": 0.45
+    },
+    "5": {
+      "name": "Non-Water Land",
+      "pixels": 10543376,
+      "area_km2": 26358.4,
+      "pct": 75.28
+    }
+  },
+  "mandal_summaries": [
+    {
+      "mandal_name": "Eluru",
+      "total_area_km2": 1288.5,
+      "raster_sampled_km2": 1288.5,
+      "permanent_water_km2": 132.9,
+      "potential_flood_km2": 144.4,
+      "ambiguous_low_backscatter_km2": 23.8,
+      "flood_candidate_pct": 11.2,
+      "mean_vh_db": -18.83
+    },
+    {
+      "mandal_name": "Ramachandrapuram",
+      "total_area_km2": 745.8,
+      "raster_sampled_km2": 745.8,
+      "permanent_water_km2": 39.6,
+      "potential_flood_km2": 121.4,
+      "ambiguous_low_backscatter_km2": 15.3,
+      "flood_candidate_pct": 16.28,
+      "mean_vh_db": -20.74
+    },
+    {
+      "mandal_name": "Bhimavaram",
+      "total_area_km2": 765.3,
+      "raster_sampled_km2": 765.3,
+      "permanent_water_km2": 150.9,
+      "potential_flood_km2": 121.3,
+      "ambiguous_low_backscatter_km2": 30.8,
+      "flood_candidate_pct": 15.85,
+      "mean_vh_db": -20.47
+    },
+    {
+      "mandal_name": "Rajahmundry",
+      "total_area_km2": 948.0,
+      "raster_sampled_km2": 948.1,
+      "permanent_water_km2": 78.5,
+      "potential_flood_km2": 115.2,
+      "ambiguous_low_backscatter_km2": 11.1,
+      "flood_candidate_pct": 12.15,
+      "mean_vh_db": -18.51
+    },
+    {
+      "mandal_name": "Tadepallegudem",
+      "total_area_km2": 894.3,
+      "raster_sampled_km2": 894.3,
+      "permanent_water_km2": 48.7,
+      "potential_flood_km2": 110.8,
+      "ambiguous_low_backscatter_km2": 19.3,
+      "flood_candidate_pct": 12.39,
+      "mean_vh_db": -19.88
+    },
+    {
+      "mandal_name": "Kottapeta",
+      "total_area_km2": 386.4,
+      "raster_sampled_km2": 386.4,
+      "permanent_water_km2": 41.1,
+      "potential_flood_km2": 69.7,
+      "ambiguous_low_backscatter_km2": 4.4,
+      "flood_candidate_pct": 18.04,
+      "mean_vh_db": -20.0
+    },
+    {
+      "mandal_name": "Kakinada",
+      "total_area_km2": 916.7,
+      "raster_sampled_km2": 916.6,
+      "permanent_water_km2": 47.3,
+      "potential_flood_km2": 61.3,
+      "ambiguous_low_backscatter_km2": 20.0,
+      "flood_candidate_pct": 6.69,
+      "mean_vh_db": -18.86
+    },
+    {
+      "mandal_name": "Tanuku",
+      "total_area_km2": 569.0,
+      "raster_sampled_km2": 569.0,
+      "permanent_water_km2": 10.0,
+      "potential_flood_km2": 60.5,
+      "ambiguous_low_backscatter_km2": 10.4,
+      "flood_candidate_pct": 10.63,
+      "mean_vh_db": -20.02
+    },
+    {
+      "mandal_name": "Narsapur",
+      "total_area_km2": 653.1,
+      "raster_sampled_km2": 653.1,
+      "permanent_water_km2": 96.3,
+      "potential_flood_km2": 55.9,
+      "ambiguous_low_backscatter_km2": 18.0,
+      "flood_candidate_pct": 8.57,
+      "mean_vh_db": -19.1
+    },
+    {
+      "mandal_name": "Mummidivaram",
+      "total_area_km2": 473.1,
+      "raster_sampled_km2": 473.1,
+      "permanent_water_km2": 82.9,
+      "potential_flood_km2": 40.5,
+      "ambiguous_low_backscatter_km2": 7.9,
+      "flood_candidate_pct": 8.56,
+      "mean_vh_db": -18.59
+    },
+    {
+      "mandal_name": "Kovvur",
+      "total_area_km2": 888.6,
+      "raster_sampled_km2": 888.5,
+      "permanent_water_km2": 10.0,
+      "potential_flood_km2": 35.9,
+      "ambiguous_low_backscatter_km2": 9.2,
+      "flood_candidate_pct": 4.04,
+      "mean_vh_db": -17.58
+    },
+    {
+      "mandal_name": "Razole",
+      "total_area_km2": 436.6,
+      "raster_sampled_km2": 436.6,
+      "permanent_water_km2": 76.2,
+      "potential_flood_km2": 27.9,
+      "ambiguous_low_backscatter_km2": 4.4,
+      "flood_candidate_pct": 6.39,
+      "mean_vh_db": -17.9
+    },
+    {
+      "mandal_name": "Amalapuram",
+      "total_area_km2": 420.5,
+      "raster_sampled_km2": 420.5,
+      "permanent_water_km2": 60.2,
+      "potential_flood_km2": 25.2,
+      "ambiguous_low_backscatter_km2": 8.0,
+      "flood_candidate_pct": 6.0,
+      "mean_vh_db": -18.21
+    },
+    {
+      "mandal_name": "RampaChodavaram",
+      "total_area_km2": 1826.5,
+      "raster_sampled_km2": 1826.3,
+      "permanent_water_km2": 39.9,
+      "potential_flood_km2": 23.0,
+      "ambiguous_low_backscatter_km2": 2.5,
+      "flood_candidate_pct": 1.26,
+      "mean_vh_db": -14.91
+    },
+    {
+      "mandal_name": "Polavaram",
+      "total_area_km2": 1450.6,
+      "raster_sampled_km2": 1450.7,
+      "permanent_water_km2": 20.7,
+      "potential_flood_km2": 19.9,
+      "ambiguous_low_backscatter_km2": 3.5,
+      "flood_candidate_pct": 1.37,
+      "mean_vh_db": -15.41
+    },
+    {
+      "mandal_name": "Peddapuram",
+      "total_area_km2": 768.8,
+      "raster_sampled_km2": 768.8,
+      "permanent_water_km2": 12.8,
+      "potential_flood_km2": 18.1,
+      "ambiguous_low_backscatter_km2": 7.6,
+      "flood_candidate_pct": 2.36,
+      "mean_vh_db": -16.87
+    },
+    {
+      "mandal_name": "Chintalapudi",
+      "total_area_km2": 1241.5,
+      "raster_sampled_km2": 1241.5,
+      "permanent_water_km2": 15.1,
+      "potential_flood_km2": 18.0,
+      "ambiguous_low_backscatter_km2": 6.8,
+      "flood_candidate_pct": 1.45,
+      "mean_vh_db": -16.18
+    },
+    {
+      "mandal_name": "Pithapuram",
+      "total_area_km2": 330.9,
+      "raster_sampled_km2": 330.9,
+      "permanent_water_km2": 4.6,
+      "potential_flood_km2": 6.1,
+      "ambiguous_low_backscatter_km2": 3.7,
+      "flood_candidate_pct": 1.85,
+      "mean_vh_db": -17.01
+    },
+    {
+      "mandal_name": "Prathipadu",
+      "total_area_km2": 786.5,
+      "raster_sampled_km2": 786.4,
+      "permanent_water_km2": 26.7,
+      "potential_flood_km2": 4.2,
+      "ambiguous_low_backscatter_km2": 3.0,
+      "flood_candidate_pct": 0.54,
+      "mean_vh_db": -15.73
+    },
+    {
+      "mandal_name": "Tuni",
+      "total_area_km2": 511.1,
+      "raster_sampled_km2": 511.1,
+      "permanent_water_km2": 5.2,
+      "potential_flood_km2": 4.2,
+      "ambiguous_low_backscatter_km2": 3.2,
+      "flood_candidate_pct": 0.85,
+      "mean_vh_db": -16.1
+    },
+    {
+      "mandal_name": "Addatigala",
+      "total_area_km2": 2197.4,
+      "raster_sampled_km2": 2197.5,
+      "permanent_water_km2": 18.7,
+      "potential_flood_km2": 4.0,
+      "ambiguous_low_backscatter_km2": 1.5,
+      "flood_candidate_pct": 0.18,
+      "mean_vh_db": -14.77
+    }
+  ]
+}

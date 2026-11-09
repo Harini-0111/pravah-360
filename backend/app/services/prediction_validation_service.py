@@ -187,7 +187,15 @@ class PredictionValidationService:
                 "total_train_samples": len(X_train),
                 "total_test_samples": len(X_test),
                 "last_validated_iso": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                "scientific_disclaimer": "CRITICAL VALIDATION DISCLOSURE: PRAVAH 360 does NOT claim arbitrary 90%+ unvalidated accuracy. Inundation classification is evaluated against held-out coastal delta test mandals using independent geographic partitions to prevent spatial data leakage. The 8.25 million population metric represents total potential exposure in elevated susceptibility zones, NOT confirmed inundated individuals."
+                "evaluation_framework": "Synthetic Multi-Scenario Spatial-Holdout Benchmark",
+                "scientific_disclaimer": "CRITICAL SCIENTIFIC INTEGRITY DISCLOSURE: The classification metrics (Precision 0.857, Recall 0.857, F1 0.857) and continuous stage errors (MAE 0.199 ft) reported here are generated using an internal synthetic benchmark dataset (_generate_synthetic_benchmark_dataset, np.random.seed(42)) across 4 simulated meteorological scenarios with spatial holdout partitioning across 4 coastal delta mandals. They do NOT represent empirical ground-truth sensor telemetry during a live flood event. Genuinely empirical post-disaster validation requires official high-water marks (HWBM) or satellite SAR flood polygons. PRAVAH 360 strictly rejects unvalidated claims of operational 90%+ accuracy.",
+                "empirical_validation_status": "PENDING_OFFICIAL_GROUND_TRUTH_DATASET"
+            },
+            "evaluation_provenance": {
+                "classification_benchmark_type": "SYNTHETIC_SCENARIO_BENCHMARK",
+                "continuous_river_stage_evaluation_type": "SYNTHETIC_HYDROLOGICAL_RESIDUAL_SERIES",
+                "empirical_validation_available": False,
+                "empirical_validation_note": "No active ground-truth telemetric station stream is connected; synthetic holdout benchmark is utilized to evaluate algorithmic robustness and prevent spatial autocorrelation leakage."
             },
             "classification_metrics": {
                 "random_forest": {

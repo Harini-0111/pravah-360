@@ -1,0 +1,21 @@
+ECMWF ERA5 REANALYSIS DAILY PRECIPITATION - JULY 2022 FLOOD EVENT
+================================================================
+Location: Lower Godavari Basin (Lat: 16.98, Lon: 81.78)
+Time period: 2022-07-10 to 2022-07-20
+Source: ECMWF / Copernicus via Open-Meteo Historical Archive API
+
+Daily Rainfall Breakdown:
+  2022-07-10:  23.2 mm
+  2022-07-11:  38.9 mm
+  2022-07-12:  41.3 mm
+  2022-07-13:  20.3 mm
+  2022-07-14:   0.3 mm
+  2022-07-15:   0.0 mm
+  2022-07-16:   1.7 mm
+  2022-07-17:   6.5 mm
+  2022-07-18:  20.2 mm
+  2022-07-19:   0.1 mm
+  2022-07-20:   2.4 mm
+
+Total 11-day precipitation: 154.9 mm
+Antecedent storm peak: July 11-13 (100.5 mm in 72 hours), triggering the record flood wave.

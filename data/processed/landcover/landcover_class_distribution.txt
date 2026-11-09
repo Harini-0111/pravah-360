@@ -1,0 +1,16 @@
+ESA WORLDCOVER 2021 v200 - LOWER GODAVARI BASIN DISTRIBUTION
+=============================================================
+Tile: N15E081 (15N-18N, 81E-84E)
+Study bounds: [16.3 N, 81.0 E] to [17.9 N, 82.8 E]
+Total sampled pixels: 16,588,800
+
+Class   0 (Unknown (0)              ):  753,842 pixels ( 4.54%)
+Class  10 (Tree cover               ): 7,133,887 pixels (43.00%)
+Class  20 (Shrubland                ):   56,278 pixels ( 0.34%)
+Class  30 (Grassland                ):  876,854 pixels ( 5.29%)
+Class  40 (Cropland                 ): 3,985,682 pixels (24.03%)
+Class  50 (Built-up                 ):  273,641 pixels ( 1.65%)
+Class  60 (Bare / sparse vegetation ):  124,721 pixels ( 0.75%)
+Class  80 (Permanent water bodies   ): 3,147,163 pixels (18.97%)
+Class  90 (Herbaceous wetland       ):  124,559 pixels ( 0.75%)
+Class  95 (Mangroves                ):  112,173 pixels ( 0.68%)

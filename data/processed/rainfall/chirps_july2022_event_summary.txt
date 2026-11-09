@@ -1,0 +1,15 @@
+CHIRPS v2.0 DAILY PRECIPITATION - JULY 2022 GODAVARI FLOOD EVENT
+=================================================================
+Spatial extent: [16.3 N, 81.0 E] to [17.9 N, 82.8 E] (Lower Godavari Basin)
+Spatial resolution: 0.05 degrees (~5.5 km)
+Temporal range: 10 July 2022 to 20 July 2022 (daily)
+File: data/raw/rainfall/chirps/chirps_godavari_20220710_20220720.nc
+
+Historical Context:
+- July 11-14, 2022: Intense catchment-wide rainfall over Upper & Middle Godavari (Vidarbha, Telangana, Chhattisgarh)
+- July 14-16, 2022: Extreme peak inflow into Dowleswaram Barrage (>2.58 million cusecs, 3rd danger signal)
+- Precipitation units: mm/day
+
+Complementary Data Notice:
+- GPM IMERG Daily (0.1 deg) provides satellite GPM-core microwave/IR calibration.
+- CHIRPS (0.05 deg) incorporates station blending for high-resolution topographic precipitation estimation.

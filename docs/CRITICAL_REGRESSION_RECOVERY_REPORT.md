@@ -120,6 +120,6 @@ All 78 unit tests passed with zero failures or regressions.
 
 ## 5. Generated Verification Screenshots
 
-- [**`docs/screenshots/clean_01_telugu_verified.png`**](file:///c:/major%20project/docs/screenshots/clean_01_telugu_verified.png): Confirms full-page Telugu rendering across Welcome, Login, and Registration cards.
-- [**`docs/screenshots/clean_02_auth_verified.png`**](file:///c:/major%20project/docs/screenshots/clean_02_auth_verified.png): Confirms registration, sign out, and re-login with authenticated session state.
-- [**`docs/screenshots/clean_03_voice_verified.png`**](file:///c:/major%20project/docs/screenshots/clean_03_voice_verified.png): Confirms the multimodal voice assistant answering rain, weather, hospital, and SOS queries with suggestion chips and text input fallback.
+- [**`docs/screenshots/clean_01_telugu_verified.png`**](screenshots/clean_01_telugu_verified.png): Confirms full-page Telugu rendering across Welcome, Login, and Registration cards.
+- [**`docs/screenshots/clean_02_auth_verified.png`**](screenshots/clean_02_auth_verified.png): Confirms registration, sign out, and re-login with authenticated session state.
+- [**`docs/screenshots/clean_03_voice_verified.png`**](screenshots/clean_03_voice_verified.png): Confirms the multimodal voice assistant answering rain, weather, hospital, and SOS queries with suggestion chips and text input fallback.

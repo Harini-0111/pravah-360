@@ -1,0 +1,165 @@
+{
+  "historical_flood_events": [
+    {
+      "event_id": "CYCLONE_MURASU_NOV_2026",
+      "event_name": "Cyclone Murasu Landfall & Post-Landfall Deep Depression (November 2026)",
+      "river_system": "Bay of Bengal Coastal Zone & Lower Godavari Delta Catchment",
+      "state": "Andhra Pradesh",
+      "districts_affected": [
+        "Dr. B.R. Ambedkar Konaseema",
+        "East Godavari",
+        "West Godavari",
+        "Kakinada",
+        "Bapatla",
+        "Prakasam",
+        "Nellore"
+      ],
+      "peak_date": "2026-11-03 to 2026-11-04",
+      "event_duration": "2026-11-02 to 2026-11-05",
+      "cyclone_classification": "Severe Cyclonic Storm to Deep Depression",
+      "official_sources": [
+        "Andhra Pradesh State Disaster Management Authority (APSDMA) Cyclone Information Feed",
+        "India Meteorological Department (IMD) Cyclone Warning Division Bulletins",
+        "Central Water Commission (CWC) Godavari Circle River Bulletins"
+      ],
+      "timeline_steps": [
+        {
+          "step_id": 1,
+          "timestamp": "2026-11-03 08:30 IST",
+          "phase": "Approaching Coast",
+          "official_bulletin": "IMD Bulletin #14: Severe Cyclonic Storm 'Murasu' over Westcentral and adjoining Southwest Bay of Bengal moving north-northwestwards with sustained wind speeds of 85-95 kmph gusting to 105 kmph. Landfall expected south of Andhra Pradesh coast by evening.",
+          "source": "IMD & APSDMA Official Warning",
+          "alert_tier": "OFFICIAL_WARNING",
+          "severity": "Severe",
+          "dowleswaram_gauge_ft": 12.4,
+          "rainfall_24h_mm": 48.6,
+          "affected_mandals": ["Amalapuram", "Razole", "Mummidivaram", "Kakinada Rural", "Narsapur"],
+          "model_advisory": "PRAVAH 360 hydrodynamic model indicates heightened coastal storm surge potential along seaward delta mandals. Embankment overtopping probability elevated in low-elevation reaches.",
+          "key_takeaway": "Early warning stage: Coastal mandals placed on Orange/Red alert prior to landfall."
+        },
+        {
+          "step_id": 2,
+          "timestamp": "2026-11-03 17:30 IST",
+          "phase": "Landfall in Progress",
+          "official_bulletin": "APSDMA Flash Advisory: Severe Cyclonic Storm 'Murasu' commenced landfall process along the South Andhra Pradesh coast. Wind speeds recorded at 80-90 kmph with heavy to very heavy precipitation in coastal sectors.",
+          "source": "APSDMA Emergency Operations Centre",
+          "alert_tier": "OFFICIAL_WARNING",
+          "severity": "Extreme",
+          "dowleswaram_gauge_ft": 13.8,
+          "rainfall_24h_mm": 112.4,
+          "affected_mandals": ["Amalapuram", "Razole", "Mummidivaram", "Kovvur", "Rajamahendravaram Urban"],
+          "model_advisory": "AHP susceptibility analysis flags agricultural drain congestion and urban waterlogging in Rajamahendravaram and Kovvur due to tidal backwater locking at delta outlets.",
+          "key_takeaway": "Landfall peak: Widespread surface waterlogging and strong gale winds."
+        },
+        {
+          "step_id": 3,
+          "timestamp": "2026-11-04 02:30 IST",
+          "phase": "Post-Landfall Weakening (Deep Depression)",
+          "official_bulletin": "APSDMA Special Bulletin (02:30 AM IST, 4 Nov): Cyclone 'Murasu' has moved inland and weakened into a Deep Depression over coastal Andhra Pradesh and adjoining east Telangana. System is gradually de-intensifying.",
+          "source": "APSDMA State Disaster Management Authority",
+          "alert_tier": "OFFICIAL_WARNING",
+          "severity": "Moderate to Severe",
+          "dowleswaram_gauge_ft": 14.6,
+          "rainfall_24h_mm": 86.2,
+          "affected_mandals": ["Rajamahendravaram Urban", "Rajamahendravaram Rural", "Kadiam", "Kovvur", "Nidadavole"],
+          "model_advisory": "CRITICAL RISK INTELLIGENCE: Although the cyclone has formally weakened from cyclonic storm intensity, rainfall runoff from upstream catchments and adjoining east Telangana is now converging into the Lower Godavari tributaries.",
+          "key_takeaway": "De-intensification does NOT mean all clear: River stage continues rising even as winds decline."
+        },
+        {
+          "step_id": 4,
+          "timestamp": "2026-11-04 08:30 IST",
+          "phase": "Residual Heavy Rainfall & Lightning Stage",
+          "official_bulletin": "APSDMA Weather Watch (08:30 AM IST, 4 Nov): Multiple local lightning and thunder alerts active across Godavari delta mandals. Heavy residual rain bands persist over East Godavari and Konaseema districts.",
+          "source": "APSDMA SACHET Live Feed",
+          "alert_tier": "OFFICIAL_WARNING",
+          "severity": "Severe",
+          "dowleswaram_gauge_ft": 15.2,
+          "rainfall_24h_mm": 64.0,
+          "affected_mandals": ["Kovvur", "Razole", "Mummidivaram", "Seethanagaram", "Gokavaram"],
+          "model_advisory": "PRAVAH 360 continuous surveillance flags localized lightning hazard and standing crop inundation. Water level approaching 1st Warning marker (14.75 ft) at Dowleswaram Barrage.",
+          "key_takeaway": "Residual hazard phase: The system must communicate evolving post-landfall lightning and river surge rather than dropping all warnings."
+        }
+      ],
+      "validation_data_gap_note": "APSDMA official cyclone feed provides real-time telemetric ground truth. Replay mode tests model advisory performance at each milestone without future data leakage."
+    },
+    {
+      "event_id": "CYCLONE_ARNAB_HISTORICAL",
+      "event_name": "Cyclone Arnab Historical Bay of Bengal Coastal Inundation Event",
+      "river_system": "Bay of Bengal Coastal Zone & Godavari Delta Shoreline",
+      "state": "Andhra Pradesh",
+      "districts_affected": [
+        "Dr. B.R. Ambedkar Konaseema",
+        "Kakinada",
+        "East Godavari"
+      ],
+      "peak_date": "Historical Archive Reference",
+      "event_duration": "4 Days",
+      "cyclone_classification": "Severe Cyclonic Storm (Historical Reference)",
+      "official_sources": [
+        "IMD Historical Tropical Cyclone Archive",
+        "APSDMA Disaster History Records"
+      ],
+      "timeline_steps": [
+        {
+          "step_id": 1,
+          "timestamp": "Historical Archive Day 1 08:30 IST",
+          "phase": "Depression Formation",
+          "official_bulletin": "Deep depression formed over Southeast Bay of Bengal, moving northwestwards towards north Andhra Pradesh coast.",
+          "source": "IMD Cyclone Archive",
+          "alert_tier": "OFFICIAL_WARNING",
+          "severity": "Moderate",
+          "dowleswaram_gauge_ft": 11.2,
+          "rainfall_24h_mm": 32.0,
+          "affected_mandals": ["Kakinada", "Mummidivaram"],
+          "model_advisory": "Early warning baseline: Ocean swell models indicate rising wave heights off Kakinada spit.",
+          "key_takeaway": "Early coastal warning baseline."
+        },
+        {
+          "step_id": 2,
+          "timestamp": "Historical Archive Day 2 17:30 IST",
+          "phase": "Coastal Storm Surge",
+          "official_bulletin": "Cyclone Arnab intensified into Severe Cyclonic Storm with storm surge of 1.2m above astronomical tide along delta coastline.",
+          "source": "IMD Historical Archive",
+          "alert_tier": "OFFICIAL_WARNING",
+          "severity": "Extreme",
+          "dowleswaram_gauge_ft": 13.5,
+          "rainfall_24h_mm": 145.0,
+          "affected_mandals": ["Amalapuram", "Razole", "Mummidivaram", "Kakinada"],
+          "model_advisory": "Sentinel-1 SAR surface water candidates show coastal backwater inundation in mangrove estuaries and aquaculture pockets.",
+          "key_takeaway": "Tidal surge and coastal backwater inundation."
+        }
+      ],
+      "validation_data_gap_note": "Used as an independent historical event benchmark for retrospective early-warning timeline evaluation."
+    },
+    {
+      "event_id": "GODAVARI_FLOOD_JULY_2022",
+      "event_name": "Historic Lower Godavari Basin Flood of July 2022",
+      "river_system": "Godavari River (Gautami and Vasishta delta branches)",
+      "state": "Andhra Pradesh",
+      "districts_affected": [
+        "Dr. B.R. Ambedkar Konaseema",
+        "East Godavari",
+        "West Godavari",
+        "Eluru",
+        "Alluri Sitharama Raju"
+      ],
+      "peak_date": "2022-07-15 to 2022-07-16",
+      "event_duration": "2022-07-11 to 2022-07-22",
+      "peak_discharge_cusecs": 2580000,
+      "peak_discharge_cumecs": 73056,
+      "peak_water_level_gauge": "Dowleswaram Barrage 17.75 ft (3rd Danger Signal)",
+      "upstream_gauge": "Bhadrachalam 71.30 ft",
+      "official_sources": [
+        "Central Water Commission (CWC) Daily Flood Situation Reports",
+        "Andhra Pradesh State Disaster Management Authority (APSDMA) Situation Reports",
+        "ISRO NRSC Disaster Management Support Programme (DMSP) Flood Maps"
+      ],
+      "sentinel1_validation_dates": {
+        "pre_flood_baseline": ["2022-06-02", "2022-06-14"],
+        "flood_peak_observations": ["2022-07-14", "2022-07-16"],
+        "post_flood_recession": ["2022-07-26", "2022-07-28"]
+      },
+      "validation_data_gap_note": "High-resolution UAV orthomosaics and surveyed RTK-GNSS flood depths at village cadastral level are restricted internal records of the Irrigation & CAD Department, AP. Remote sensing SAR inundation (Sentinel-1) combined with CWC discharge hydrographs and NRSC flood extents serve as the primary validation reference."
+    }
+  ]
+}
