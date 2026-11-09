@@ -108,6 +108,7 @@ scripts/legacy_patches/
 scripts/doc_content_dump.txt
 extracted_images/
 report_screenshots/
+report_screenshots_final/
 
 # 8. Third-Party Reference Documents & External Research Papers (Preserve Locally)
 data/reference/*.pdf

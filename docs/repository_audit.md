@@ -16,7 +16,7 @@
 
 This repository audit evaluates the preparedness of the **PRAVAH 360** codebase for publication and pushing to GitHub. The audit confirms that:
 1. **Application Health & Scientific Consistency:** The backend (modular FastAPI) and frontend (Leaflet.js 2D GIS, Three.js 3D WebGL Globe, bilingual UI, and emergency operations) are fully functional. The complete automated test suite of **98 unit and integration tests** achieves a **100% pass rate** in ~20 seconds.
-2. **Authoritative Academic Documentation:** The final 86-page B.Tech major project report ([`PRAVAH360_Final_Formatted_Report.pdf`](../PRAVAH360_Final_Formatted_Report.pdf) and [`PRAVAH360_Final_Formatted_Report.docx`](../PRAVAH360_Final_Formatted_Report.docx)), all 10 high-resolution 300 DPI architecture diagrams ([`report_diagrams/`](../report_diagrams/)), and 9 distinct, verified application screenshots ([`report_screenshots_final/`](../report_screenshots_final/)) are intact and verified.
+2. **Authoritative Academic Documentation:** The final 86-page B.Tech major project report ([`PRAVAH360_Final_Formatted_Report.pdf`](../PRAVAH360_Final_Formatted_Report.pdf) and [`PRAVAH360_Final_Formatted_Report.docx`](../PRAVAH360_Final_Formatted_Report.docx)), all 10 high-resolution 300 DPI architecture diagrams ([`report_diagrams/`](../report_diagrams/)), and 9 distinct, verified application screenshots (`report_screenshots_final/`, preserved locally) are intact and verified.
 3. **Large File Risk Assessment:** Raw offline geospatial assets—specifically four uncompressed Sentinel-1 SAR tiles from Google Earth Engine (~5.48 GB total) and the pan-Asian HydroSHEDS shapefile (~424 MB)—exceed GitHub's **100 MB hard limit**. These raw assets must be excluded from direct Git tracking via `.gitignore` and documented with reproducible download instructions, while their lightweight processed GeoJSON and PNG derivatives are retained in the repository.
 4. **Secrets and Credentials Hygiene:** A regex scan over all source code confirmed **zero exposed API keys, secret tokens, or private credentials**.
 
@@ -144,7 +144,7 @@ The following files exceed GitHub's 100 MB hard upload limit and MUST NOT be tra
 - `PRAVAH360_Final_Formatted_Report.docx` (86 pages, 8.55 MB).
 - `PRAVAH360_Formatting_QA_Report.md`.
 - `report_diagrams/` (10 high-resolution 300 DPI architecture diagrams).
-- `report_screenshots_final/` (9 verified authentic application screenshots).
+- `report_screenshots_final/` (9 verified authentic application screenshots; preserved locally, excluded from Git tracking).
 
 ---
 
@@ -167,7 +167,8 @@ A programmatic regex pattern audit was executed across all text, configuration, 
 | Application Code (`backend/`, `frontend/`) | ~12 MB | ~12 MB | Committed directly |
 | Lightweight Datasets (`data/processed/*.geojson`, rasters <20MB) | ~35 MB | ~35 MB | Committed directly |
 | Final Academic Documents (`.pdf`, `.docx`) | ~12 MB | ~12 MB | Committed directly |
-| Diagram & Screenshot Assets (`report_diagrams/`, `report_screenshots_final/`) | ~18 MB | ~18 MB | Committed directly |
+| Diagram Assets (`report_diagrams/`) | ~1.8 MB | ~1.8 MB | Committed directly |
+| Screenshot Assets (`report_screenshots_final/`) | ~5.8 MB | **0 MB** | Excluded in `.gitignore`, preserved locally |
 | Raw Sentinel-1 GeoTIFFs (`track129_20220716/*.tif`) | 5,478 MB (5.48 GB) | **0 MB** | Excluded in `.gitignore`, documented in catalog |
 | Pan-Asia HydroSHEDS Shapefile (`HydroRIVERS_v10_as_shp/`) | 424 MB | **0 MB** | Excluded in `.gitignore`, documented in catalog |
 | Local Backups (`backups/`, `backup_*/`) | 5,500 MB (5.50 GB) | **0 MB** | Excluded in `.gitignore` |

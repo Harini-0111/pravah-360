@@ -5,7 +5,7 @@
 1. **Editable DOCX:** [`C:\major project\PRAVAH360_Final_Formatted_Report.docx`](PRAVAH360_Final_Formatted_Report.docx) (8.55 MB)
 2. **Final Typeset PDF:** [`C:\major project\PRAVAH360_Final_Formatted_Report.pdf`](PRAVAH360_Final_Formatted_Report.pdf) (3.41 MB, 86 Pages)
 3. **Diagram Assets Directory:** [`C:\major project\report_diagrams\`](report_diagrams) (10 High-Resolution 300 DPI PNG diagrams)
-4. **Screenshot Assets Directory:** [`C:\major project\report_screenshots_final\`](report_screenshots_final) (9 Distinct Verified Application PNG screenshots)
+4. **Screenshot Assets Directory:** `report_screenshots_final/` (Preserved locally; 9 Distinct Verified Application PNG screenshots)
 
 ---
 

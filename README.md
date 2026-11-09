@@ -44,24 +44,17 @@ Flood management in dynamic alluvial basins requires actionable geospatial intel
 - **Bilingual Accessibility (Telugu & English):** Native browser **W3C Web Speech API** integration for Telugu (	e-IN) and English voice search, emergency advisories, and auditory warning readouts.
 ---
 
-## 3. Verified Application Screenshots
+## 3. Application Interface & Local Exploration
 
-The following 6 verified screenshots represent the core operational interfaces of PRAVAH 360, documented in Chapter 10 of the major project report:
+PRAVAH 360 features a unified, responsive geospatial interface integrating:
+- **2D Geospatial Situation Room:** Interactive Leaflet.js explorer with 21-mandal AHP susceptibility choropleths, spatial layer toggles, and inspector drawers.
+- **3D WebGL Virtual Earth:** Rotating Earth globe (powered by Globe.gl / Three.js) with NASA Blue Marble textures and regional camera perspectives.
+- **Bilingual Telugu Voice Assistant:** Hands-free voice interaction utilizing the browser W3C Web Speech API with native `te-IN` speech synthesis and emergency intent parsing.
+- **Audited Emergency Notification Drawer:** Sliding continuous feed displaying verified alerts with transparent source freshness badges (LIVE, CACHED, STALE).
+- **Satellite Candidate Water Overlays:** Vectorized exploratory Sentinel-1 C-band SAR surface water candidate footprints over the Lower Godavari delta.
+- **Historical & Scenario Timeline Replay:** Synchronized disaster timeline replay with live Dowleswaram Barrage discharge hydrograph surge curves.
 
-| 2D Geospatial Explorer & Mandal Risk Choropleth | 3D WebGL Virtual Earth & Regional Perspective |
-| :---: | :---: |
-| ![2D GIS Situation Room](report_screenshots_final/fig10_3.png) | ![3D Virtual Globe](report_screenshots_final/fig10_4.png) |
-| **2D GIS Situation Room:** 21-mandal AHP susceptibility choropleth, layer toggles, and inspector drawer | **3D Virtual Earth:** Globe.gl / Three.js interactive rotating Earth with NASA textures and regional viewpoints |
-
-| Verified Bilingual Telugu Voice Assistant | Sliding Emergency Notification Drawer |
-| :---: | :---: |
-| ![Telugu Voice Assistant](report_screenshots_final/fig10_2.png) | ![Notification Drawer](report_screenshots_final/fig10_6.png) |
-| **Telugu Voice Assistant:** Hands-free voice querying with native `te-IN` speech synthesis and intent parsing | **Audited Alerts Drawer:** Continuous feed displaying verified alerts with transparent source freshness badges |
-
-| Sentinel-1 SAR Observational Candidate Mask | Historical Event Replay & Hydrograph |
-| :---: | :---: |
-| ![Sentinel-1 SAR Footprint](report_screenshots_final/fig10_5.png) | ![Historical Replay Modal](report_screenshots_final/fig10_8.png) |
-| **Satellite Water Mask:** Exploratory Sentinel-1 floodwater candidate layer extracted from Track 129 C-band SAR backscatter | **Simulated Event Replay:** Simulated Cyclone Murasu scenario progression and Dowleswaram Barrage discharge hydrograph curves |
+To explore the live application interface directly, follow the [**Installation & Setup Guide**](#8-installation--setup-guide) below to launch the local FastAPI server and open [`http://127.0.0.1:8000`](http://127.0.0.1:8000) in your web browser. All authentic UI captures and figures are documented in Chapter 10 of the authoritative academic project report ([`PRAVAH360_Final_Formatted_Report.pdf`](PRAVAH360_Final_Formatted_Report.pdf)).
 
 ---
 
@@ -307,9 +300,8 @@ PRAVAH-360/
 │   ├── styles.css                          # Modern responsive styling & dark theme
 │   └── app.js                              # Master state, router & GIS controller
 ├── report_diagrams/                        # 10 High-resolution 300 DPI architecture diagrams
-├── report_screenshots_final/               # 9 Verified authentic application captures
 ├── scripts/                                # Maintenance, GEE export & pagination scripts
-├── tests/                                  # 9 Automated test suites (98 tests)
+├── tests/                                  # 9 Automated test suites (109 tests)
 ├── .env.example                            # Safe environment variable template
 ├── .gitignore                              # Comprehensive GitHub exclusion rules
 ├── LICENSE                                 # MIT License & 3rd-party data notices
